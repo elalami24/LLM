@@ -313,13 +313,13 @@ class F6SDataExtractor:
         for i, program in enumerate(self.programs[:10]):  # Premiers 10
             report.append(f"\n{i+1}. {program.get('title', 'Sans titre')}")
             if program.get('location'):
-                report.append(f"   📍 {program['location']}")
+                report.append(f"    {program['location']}")
             if program.get('funding_amount'):
-                report.append(f"   💰 {program['funding_amount']}")
+                report.append(f"    {program['funding_amount']}")
             if program.get('deadline'):
-                report.append(f"   ⏰ {program['deadline']}")
+                report.append(f"    {program['deadline']}")
             if program.get('verified'):
-                report.append(f"   ✅ Vérifié")
+                report.append(f"    Vérifié")
         
         if len(self.programs) > 10:
             report.append(f"\n... et {len(self.programs) - 10} autres programmes")
@@ -340,7 +340,7 @@ def main():
         extractor = F6SDataExtractor(html_content=html_content)
     else:
         if not Path(html_file).exists():
-            print(f"❌ Fichier non trouvé: {html_file}")
+            print(f" Fichier non trouvé: {html_file}")
             return
         extractor = F6SDataExtractor(html_file=html_file)
     
@@ -348,7 +348,7 @@ def main():
     programs = extractor.extract_programs()
     
     if not programs:
-        print("❌ Aucun programme extrait")
+        print(" Aucun programme extrait")
         return
     
     # Sauvegarder les données
@@ -364,7 +364,7 @@ def main():
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write(report)
     
-    print(f"\n📁 Fichiers générés:")
+    print(f"\n Fichiers générés:")
     print(f"   - JSON: {json_file}")
     print(f"   - CSV: {csv_file}")
     print(f"   - Rapport: {report_file}")

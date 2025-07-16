@@ -430,7 +430,7 @@ def main():
         programs = extract_programs_from_html(html_content, source_url)
         
         if programs:
-            print(f"\n✅ Extraction réussie! {len(programs)} programmes trouvés")
+            print(f"\n Extraction réussie! {len(programs)} programmes trouvés")
             
             # Afficher quelques exemples
             print("\nExemples de programmes extraits:")
@@ -441,9 +441,9 @@ def main():
                 if program.get('url'):
                     print(f"   URL: {program['url']}")
         else:
-            print("\n⚠️ Aucun programme extrait - vérifiez le HTML sauvegardé")
+            print("\n Aucun programme extrait - vérifiez le HTML sauvegardé")
     else:
-        print("\n❌ Impossible d'obtenir le contenu de F6S")
+        print("\n Impossible d'obtenir le contenu de F6S")
         print("Vérifiez que vos cookies sont valides et non expirés")
     
     return result is not None
