@@ -1,0 +1,12 @@
+[
+  {
+    "name": "PHPSESSID",
+    "value": "1456be39a76170e91de4bfdcba1a3fdd",
+    "domain": ".f6s.com",
+    "path": "/",
+    "expires": 1787193873.00828,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]

@@ -489,11 +489,11 @@ async def main():
     API_KEY = os.getenv("GEMINI_API_KEY")
     
     if not API_KEY:
-        logger.error("❌ GEMINI_API_KEY non trouvée dans config.env")
-        logger.info("📝 Créez un fichier config.env avec: GEMINI_API_KEY=votre_clé_ici")
+        logger.error(" GEMINI_API_KEY non trouvée dans config.env")
+        logger.info(" Créez un fichier config.env avec: GEMINI_API_KEY=votre_clé_ici")
         return
     
-    logger.info(f"✅ Clé API chargée depuis config.env")
+    logger.info(f"Clé API chargée depuis config.env")
     
     # URLs cibles
     target_urls = [
@@ -540,8 +540,8 @@ async def main():
         scraper = OpportunityScraper()
         scraper.save_to_json(all_opportunities, filename)
         
-        logger.info(f"🎉 Scraping terminé! Trouvé {len(all_opportunities)} opportunités")
-        logger.info(f"📁 Fichier sauvegardé: {filename}")
+        logger.info(f" Scraping terminé! Trouvé {len(all_opportunities)} opportunités")
+        logger.info(f" Fichier sauvegardé: {filename}")
         
         # Print sample data
         if all_opportunities:
