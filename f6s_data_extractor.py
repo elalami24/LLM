@@ -57,17 +57,31 @@ class F6SDataExtractor:
         
         logger.info("Début de l'extraction des programmes...")
         
-        # Chercher les éléments de programmes
+        # Chercher les éléments de programmes - essayer plusieurs sélecteurs
         program_containers = self.soup.find_all('div', class_='bordered-list-item result-item')
+        
+        # Si aucun résultat avec ce sélecteur, essayer d'autres variantes
+        if not program_containers:
+            logger.warning("Aucun programme trouvé avec le sélecteur principal, tentative avec d'autres sélecteurs...")
+            program_containers = self.soup.find_all('div', class_='result-item')
+            
+        if not program_containers:
+            program_containers = self.soup.find_all('div', class_='bordered-list-item')
+            
+        if not program_containers:
+            # Essayer de trouver des éléments avec des classes partielles
+            program_containers = self.soup.find_all('div', class_=re.compile(r'result.*item'))
         
         logger.info(f"Trouvé {len(program_containers)} conteneurs de programmes")
         
         for i, container in enumerate(program_containers):
             try:
                 program = self._extract_single_program(container, i)
-                if program:
+                if program and program.get('title'):  # Vérifier que le titre existe
                     self.programs.append(program)
                     logger.debug(f"Programme {i+1} extrait: {program.get('title', 'Sans titre')}")
+                else:
+                    logger.warning(f"Programme {i+1} ignoré: données incomplètes")
             except Exception as e:
                 logger.error(f"Erreur lors de l'extraction du programme {i+1}: {e}")
         
@@ -83,15 +97,14 @@ class F6SDataExtractor:
             'location': '',
             'deadline': '',
             'date_range': '',
-            'url': '',
             'apply_url': '',
-            'info_url': '',
-            'funding_amount': '',
-            'equity': '',
+            'info_url': '',  # Correction: ajout de info_url dans l'initialisation
             'organization_image': '',
             'verified': False,
             'type': '',
             'markets': [],
+            'funding_amount': '',  # Correction: ajout des champs manquants
+            'equity': '',
             'raw_text': container.get_text(strip=True) if container else ''
         }
         
@@ -102,11 +115,31 @@ class F6SDataExtractor:
                 title_link = title_elem.find('a')
                 if title_link:
                     program['title'] = title_link.get_text(strip=True)
-                    program['info_url'] = title_link.get('href', '')
+                    href = title_link.get('href', '')
+                    if href:
+                        program['info_url'] = href
                     
                     # Vérifier si vérifié
                     if title_elem.find('span', class_='verified-badge'):
                         program['verified'] = True
+            
+            # Si pas de titre trouvé avec la méthode principale, essayer d'autres sélecteurs
+            if not program['title']:
+                # Essayer avec d'autres sélecteurs possibles
+                title_candidates = [
+                    container.find('h3'),
+                    container.find('h2'),
+                    container.find('a', class_='title'),
+                    container.find('div', class_='program-title'),
+                    container.find('div', class_='name')
+                ]
+                
+                for candidate in title_candidates:
+                    if candidate:
+                        program['title'] = candidate.get_text(strip=True)
+                        if candidate.get('href'):
+                            program['info_url'] = candidate.get('href')
+                        break
             
             # Extraire les détails (localisation, dates)
             subtitle_elem = container.find('div', class_='subtitle')
@@ -133,7 +166,8 @@ class F6SDataExtractor:
                     # Extraire les marchés des détails
                     if 'Funds Startups in' in details_text:
                         markets_text = details_text.replace('Funds Startups in', '').strip()
-                        program['markets'] = [market.strip() for market in markets_text.split(',')]
+                        if markets_text:
+                            program['markets'] = [market.strip() for market in markets_text.split(',') if market.strip()]
             
             # Extraire les informations de financement
             result_extra = container.find('div', class_='result-extra')
@@ -177,8 +211,8 @@ class F6SDataExtractor:
                 program['organization_image'] = img_elem.get('src', '')
             
             # Nettoyer les URLs (ajouter le domaine si relatif)
-            for url_field in ['url', 'apply_url', 'info_url']:
-                if program[url_field] and program[url_field].startswith('/'):
+            for url_field in ['apply_url', 'info_url']:  # Correction: 'url' n'existe pas dans program
+                if program.get(url_field) and program[url_field].startswith('/'):
                     program[url_field] = 'https://www.f6s.com' + program[url_field]
             
             return program
@@ -313,13 +347,13 @@ class F6SDataExtractor:
         for i, program in enumerate(self.programs[:10]):  # Premiers 10
             report.append(f"\n{i+1}. {program.get('title', 'Sans titre')}")
             if program.get('location'):
-                report.append(f"    {program['location']}")
+                report.append(f"    Localisation: {program['location']}")
             if program.get('funding_amount'):
-                report.append(f"    {program['funding_amount']}")
+                report.append(f"    Financement: {program['funding_amount']}")
             if program.get('deadline'):
-                report.append(f"    {program['deadline']}")
+                report.append(f"    Deadline: {program['deadline']}")
             if program.get('verified'):
-                report.append(f"    Vérifié")
+                report.append(f"    ✓ Vérifié")
         
         if len(self.programs) > 10:
             report.append(f"\n... et {len(self.programs) - 10} autres programmes")
@@ -335,9 +369,8 @@ def main():
     html_file = input("Entrez le chemin du fichier HTML (ou appuyez sur Entrée pour utiliser l'exemple): ").strip()
     
     if not html_file:
-        # Utiliser le HTML que vous avez fourni
-        html_content = """<!-- Ici vous pouvez coller votre HTML -->"""
-        extractor = F6SDataExtractor(html_content=html_content)
+        print(" Aucun fichier HTML fourni. Veuillez spécifier un fichier HTML valide.")
+        return
     else:
         if not Path(html_file).exists():
             print(f" Fichier non trouvé: {html_file}")
