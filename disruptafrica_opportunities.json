@@ -5,11 +5,10 @@
     "subtitle": "Applications are open for the US$2 million Milken-Motsepe Prize, which aims to support African AI solutions transforming manufacturing.",
     "description": "TheMilken-Motsepe Prizeis aimed at companies in Africa revolutionising manufacturing value chains in emerging markets by leveraging AI and other emerging technologies. It offers US$2 million in total prizes, including a US$1 million Grand Prize, with participating companies also gaining access to exclusive networking and the opportunity to pitch to industry leaders and key decision-makers. “If your company is using AI and advanced data analytics to boost efficiency, reduce waste, and deliver scalable impact – this is your moment. We’re looking for tech-powered solutions ready to drive job creation, unlock commercial growth, and ignite breakthroughs across the globe,” organisers said. The winning team will demonstrate a scalable innovation across manufacturing value chains that leverages AI to deliver measurable impact in efficiency and waste loss. Teams will be evaluated on commercial viability, technological integration, operational economics, and market scalability in Africa. Applications are openhereuntil July 31.",
     "content": "Applications are open for the US$2 million Milken-Motsepe Prize, which aims to support African AI solutions transforming manufacturing.TheMilken-Motsepe Prizeis aimed at companies in Africa revolutionising manufacturing value chains in emerging markets by leveraging AI and other emerging technologies.It offers US$2 million in total prizes, including a US$1 million Grand Prize, with participating companies also gaining access to exclusive networking and the opportunity to pitch to industry leaders and key decision-makers.“If your company is using AI and advanced data analytics to boost efficiency, reduce waste, and deliver scalable impact – this is your moment. We’re looking for tech-powered solutions ready to drive job creation, unlock commercial growth, and ignite breakthroughs across the globe,” organisers said.The winning team will demonstrate a scalable innovation across manufacturing value chains that leverages AI to deliver measurable impact in efficiency and waste loss. Teams will be evaluated on commercial viability, technological integration, operational economics, and market scalability in Africa.Applications are openhereuntil July 31.",
-    "meta_title": "2M$ Milken-Motsepe Prize: IA pour la fabrication en Afrique",
-    "Meta Description": "Le prix Milken-Motsepe de 2 millions de dollars récompense les solutions d'IA africaines qui transforment le secteur manufacturier. Candidatures jusqu'au 31 juillet.",
+    "meta_title": "Prix Milken-Motsepe : 2M$ pour l'IA en Afrique",
+    "Meta Description": "Le prix Milken-Motsepe offre 2 millions de dollars à des solutions d'IA africaines pour transformer la fabrication. Candidatures jusqu'au 31 juillet.",
     "slug": "prix-milken-motsepe-ia-fabrication-afrique",
     "regions": [
-      "South Africa",
       "Algeria",
       "Angola",
       "Benin",
@@ -53,6 +52,8 @@
       "Seychelles",
       "Sierra Leone",
       "Somalia",
+      "South Africa",
+      "South Sudan",
       "Sudan",
       "Tanzania",
       "Togo",
@@ -75,25 +76,18 @@
       "Funding Opportunity"
     ],
     "draft_summary": {
-      "introduction": "Le prix Milken-Motsepe, doté de 2 millions de dollars US, récompense les entreprises africaines qui utilisent l'intelligence artificielle (IA) pour révolutionner les chaînes de valeur manufacturières sur les marchés émergents.",
-      "details": [
-        {
-          "heading": "À propos du prix",
-          "text": "Ce prix vise à soutenir les solutions d'IA africaines innovantes qui améliorent l'efficacité, réduisent les déchets et créent des emplois.  Il comprend un grand prix de 1 million de dollars US, ainsi que des opportunités de réseautage et de présentation devant des leaders de l'industrie."
-        },
-        {
-          "heading": "Critères d'évaluation",
-          "text": "Les équipes seront évaluées sur la viabilité commerciale, l'intégration technologique, les aspects économiques opérationnels et l'évolutivité du marché en Afrique.  L'innovation doit être évolutive et démontrer un impact mesurable sur l'efficacité et la réduction des pertes."
-        },
-        {
-          "heading": "Admissibilité",
-          "text": "Les entreprises africaines utilisant l'IA et l'analyse de données avancée pour améliorer l'efficacité et réduire les déchets sont invitées à soumettre leur candidature."
-        }
-      ],
-      "closing": "Les candidatures pour le prix Milken-Motsepe sont ouvertes jusqu'au 31 juillet. Pour plus d'informations et pour soumettre une candidature, veuillez consulter le site web indiqué dans la source originale."
+      "introduction": "Le prix Milken-Motsepe, doté de 2 millions de dollars US, est ouvert aux candidatures.  Ce prix vise à soutenir les solutions d'intelligence artificielle (IA) africaines qui transforment le secteur manufacturier.",
+      "details": {
+        "objectif": "Le prix soutient les entreprises africaines qui révolutionnent les chaînes de valeur manufacturières sur les marchés émergents en utilisant l'IA et d'autres technologies émergentes.",
+        "montant": "Un grand prix de 1 million de dollars US est offert, ainsi que d'autres prix pour un total de 2 millions de dollars US.",
+        "avantages_supplémentaires": "Les entreprises participantes bénéficieront d'un réseautage exclusif et de l'opportunité de présenter leurs projets à des leaders de l'industrie et des décideurs clés.",
+        "critères_de_sélection": "Les équipes seront évaluées sur la viabilité commerciale, l'intégration technologique, les aspects économiques opérationnels et l'évolutivité du marché en Afrique.  L'innovation doit être évolutive, utiliser l'IA pour améliorer l'efficacité et réduire les pertes.",
+        "éligibilité": "Les entreprises utilisant l'IA et l'analyse de données avancée pour améliorer l'efficacité, réduire les déchets et produire un impact mesurable sont invitées à postuler."
+      },
+      "conclusion": "La date limite de soumission des candidatures est le 31 juillet.  Ce prix offre une occasion unique aux entreprises africaines innovantes de faire progresser leurs solutions d'IA dans le secteur manufacturier."
     },
     "main_image_alt": "Image du prix Milken-Motsepe",
-    "organizer_logo_alt": "Logo du Milken Institute et/ou de la Fondation Motsepe",
+    "organizer_logo_alt": null,
     "extracted_published_date": "2025-07-29T09:00:15+02:00",
     "extracted_deadline": "july 31",
     "organization_name": "Milken Institute and Motsepe Foundation",
@@ -107,9 +101,9 @@
     "subtitle": "Africa’s Business Heroes (ABH), the flagship philanthropic initiative of the Alibaba Philanthropy, has announced the top 50 finalists for its US$1.5 million 2025 competition – marking a record-breaking year for participation and regional representation.",
     "description": "Africa’s Business Heroes (ABH) is the Jack Ma Foundation’s flagship philanthropic initiative in Africa. It supports visionary entrepreneurs across all 54 African countries who are building inclusive and sustainable economies. Over 10 years, ABH will recognise 100 entrepreneurs, awarding them with grant funding, training, and a platform to amplify their stories. Each year, the top 10 finalists compete in a televised pitch finale for a share of US$1.5 million. This year, ABH received 32,000 applications, the highest in the competition’s history, with submissions from all 54 African countries. Fifty startups have been selected as finalists for the seventh edition of the competition. They span 16 sectors and hail from 17 countries, with 36 per cent female representation and 10 per cent Francophone entrepreneurs. As part of the next stage of the competition, the Top 50 will participate in the ABH Virtual Bootcamp, an intensive training program featuring workshops led by ecosystem leaders, investors, and ABH Heroes. Topics will include building resilient teams, investment readiness, leveraging AI, and digital marketing for growth. “The 2025 ABH Prize has raised the bar, yet again. We are seeing greater depth, diversity, and innovation across the span of applications,” said Zahra Baitie-Boateng, managing director for Africa at ABH. “This record-breaking year speaks to the relevance of ABH in every corner of the continent. These 50 finalists are solving real problems with global potential, and we’re excited to amplify their work.” In addition to training and mentorship, the top 50 will benefit from media exposure and access to a dynamic network of ABH Heroes, alumni, and partners. They will then undergo a second round of evaluations through in-depth interviews with ABH round two judges, after which 22 entrepreneurs will be shortlisted to undergo due diligence led by PlusVC. Those who advance will be revealed as the top 20 finalists in August, before heading to Dakar for the semi-finale in September. The top 10 finalists selected in Dakar will then progress to the grand finale in Kigali in December, where they will compete for their share of US$1.5 million in grant funding and be crowned this year’s Africa’s Business Heroes. To learn more about the 2025 ABH Top 50 finalists and the competition, gohere.",
     "content": "Africa’s Business Heroes (ABH), the flagship philanthropic initiative of the Alibaba Philanthropy, has announced the top 50 finalists for its US$1.5 million 2025 competition – marking a record-breaking year for participation and regional representation.Africa’s Business Heroes (ABH) is the Jack Ma Foundation’s flagship philanthropic initiative in Africa. It supports visionary entrepreneurs across all 54 African countries who are building inclusive and sustainable economies.Over 10 years, ABH will recognise 100 entrepreneurs, awarding them with grant funding, training, and a platform to amplify their stories. Each year, the top 10 finalists compete in a televised pitch finale for a share of US$1.5 million.This year, ABH received 32,000 applications, the highest in the competition’s history, with submissions from all 54 African countries. Fifty startups have been selected as finalists for the seventh edition of the competition.They span 16 sectors and hail from 17 countries, with 36 per cent female representation and 10 per cent Francophone entrepreneurs. As part of the next stage of the competition, the Top 50 will participate in the ABH Virtual Bootcamp, an intensive training program featuring workshops led by ecosystem leaders, investors, and ABH Heroes. Topics will include building resilient teams, investment readiness, leveraging AI, and digital marketing for growth.“The 2025 ABH Prize has raised the bar, yet again. We are seeing greater depth, diversity, and innovation across the span of applications,” said Zahra Baitie-Boateng, managing director for Africa at ABH. “This record-breaking year speaks to the relevance of ABH in every corner of the continent. These 50 finalists are solving real problems with global potential, and we’re excited to amplify their work.”In addition to training and mentorship, the top 50 will benefit from media exposure and access to a dynamic network of ABH Heroes, alumni, and partners. They will then undergo a second round of evaluations through in-depth interviews with ABH round two judges, after which 22 entrepreneurs will be shortlisted to undergo due diligence led by PlusVC. Those who advance will be revealed as the top 20 finalists in August, before heading to Dakar for the semi-finale in September.The top 10 finalists selected in Dakar will then progress to the grand finale in Kigali in December, where they will compete for their share of US$1.5 million in grant funding and be crowned this year’s Africa’s Business Heroes.To learn more about the 2025 ABH Top 50 finalists and the competition, gohere.",
-    "meta_title": "Africa’s Business Heroes: Top 50 Finalists Announced for $1.5M Prize",
-    "Meta Description": "Africa’s Business Heroes (ABH) selects 50 finalists from 17 countries for its US$1.5 million 2025 competition.  Apply now!",
-    "slug": "africas-business-heroes-top-50-finalists-2025",
+    "meta_title": "Africa's Business Heroes 2025: Top 50 Finalists Announced",
+    "Meta Description": "Africa's Business Heroes (ABH) 2025 competition announces its top 50 finalists, vying for $1.5 million in grant funding.  Record participation!",
+    "slug": "africas-business-heroes-2025-top-50-finalists",
     "regions": [
       "Algeria",
       "Angola",
@@ -168,6 +162,7 @@
       "AgriTech",
       "Agribusiness",
       "Artificial Intelligence",
+      "CleanTech",
       "E-commerce and Retail",
       "EdTech",
       "Energy",
@@ -185,31 +180,38 @@
     "categories": [
       "Competition"
     ],
-    "draft_summary": {
-      "introduction": "Africa’s Business Heroes (ABH), a philanthropic initiative of the Alibaba Philanthropy (and flagship initiative of the Jack Ma Foundation), has announced its top 50 finalists for its 2025 competition, offering a total prize pool of US$1.5 million.",
-      "body": [
-        {
-          "heading": "Record-Breaking Participation",
-          "content": "This year saw a record-breaking 32,000 applications from all 54 African countries.  The 50 finalists represent 17 countries and 16 sectors, with 36% female representation and 10% Francophone entrepreneurs."
-        },
-        {
-          "heading": "Competition Stages",
-          "content": "The competition unfolds in several stages:  a virtual bootcamp, in-depth interviews with judges, due diligence by PlusVC, a semi-finale in Dakar, and finally, a grand finale in Kigali where the top 10 will compete for the US$1.5 million prize pool."
-        },
-        {
-          "heading": "Support and Mentorship",
-          "content": "Finalists receive intensive training, mentorship from ecosystem leaders and investors, media exposure, and access to the ABH network.  The program aims to support visionary entrepreneurs building inclusive and sustainable economies across Africa."
-        }
-      ],
-      "closing": "The Africa’s Business Heroes initiative continues to provide significant support for entrepreneurial growth and innovation across the African continent.  The program's impact is evident in the record number of applicants and the diversity of the finalists selected."
-    },
-    "main_image_alt": "Africa's Business Heroes 2025 Top 50 Finalists",
-    "organizer_logo_alt": "Alibaba Philanthropy Logo",
+    "draft_summary": [
+      {
+        "type": "introduction",
+        "content": "Africa’s Business Heroes (ABH), a flagship philanthropic initiative of the Jack Ma Foundation, has announced the top 50 finalists for its 2025 competition.  This year saw a record number of applications, highlighting the growing entrepreneurial spirit across Africa."
+      },
+      {
+        "type": "body",
+        "heading": "Competition Details",
+        "content": "The competition offers a total of US$1.5 million in grant funding.  Over 32,000 applications were received from all 54 African countries. The 50 finalists represent 17 countries and 16 sectors, with strong female (36%) and Francophone (10%) representation.  The competition involves a virtual bootcamp, followed by further evaluations leading to a semi-final in Dakar and a grand finale in Kigali."
+      },
+      {
+        "type": "body",
+        "heading": "Program Stages",
+        "content": "The top 50 finalists will participate in an intensive virtual bootcamp.  Following this, 22 entrepreneurs will be shortlisted for due diligence, leading to the selection of the top 20 finalists in August. These finalists will then proceed to the semi-final in Dakar in September and the grand finale in Kigali in December."
+      },
+      {
+        "type": "body",
+        "heading": "Support and Resources",
+        "content": "Beyond funding, finalists receive training, mentorship, media exposure, and networking opportunities.  The program aims to support visionary entrepreneurs building inclusive and sustainable economies across the African continent."
+      },
+      {
+        "type": "conclusion",
+        "content": "The ABH 2025 competition showcases the remarkable talent and innovation emerging from African entrepreneurs.  The finalists are tackling real-world challenges with solutions that hold global potential."
+      }
+    ],
+    "main_image_alt": "Image of the Africa's Business Heroes 2025 Top 50 Finalists",
+    "organizer_logo_alt": "Jack Ma Foundation logo",
     "extracted_published_date": "2025-07-25T09:00:22+02:00",
     "extracted_deadline": null,
-    "organization_name": "Alibaba Philanthropy",
-    "organization_website": "https://static.alibabagroup.com/reports/fy2023/ar/ebook/en/index.html",
-    "organization_logo": null,
+    "organization_name": "Jack Ma Foundation",
+    "organization_website": "https://www.jackmafoundation.org.cn/",
+    "organization_logo": "https://img.mayun.xin/upload/2018082207/2eb1ce0a685923426ee1ee60756c7aef.png",
     "serpapi_enhanced": true
   },
   {
@@ -219,8 +221,8 @@
     "description": "TheAfrica Money & DeFi Summit West Africa, curated by the team behind the Africa Tech Summit Series, is a leading tech conference that provides valuable insights and networking opportunities for the pan-African fintech, DeFi) and Web3 ecosystem. Hosted in Accra, Ghana, the event brings together fintech leaders, MNOs, international investors, entrepreneurs, government representatives, trade bodies, media, and leading ventures to drive investment and foster business collaborations within the African Fintech and DeFi ecosystem. “Africa’s financial landscape is evolving rapidly. Stablecoins now support payroll, cross-border transfers, and business operations – driving real commercial momentum. With mobile-based stablecoin transfers up 61 per cent and 43 per cent of digital asset transactions involving stablecoins, adoption is accelerating,” said Andrew Fassnidge, director of Africa Money & DeFi Summit. “Fintech innovation is at the heart of this shift, spanning embedded finance, lending platforms, digital identity, Web3, mobile money, and digital commerce. This summit brings together the builders, investors, and platforms turning emerging technologies into scalable business and investment opportunities.” Applications are now open for theInvestment Showcase, spotlighting investment-ready African ventures across fintech, blockchain, payments, Web3, and DeFi. Selected startups will pitch live to investors and ecosystem leaders, with the potential to secure funding and strategic partnerships.",
     "content": "The third edition of the Africa Money & DeFi Summit West Africa returns to Accra, Ghana on September 24–25, bringing together over 500 leaders across fintech, Web3, and decentralised finance.TheAfrica Money & DeFi Summit West Africa, curated by the team behind the Africa Tech Summit Series, is a leading tech conference that provides valuable insights and networking opportunities for the pan-African fintech, DeFi) and Web3 ecosystem.Hosted in Accra, Ghana, the event brings together fintech leaders, MNOs, international investors, entrepreneurs, government representatives, trade bodies, media, and leading ventures to drive investment and foster business collaborations within the African Fintech and DeFi ecosystem.“Africa’s financial landscape is evolving rapidly. Stablecoins now support payroll, cross-border transfers, and business operations – driving real commercial momentum. With mobile-based stablecoin transfers up 61 per cent and 43 per cent of digital asset transactions involving stablecoins, adoption is accelerating,” said Andrew Fassnidge, director of Africa Money & DeFi Summit.“Fintech innovation is at the heart of this shift, spanning embedded finance, lending platforms, digital identity, Web3, mobile money, and digital commerce. This summit brings together the builders, investors, and platforms turning emerging technologies into scalable business and investment opportunities.”Applications are now open for theInvestment Showcase, spotlighting investment-ready African ventures across fintech, blockchain, payments, Web3, and DeFi. Selected startups will pitch live to investors and ecosystem leaders, with the potential to secure funding and strategic partnerships.",
     "meta_title": "Africa Money & DeFi Summit 2024: Accra, Ghana",
-    "Meta Description": "The 3rd Africa Money & DeFi Summit heads to Accra, Ghana on Sept 24-25, connecting fintech, Web3 & DeFi leaders. Investment Showcase open!",
-    "slug": "africa-money-defi-summit-2024-accra-ghana",
+    "Meta Description": "The Africa Money & DeFi Summit returns to Accra, Ghana on Sept 24-25, bringing together fintech, Web3, and DeFi leaders.",
+    "slug": "africa-money-defi-summit-2024",
     "regions": [
       "Ghana"
     ],
@@ -237,13 +239,13 @@
       "Conference",
       "Summit"
     ],
-    "draft_summary": "- **Introduction:** The Africa Money & DeFi Summit West Africa, a leading tech conference, will be held in Accra, Ghana on September 24-25, 2024.\n\n- **Event Overview:**  This third edition brings together over 500 leaders from the fintech, Web3, and decentralized finance (DeFi) sectors across Africa.  The summit aims to drive investment and foster collaborations within the African Fintech and DeFi ecosystem.\n\n- **Attendees:** The event will host fintech leaders, mobile network operators (MNOs), international investors, entrepreneurs, government representatives, trade bodies, media, and leading ventures.\n\n- **Key Themes:** The summit will address the rapid evolution of Africa's financial landscape, highlighting the growth of stablecoins and fintech innovations such as embedded finance, lending platforms, digital identity, Web3, mobile money, and digital commerce.\n\n- **Investment Showcase:**  An Investment Showcase is open for applications, spotlighting investment-ready African ventures in fintech, blockchain, payments, Web3, and DeFi. Selected startups will have the opportunity to pitch to investors and ecosystem leaders.\n\n- **Conclusion:** The Africa Money & DeFi Summit West Africa offers a valuable platform for networking, insights, and investment opportunities within the rapidly expanding African fintech and DeFi ecosystem.  Interested parties should visit the official website for application details and further information.",
-    "main_image_alt": "Image of the Africa Money & DeFi Summit West Africa",
+    "draft_summary": "- **Introduction:** The 3rd Africa Money & DeFi Summit will be held in Accra, Ghana, from September 24th to 25th, 2024. This leading tech conference focuses on the pan-African fintech, DeFi, and Web3 ecosystems.\n\n- **Event Overview:** The summit brings together over 500 leaders, including fintech leaders, mobile network operators (MNOs), investors, entrepreneurs, government representatives, and media.\n\n- **Investment Showcase:**  An Investment Showcase is part of the summit, highlighting investment-ready African ventures in fintech, blockchain, payments, Web3, and DeFi.  Selected startups will have the opportunity to pitch to investors and ecosystem leaders to secure funding and partnerships.  Applications are currently open.\n\n- **Key Themes:** The summit will cover key areas of fintech innovation, including embedded finance, lending platforms, digital identity, Web3, mobile money, and digital commerce.\n\n- **Conclusion:** The Africa Money & DeFi Summit offers valuable networking opportunities and insights into the rapidly evolving African financial landscape, particularly regarding the increasing adoption of stablecoins and fintech innovations.",
+    "main_image_alt": "Image of the Africa Money & DeFi Summit",
     "organizer_logo_alt": "Logo of the Africa Tech Summit Series",
     "extracted_published_date": "2025-07-22T09:00:17+02:00",
     "extracted_deadline": null,
     "organization_name": "Africa Tech Summit Series",
-    "organization_website": "https://www.coingabbar.com/en/event-details/africa-money-and-defi-summit-2025-accra-ghana-crypto-event?srsltid=AfmBOoqnv9qDy7PP5t0C3oS-xUuHYdW8i5eBneYECKDy4L2vO-KYDpLp",
+    "organization_website": "https://www.coingabbar.com/en/event-details/africa-money-and-defi-summit-2025-accra-ghana-crypto-event?srsltid=AfmBOopuKqSg3ijETao1XuL8eumfB8bE0hJqNE_Hc7Ahxlt71O19Qwxe",
     "organization_logo": "https://d3iuzwoiyg9qa8.cloudfront.net/version5/images/small-header-logo.svg",
     "serpapi_enhanced": true
   },
@@ -253,17 +255,17 @@
     "subtitle": "The fifth edition of the India-Africa Entrepreneurship and Investment Summit will be held in Nairobi, Kenya, on July 17-18.",
     "description": "Hosted by theIndia Africa Business Network (IABN)in collaboration with Kenya Investment Authority, India Kenya Business Council, TiE Africa, and other ecosystem partners, the summit is a premier platform for advancing business partnerships, knowledge exchange, and investment opportunities between India’s US$4 trillion economy and Africa’s US$3.5 trillion frontier markets. The fifth edition of the event will open with a keynote address by Ravi Venkatesan, chair of the Global Energy Alliance for People and Planet, and founder of the Global Alliance for Mass Entrepreneurship. Joining him are prominent business leaders, policymakers, and impact investors, including Raman Roy, chairman and managing director of Quatrro; H.E. Ambassador Philip Thigo, Kenya’s Special Envoy on Technology; and John Mwendwa, CEO of Kenya Investment Authority. “The presence of these eminent leaders signals a deepening commitment to the India–Africa growth corridor,” said Baljinder Sharma, convenor at IABN. “This year’s summit aims to inspire actionable collaboration and build sustainable bridges between two of the world’s most dynamic entrepreneurial regions.”",
     "content": "The fifth edition of the India-Africa Entrepreneurship and Investment Summit will be held in Nairobi, Kenya, on July 17-18.Hosted by theIndia Africa Business Network (IABN)in collaboration with Kenya Investment Authority, India Kenya Business Council, TiE Africa, and other ecosystem partners, the summit is a premier platform for advancing business partnerships, knowledge exchange, and investment opportunities between India’s US$4 trillion economy and Africa’s US$3.5 trillion frontier markets.The fifth edition of the event will open with a keynote address by Ravi Venkatesan, chair of the Global Energy Alliance for People and Planet, and founder of the Global Alliance for Mass Entrepreneurship.Joining him are prominent business leaders, policymakers, and impact investors, including Raman Roy, chairman and managing director of Quatrro; H.E. Ambassador Philip Thigo, Kenya’s Special Envoy on Technology; and John Mwendwa, CEO of Kenya Investment Authority.“The presence of these eminent leaders signals a deepening commitment to the India–Africa growth corridor,” said Baljinder Sharma, convenor at IABN. “This year’s summit aims to inspire actionable collaboration and build sustainable bridges between two of the world’s most dynamic entrepreneurial regions.”",
-    "meta_title": "5e Sommet Inde-Afrique sur l'entrepreneuriat à Nairobi",
-    "Meta Description": "Le 5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement aura lieu à Nairobi les 17 et 18 juillet.  Rejoignez des leaders d'opinion et investisseurs.",
-    "slug": "5e-sommet-inde-afrique-entrepreneuriat-nairobi",
+    "meta_title": "5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement à Nairobi",
+    "Meta Description": "Le 5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement aura lieu à Nairobi du 17 au 18 juillet. Rejoignez des leaders d'affaires et des investisseurs.",
+    "slug": "5e-sommet-inde-afrique-entrepreneuriat-investissement-nairobi",
     "regions": [
       "Kenya"
     ],
     "sectors": [
       "Economic Development",
-      "Technology",
       "FinTech",
       "Agribusiness",
+      "Technology",
       "Energy"
     ],
     "stages": [
@@ -273,9 +275,14 @@
       "Summit",
       "Conference"
     ],
-    "draft_summary": "* **Introduction:** Le 5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement se tiendra à Nairobi, Kenya, les 17 et 18 juillet 2025.\n\n* **Organisations participantes:**  Organisé par le India Africa Business Network (IABN) en collaboration avec la Kenya Investment Authority, l'India Kenya Business Council et TiE Africa.\n\n* **Points forts:** Ce sommet vise à promouvoir les partenariats commerciaux, les échanges de connaissances et les opportunités d'investissement entre l'Inde et l'Afrique.\n\n* **Intervenants:**  Des personnalités telles que Ravi Venkatesan (Global Energy Alliance for People and Planet), Raman Roy (Quatrro),  l'Ambassadeur Philip Thigo (Envoyé Spécial du Kenya pour la Technologie) et John Mwendwa (CEO de la Kenya Investment Authority) prendront la parole.\n\n* **Objectifs:** Le sommet ambitionne d'encourager une collaboration concrète et de construire des ponts durables entre deux régions entrepreneuriales dynamiques.\n\n* **Conclusion:** Ce sommet offre une plateforme importante pour le développement économique et les collaborations entre l'Inde et l'Afrique.",
+    "draft_summary": {
+      "introduction": "Le 5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement se tiendra à Nairobi, Kenya, les 17 et 18 juillet 2025. Organisé par l'India Africa Business Network (IABN) en collaboration avec plusieurs partenaires, ce sommet est une plateforme majeure pour promouvoir les partenariats commerciaux, les échanges de connaissances et les opportunités d'investissement entre l'Inde et l'Afrique.",
+      "key_speakers": "L'événement accueillera des personnalités influentes telles que Ravi Venkatesan, président de la Global Energy Alliance for People and Planet, Raman Roy, président-directeur général de Quatrro, Son Excellence l'Ambassadeur Philip Thigo, envoyé spécial du Kenya pour les technologies, et John Mwendwa, PDG de Kenya Investment Authority.",
+      "objectives": "Ce sommet vise à stimuler une collaboration concrète et à construire des ponts durables entre deux des régions entrepreneuriales les plus dynamiques au monde.  Il se concentrera sur le renforcement des partenariats d'affaires, l'échange de connaissances et l'exploration d'opportunités d'investissement.",
+      "closing_statement": "Le 5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement promet d'être un événement riche en échanges et en opportunités pour les acteurs économiques indiens et africains."
+    },
     "main_image_alt": "Image du 5e Sommet Inde-Afrique sur l'entrepreneuriat et l'investissement à Nairobi",
-    "organizer_logo_alt": "Logo du India Africa Business Network (IABN)",
+    "organizer_logo_alt": "Logo de l'India Africa Business Network (IABN)",
     "extracted_published_date": "2025-07-03T09:00:34+02:00",
     "extracted_deadline": null,
     "organization_name": "India Africa Business Network (IABN)",
@@ -289,7 +296,7 @@
     "description": "Powered by the Hashgraph Association, a Swiss non-profit organisation driving global adoption of Hedera-powered solutions by funding innovation, training, certification, and venture building programs, and Exponential Science Foundation, a not-for-profit foundation accelerating responsible tech adoption, via research, education, and innovation activities, the Hedera Africa Hackathon 2025 aims to enable the next-generation of developers and empower economic inclusion in Africa with a digital future for all. The Web3 hackathon initiative combines online participation with onsite events in over 20 African cities, intending to attract over 10,000 participants across more than 15 African countries. Developers, students, and entrepreneurs are invited to collaborate to build decentralized solutions on Hedera across industries such as finance, healthcare, telecoms, sustainability, agriculture, and manufacturing, while leveraging the convergence of other deep technologies such as artificial intelligence (AI), Internet of Things (IoT), Robotics, and Quantum Computing, with a prize pool of more than US$1 million on offer. Applications are openhereuntil September 30.",
     "content": "Applications are open for the latest Hedera Africa Hackathon, which challenges applicants to develop blockchain and distributed ledger technology-based scalable solutions tailored to Africa’s most urgent challenges and needs.Powered by the Hashgraph Association, a Swiss non-profit organisation driving global adoption of Hedera-powered solutions by funding innovation, training, certification, and venture building programs, and Exponential Science Foundation, a not-for-profit foundation accelerating responsible tech adoption, via research, education, and innovation activities, the Hedera Africa Hackathon 2025 aims to enable the next-generation of developers and empower economic inclusion in Africa with a digital future for all.The Web3 hackathon initiative combines online participation with onsite events in over 20 African cities, intending to attract over 10,000 participants across more than 15 African countries. Developers, students, and entrepreneurs are invited to collaborate to build decentralized solutions on Hedera across industries such as finance, healthcare, telecoms, sustainability, agriculture, and manufacturing, while leveraging the convergence of other deep technologies such as artificial intelligence (AI), Internet of Things (IoT), Robotics, and Quantum Computing, with a prize pool of more than US$1 million on offer.Applications are openhereuntil September 30.",
     "meta_title": "Hedera Africa Hackathon 2025: $1M Prize",
-    "Meta Description": "Win up to $1M in the Hedera Africa Hackathon 2025! Develop blockchain solutions for Africa's challenges. Apply by Sept 30.",
+    "Meta Description": "Win $1M+ in the Hedera Africa Hackathon 2025! Develop blockchain solutions for Africa's challenges. Apply by Sept 30.",
     "slug": "hedera-africa-hackathon-2025",
     "regions": [
       "Algeria",
@@ -348,9 +355,9 @@
     "sectors": [
       "FinTech",
       "HealthTech",
-      "Telecom",
+      "Technology",
       "Sustainability",
-      "AgriTech",
+      "Agriculture",
       "Manufacturing",
       "Artificial Intelligence",
       "Blockchain"
@@ -359,37 +366,17 @@
       "Stage Agnostic"
     ],
     "categories": [
-      "Hackathon"
+      "Hackathon",
+      "Competition"
     ],
-    "draft_summary": {
-      "introduction": "The Hedera Africa Hackathon 2025, a Web3 initiative powered by the Hashgraph Association and Exponential Science Foundation, invites developers, students, and entrepreneurs to create scalable blockchain solutions addressing Africa's critical challenges.",
-      "body": [
-        {
-          "heading": "Challenge & Focus",
-          "content": "Participants are challenged to develop innovative blockchain and distributed ledger technology (DLT)-based solutions for sectors including finance, healthcare, telecoms, sustainability, agriculture, and manufacturing.  The hackathon encourages the integration of AI, IoT, Robotics, and Quantum Computing."
-        },
-        {
-          "heading": "Participation & Location",
-          "content": "The hackathon combines online participation with onsite events in over 20 African cities across more than 15 countries.  It aims to attract over 10,000 participants."
-        },
-        {
-          "heading": "Prizes & Funding",
-          "content": "A prize pool exceeding US$1 million is available for winning projects."
-        },
-        {
-          "heading": "Organizers",
-          "content": "The initiative is driven by the Hashgraph Association, a Swiss non-profit promoting Hedera-powered solutions, and the Exponential Science Foundation, a non-profit focusing on responsible tech adoption."
-        }
-      ],
-      "closing": "The Hedera Africa Hackathon 2025 presents a unique opportunity for developers to contribute to Africa's digital transformation while competing for significant prizes. Applications are open until September 30th."
-    },
-    "main_image_alt": "Image of the Hedera Africa Hackathon 2025",
-    "organizer_logo_alt": "Logos of Hashgraph Association and Exponential Science Foundation",
+    "draft_summary": "* **Introduction:** The Hedera Africa Hackathon 2025, a Web3 initiative powered by the Hashgraph Association and Exponential Science Foundation, invites developers, students, and entrepreneurs to create blockchain-based solutions for Africa's challenges. \n\n* **About the Hackathon:** This hackathon aims to foster innovation and economic inclusion in Africa through the development of scalable solutions using Hedera's technology.  The event combines online participation with on-site events across over 20 African cities, aiming for over 10,000 participants from more than 15 countries.  Participants can leverage AI, IoT, Robotics, and Quantum Computing alongside Hedera's blockchain. \n\n* **Focus Areas:**  The hackathon focuses on solutions across various sectors, including finance, healthcare, telecoms, sustainability, agriculture, and manufacturing.  \n\n* **Prize & Application:** A prize pool of over US$1 million is on offer. Applications are open until September 30th.  Further details on application can be found [here](link_to_application_page). \n\n* **Conclusion:** The Hedera Africa Hackathon 2025 presents a significant opportunity for developers to contribute to Africa's digital future while competing for substantial prizes.",
+    "main_image_alt": "Hedera Africa Hackathon 2025",
+    "organizer_logo_alt": "Hashgraph Association and Exponential Science Foundation logos",
     "extracted_published_date": "2025-06-24T07:59:23+02:00",
     "extracted_deadline": "september 30",
-    "organization_name": "Hashgraph Association",
-    "organization_website": "https://www.hashgraph.com/",
-    "organization_logo": "https://www.hashgraph.com/wp-content/uploads/2022/03/Hashgraph-Logo.svg",
+    "organization_name": "Hashgraph Association and Exponential Science Foundation",
+    "organization_website": "https://www.aicoin.com/en/article/461885",
+    "organization_logo": "https://www.aicoin.com/favicon.ico",
     "serpapi_enhanced": true
   },
   {
@@ -398,9 +385,9 @@
     "subtitle": "South Africa’s Woman of Stature Foundation will on July 3 host the Professional Collective Summit 2025, an event designed to inspire and equip professional women with the tools they need to thrive and scale their businesses, in Sandton, Johannesburg.",
     "description": "TheWoman of Stature Foundation, a registered NPO committed to developing South Africa’s next generation of women entrepreneurs and leaders, hosts its flagshipProfessional Collective Summiteach year, with this year’s event taking place on July 3. Under the theme “Wholeness – The Optimum You”, the one-day summit will unite female entrepreneurs, thought leaders, executives, and changemakers around one shared goal – empowering women to lead holistically, in health, finance, purpose, and enterprise. “With less than 20 per cent of SMEs in SA being female-owned and the failure rate still alarmingly high, initiatives like this are critical to shifting the national economic narrative,” said Charlotte du Plessis, CEO and founder of the Woman of Stature Foundation. “If we want to see real economic transformation in South Africa, we must support women-owned businesses. This summit will offer practical insights, powerful networks, and bold inspiration to make that happen.”",
     "content": "South Africa’s Woman of Stature Foundation will on July 3 host the Professional Collective Summit 2025, an event designed to inspire and equip professional women with the tools they need to thrive and scale their businesses, in Sandton, Johannesburg.TheWoman of Stature Foundation, a registered NPO committed to developing South Africa’s next generation of women entrepreneurs and leaders, hosts its flagshipProfessional Collective Summiteach year, with this year’s event taking place on July 3.Under the theme “Wholeness – The Optimum You”, the one-day summit will unite female entrepreneurs, thought leaders, executives, and changemakers around one shared goal – empowering women to lead holistically, in health, finance, purpose, and enterprise.“With less than 20 per cent of SMEs in SA being female-owned and the failure rate still alarmingly high, initiatives like this are critical to shifting the national economic narrative,” said Charlotte du Plessis, CEO and founder of the Woman of Stature Foundation.“If we want to see real economic transformation in South Africa, we must support women-owned businesses. This summit will offer practical insights, powerful networks, and bold inspiration to make that happen.”",
-    "meta_title": "Sommet des femmes entrepreneures en Afrique du Sud - Juillet 2025",
-    "Meta Description": "Le 3 juillet 2025, la Woman of Stature Foundation organise un sommet pour les femmes entrepreneures en Afrique du Sud.  Inscrivez-vous!",
-    "slug": "sommet-femmes-entrepreneures-afrique-sud-juillet-2025",
+    "meta_title": "Sommet professionnel pour entrepreneures en Afrique du Sud",
+    "Meta Description": "Le Woman of Stature Foundation organise un sommet pour les entrepreneures sud-africaines le 3 juillet 2025 à Johannesburg.  Inscriptions bientôt.",
+    "slug": "sommet-professionnel-entrepreneures-afrique-sud",
     "regions": [
       "South Africa"
     ],
@@ -413,11 +400,25 @@
     ],
     "categories": [
       "Summit",
-      "Event"
+      "Event",
+      "Conference"
     ],
-    "draft_summary": "* **Introduction:**  Le 3 juillet 2025, la Woman of Stature Foundation accueillera le Professional Collective Summit 2025 à Sandton, Johannesburg, en Afrique du Sud.\n\n* **À propos du Sommet:** Ce sommet d'une journée, axé sur le thème « Wholeness – The Optimum You », vise à inspirer et outiller les femmes professionnelles pour qu'elles puissent développer et faire croître leurs entreprises.  Il réunira des entrepreneures, des leaders d'opinion, des cadres et des agentes de changement.\n\n* **Objectif:** Le sommet vise à autonomiser les femmes sur les plans de la santé, des finances, de l'objectif et de l'entreprise.\n\n* **Contexte:**  Moins de 20 % des PME en Afrique du Sud sont détenues par des femmes, et le taux d'échec reste élevé.  Ce sommet vise à contribuer à une transformation économique nationale en soutenant les entreprises appartenant à des femmes.\n\n* **Conclusion:**  Le Professional Collective Summit 2025 offre une occasion unique aux femmes entrepreneures sud-africaines de se connecter, d'apprendre et de s'inspirer pour réussir.",
+    "draft_summary": {
+      "introduction": "Le Woman of Stature Foundation, une organisation à but non lucratif enregistrée en Afrique du Sud, accueillera son sommet annuel Professional Collective Summit le 3 juillet 2025 à Sandton, Johannesburg.",
+      "details": {
+        "nom_evenement": "Professional Collective Summit 2025",
+        "date": "3 juillet 2025",
+        "lieu": "Sandton, Johannesburg, Afrique du Sud",
+        "theme": "Wholeness – The Optimum You",
+        "objectif": "Inspirer et outiller les femmes professionnelles pour qu'elles réussissent et développent leurs entreprises.",
+        "participants": "Entrepreneures, leaders d'opinion, cadres et agents de changement.",
+        "focus": "Développement holistique des femmes dans les domaines de la santé, des finances, du but et de l'entreprise.",
+        "statistiques": "Moins de 20% des PME en Afrique du Sud sont détenues par des femmes, avec un taux d'échec élevé.  Ce sommet vise à changer cette réalité."
+      },
+      "closing_statement": "Le Professional Collective Summit 2025 offre une occasion unique aux femmes entrepreneures sud-africaines de se connecter, d'apprendre et de s'inspirer pour faire progresser leurs entreprises et contribuer à la transformation économique du pays."
+    },
     "main_image_alt": "Image du Professional Collective Summit 2025",
-    "organizer_logo_alt": "Logo de la Woman of Stature Foundation",
+    "organizer_logo_alt": "Logo du Woman of Stature Foundation",
     "extracted_published_date": "2025-06-23T09:00:01+02:00",
     "extracted_deadline": null,
     "organization_name": "Woman of Stature Foundation",
@@ -432,7 +433,7 @@
     "description": "Held during the Africa Impact Summit in Accra, Ghana, the 2025 Africa Impact Investment Awards recognised outstanding individuals and organisations whose work exemplifies the principles of intentional, measurable, and scalable impact investing. This year’s winners stood out among a highly competitive field of 64 nominations evaluated by a panel of 11 judges representing leading institutions from across the continent’s impact ecosystem. The 2025 Africa Impact Investment Award Winners Include: “The world cannot be changed without investment,” said Dr Stuart Theobald, executive chairman of Krutham. “These awards shine a light on the pioneers demonstrating that investing in people, planet and purpose can also unlock new paths to financial return. Their work proves that Africa can lead the way in redefining how capital delivers inclusive prosperity.”",
     "content": "Krutham, a research-led consulting firm specialising in capital markets and financial services in developing countries, has announced the winners of the third edition of the Africa Impact Investment Awards.Held during the Africa Impact Summit in Accra, Ghana, the 2025 Africa Impact Investment Awards recognised outstanding individuals and organisations whose work exemplifies the principles of intentional, measurable, and scalable impact investing.This year’s winners stood out among a highly competitive field of 64 nominations evaluated by a panel of 11 judges representing leading institutions from across the continent’s impact ecosystem.The 2025 Africa Impact Investment Award Winners Include:Impact Funder of the Year: NithioFor its innovative use of AI and geospatial data to assess credit risk and channel catalytic capital to clean energy SMEs through its FAIR platform.Impact Fund of the Year: KawiSafi VenturesRecognised for exceeding impact targets while reaching 213 million people with clean energy solutions and averting 45 million tonnes of CO₂.Financial Structure of the Year: Acre Impact CapitalFor pioneering the use of export credit agency-backed finance to crowd in private capital for infrastructure projects—mobilising over 5.6x per dollar invested.Impact Intermediary of the Year: Edge GrowthFor delivering customised enterprise and supplier development support to black-owned SMEs in South Africa, with a track record of job creation and sustained business growth.Impact Enterprise of the Year: Cherehani AfricaHonoured for its technology-driven approach to supporting over 30,000 rural women entrepreneurs with access to credit and financial literacy, positively impacting more than 130,000 lives.Trailblazer of the Year: Evelyn CastleCelebrated for her cross-sector leadership in healthcare, impact investing, and gender equity. Evelyn’s ventures have raised over $250 million to date and continue to champion women-led impact enterprises across Africa.Special Judges’ Award: AfriFORTIFIEDAcknowledged for its standout work in food innovation and early-stage support to help SMEs bring nutrient-dense products to market, addressing both malnutrition and market barriers in Kenya’s food economy.“The world cannot be changed without investment,” said Dr Stuart Theobald, executive chairman of Krutham. “These awards shine a light on the pioneers demonstrating that investing in people, planet and purpose can also unlock new paths to financial return. Their work proves that Africa can lead the way in redefining how capital delivers inclusive prosperity.”",
     "meta_title": "Africa Impact Investment Awards 2025 Winners Announced",
-    "Meta Description": "Krutham announces the winners of the 2025 Africa Impact Investment Awards, recognizing outstanding individuals and organizations in impact investing.",
+    "Meta Description": "Krutham announces the winners of the 2025 Africa Impact Investment Awards, celebrating outstanding individuals and organizations driving impactful investing across the continent.",
     "slug": "africa-impact-investment-awards-2025-winners",
     "regions": [
       "South Africa",
@@ -443,41 +444,19 @@
       "CleanTech",
       "FinTech",
       "Energy",
-      "ESG",
       "AgriTech",
+      "ESG",
       "HealthTech"
     ],
     "stages": [
       "Stage Agnostic"
     ],
     "categories": [
-      "Summit",
-      "Competition"
+      "Competition",
+      "Summit"
     ],
-    "draft_summary": [
-      {
-        "type": "introduction",
-        "content": "Krutham, a research-led consulting firm, recently announced the winners of the third annual Africa Impact Investment Awards during the Africa Impact Summit in Accra, Ghana.  The awards celebrate individuals and organizations demonstrating exceptional impact investing across the continent."
-      },
-      {
-        "type": "body",
-        "heading": "Award Winners",
-        "content": [
-          "**Impact Funder of the Year:** Nithio, recognized for its innovative use of AI and geospatial data to assess credit risk and channel capital to clean energy SMEs.",
-          "**Impact Fund of the Year:** KawiSafi Ventures, for exceeding impact targets, reaching 213 million people with clean energy solutions and averting 45 million tonnes of CO₂.",
-          "**Financial Structure of the Year:** Acre Impact Capital, for pioneering the use of export credit agency-backed finance to attract private capital for infrastructure projects.",
-          "**Impact Intermediary of the Year:** Edge Growth, for customized support to black-owned SMEs in South Africa, fostering job creation and business growth.",
-          "**Impact Enterprise of the Year:** Cherehani Africa, for its technology-driven approach to supporting over 30,000 rural women entrepreneurs.",
-          "**Trailblazer of the Year:** Evelyn Castle, celebrated for her cross-sector leadership in healthcare, impact investing, and gender equity.",
-          "**Special Judges’ Award:** AfriFORTIFIED, for its work in food innovation and supporting SMEs in Kenya's food economy."
-        ]
-      },
-      {
-        "type": "conclusion",
-        "content": "The awards highlight the significant contributions of individuals and organizations driving sustainable and impactful investments across Africa, demonstrating that investing in people, planet, and purpose can deliver financial returns and inclusive prosperity.  The event underscores the growing momentum of impact investing on the continent."
-      }
-    ],
-    "main_image_alt": "Image of the Africa Impact Investment Awards ceremony",
+    "draft_summary": "- **Introduction:** The 2025 Africa Impact Investment Awards, hosted by Krutham, celebrated impactful investing across Africa, recognizing outstanding individuals and organizations.  The awards ceremony took place during the Africa Impact Summit in Accra, Ghana.\n\n- **Award Winners:**  The awards highlighted achievements across several categories, including:\n    - **Impact Funder of the Year:** Nithio, recognized for using AI and geospatial data to assess credit risk and fund clean energy SMEs.\n    - **Impact Fund of the Year:** KawiSafi Ventures, for exceeding impact targets while reaching 213 million people with clean energy solutions.\n    - **Financial Structure of the Year:** Acre Impact Capital, for pioneering the use of export credit agency-backed finance to mobilize private capital for infrastructure projects.\n    - **Impact Intermediary of the Year:** Edge Growth, for supporting black-owned SMEs in South Africa.\n    - **Impact Enterprise of the Year:** Cherehani Africa, for its technology-driven support of rural women entrepreneurs.\n    - **Trailblazer of the Year:** Evelyn Castle, for cross-sector leadership in healthcare, impact investing, and gender equity.\n    - **Special Judges’ Award:** AfriFORTIFIED, for its work in food innovation in Kenya.\n\n- **Krutham's Perspective:** Dr. Stuart Theobald, executive chairman of Krutham, emphasized the importance of investment in achieving positive impact, highlighting the winners' success in demonstrating that investing in people, planet, and purpose can also unlock financial returns.\n\n- **Conclusion:** The awards underscore Africa's leadership in redefining how capital can deliver inclusive prosperity.  The achievements of the winners showcase the potential of impact investing to address critical challenges and drive sustainable development.",
+    "main_image_alt": "Winners of the 2025 Africa Impact Investment Awards",
     "organizer_logo_alt": "Krutham logo",
     "extracted_published_date": "2025-06-18T09:00:47+02:00",
     "extracted_deadline": null,
@@ -492,9 +471,9 @@
     "subtitle": "Cape Town-based mobility startup Loop beat six other African tech startups to emerge winner of the pitch competition at the recent Sentech Africa Tech Week.",
     "description": "Africa Tech Week is one of the continent’s largest gatherings of technology leaders, innovators, and industry experts, dedicated to showcasing groundbreaking technological solutions driving Africa’s growth. Loop, meanwhile, is changing the game for small businesses and transport providers to enter the digital ecosystem, enabling access to finance and mitigating risks associated with carrying physical cash. The adoption by the market, business profitability and most importantly, the growth and expansion plans through Africa- set Loop apart from the other finalists. The company emerged winner of the pitch competition at Sentech Africa Tech Week, with Loop CEO Imtiyaaz Riley impressing the judging panel with the company’s bold approach to digital payments and mobility in emerging markets. “Our win at Africa Tech Week is more than a trophy – it’s a signal that Africa is ready for real, homegrown innovation,” said Riley. “Loop was built in the heart of Cape Town to solve challenges we’ve lived through. We’re not just digitising payments – we’re rewriting how value moves in communities that have long been excluded. This recognition strengthens our resolve to scale meaningful tech across the continent, unlocking opportunity where it’s needed most.”",
     "content": "Cape Town-based mobility startup Loop beat six other African tech startups to emerge winner of the pitch competition at the recent Sentech Africa Tech Week.Africa Tech Week is one of the continent’s largest gatherings of technology leaders, innovators, and industry experts, dedicated to showcasing groundbreaking technological solutions driving Africa’s growth.Loop, meanwhile, is changing the game for small businesses and transport providers to enter the digital ecosystem, enabling access to finance and mitigating risks associated with carrying physical cash. The adoption by the market, business profitability and most importantly, the growth and expansion plans through Africa- set Loop apart from the other finalists.The company emerged winner of the pitch competition at Sentech Africa Tech Week, with Loop CEO Imtiyaaz Riley impressing the judging panel with the company’s bold approach to digital payments and mobility in emerging markets.“Our win at Africa Tech Week is more than a trophy – it’s a signal that Africa is ready for real, homegrown innovation,” said Riley. “Loop was built in the heart of Cape Town to solve challenges we’ve lived through. We’re not just digitising payments – we’re rewriting how value moves in communities that have long been excluded. This recognition strengthens our resolve to scale meaningful tech across the continent, unlocking opportunity where it’s needed most.”",
-    "meta_title": "Loop wins Sentech Africa Tech Week",
+    "meta_title": "Loop Wins Sentech Africa Tech Week Pitch Competition",
     "Meta Description": "Cape Town's Loop wins Sentech Africa Tech Week pitch competition, impressing judges with its digital payments and mobility solutions for emerging markets.",
-    "slug": "loop-wins-sentech-africa-tech-week",
+    "slug": "loops-sentech-africa-tech-week-win",
     "regions": [
       "South Africa"
     ],
@@ -508,14 +487,14 @@
     "categories": [
       "Competition"
     ],
-    "draft_summary": "- **Introduction:**  The Sentech Africa Tech Week, a major African technology event, recently concluded its pitch competition.  Cape Town-based startup Loop emerged victorious, showcasing innovative solutions in digital payments and mobility.\n\n- **Loop's Winning Solution:** Loop impressed judges with its approach to facilitating access to finance and mitigating cash-handling risks for small businesses and transport providers in Africa.  Their focus on digital payments and expansion plans across the continent set them apart from the competition.\n\n- **Impact and Recognition:** The win signifies the growing potential for homegrown innovation within Africa's tech sector.  Loop CEO, Imtiyaaz Riley, highlighted the company's commitment to solving real-world problems and extending opportunities to underserved communities.\n\n- **Conclusion:** The Sentech Africa Tech Week pitch competition underscores the vibrancy of the African tech landscape and the significant progress being made in financial inclusion and digital transformation. Loop's success serves as an example of the innovative solutions emerging from the continent.",
+    "draft_summary": "* **Introduction:** This article summarizes the results of the recent Sentech Africa Tech Week pitch competition, highlighting the winning startup, Loop.\n\n* **The Winning Startup:** Loop, a Cape Town-based mobility startup, emerged victorious, beating six other African tech companies.  Their innovative approach to digital payments and mobility solutions specifically designed for small businesses and transport providers in emerging markets set them apart.\n\n* **Loop's Impact:** Loop aims to facilitate the transition of small businesses and transport providers into the digital ecosystem, providing access to finance and reducing the risks associated with handling physical cash.  The company's success in market adoption and profitability, along with its ambitious growth plans for expansion across Africa, were key factors in their win.\n\n* **CEO's Statement:** Loop CEO Imtiyaaz Riley expressed that the win signifies Africa's readiness for homegrown innovation and underscores the company's commitment to scaling meaningful technology across the continent.\n\n* **Sentech Africa Tech Week:** The competition took place at Sentech Africa Tech Week, one of Africa's largest gatherings for technology leaders and innovators, focusing on showcasing groundbreaking technological solutions promoting African growth.\n\n* **Conclusion:** Loop's victory at Sentech Africa Tech Week underscores the potential of African tech startups to solve local challenges and create significant impact through innovation in the FinTech and mobility sectors.",
     "main_image_alt": "Loop team celebrating their win at Sentech Africa Tech Week",
     "organizer_logo_alt": "Sentech logo",
     "extracted_published_date": "2025-06-17T09:00:05+02:00",
     "extracted_deadline": null,
     "organization_name": "Sentech",
-    "organization_website": "https://www.gsaadvantage.gov/ref_text/GS23F0102R/GS23F0102R_online.htm",
-    "organization_logo": null,
+    "organization_website": "https://sentechacademy.com/power-bi",
+    "organization_logo": "https://sentechacademy.com/wp-content/uploads/2022/08/d-removebg-preview.png",
     "serpapi_enhanced": true
   },
   {
@@ -524,8 +503,8 @@
     "subtitle": "Kenyan startup BuuPass, East Africa’s leading digital mobility platform, has been selected to represent its country as it participates in the global Startup World Cup for the first time.",
     "description": "Founded in 2016 by Sonia Kabra and Wyclife Omondi,BuuPassis a B2B2C mobility marketplace that enables users to search, compare, and book travel tickets via web, app, or USSD, while its SaaS platform helps bus operators manage their operations, inventory, and sales. So far, the startup has sold over 16 million travel tickets and generated over US$100 million in total value of goods sold, while it has also taken part in theGoogle for Startups Accelerator Africaand beenbacked by the Google for Startups Black Founders Fund. For the first time, Kenya has joined the global Startup World Cup circuit, via a partnership between Silicon Xchange, the Kenya National Innovation Agency  (KeNIA), and NaiBAN, and a recent even saw 10 startups pitch live to represent the country. BuuPass was crowned the winner and will represent Kenya at the Startup World Cup grand finale in San Francisco, where it will compete for a US$1 million investment. “We’re honoured to have won the Kenya regional finals of the Startup World Cup. This milestone reflects the passion, grit, and commitment our team has poured into building a seamless transport booking experience for millions across Africa,” said Wyclife Omondi, co-founder of BuuPass. “Representing Kenya at the global finale in San Francisco is both humbling and energising. It’s a powerful moment, not just for BuuPass, but for African innovation as a whole. We look forward to sharing our story, learning from other global startups, and showcasing the potential of Africa-born solutions on one of the biggest entrepreneurial stages in the world.”",
     "content": "Kenyan startup BuuPass, East Africa’s leading digital mobility platform, has been selected to represent its country as it participates in the global Startup World Cup for the first time.Founded in 2016 by Sonia Kabra and Wyclife Omondi,BuuPassis a B2B2C mobility marketplace that enables users to search, compare, and book travel tickets via web, app, or USSD, while its SaaS platform helps bus operators manage their operations, inventory, and sales.So far, the startup has sold over 16 million travel tickets and generated over US$100 million in total value of goods sold, while it has also taken part in theGoogle for Startups Accelerator Africaand beenbacked by the Google for Startups Black Founders Fund.For the first time, Kenya has joined the global Startup World Cup circuit, via a partnership between Silicon Xchange, the Kenya National Innovation Agency  (KeNIA), and NaiBAN, and a recent even saw 10 startups pitch live to represent the country.BuuPass was crowned the winner and will represent Kenya at the Startup World Cup grand finale in San Francisco, where it will compete for a US$1 million investment.“We’re honoured to have won the Kenya regional finals of the Startup World Cup. This milestone reflects the passion, grit, and commitment our team has poured into building a seamless transport booking experience for millions across Africa,” said Wyclife Omondi, co-founder of BuuPass.“Representing Kenya at the global finale in San Francisco is both humbling and energising. It’s a powerful moment, not just for BuuPass, but for African innovation as a whole. We look forward to sharing our story, learning from other global startups, and showcasing the potential of Africa-born solutions on one of the biggest entrepreneurial stages in the world.”",
-    "meta_title": "BuuPass: Kenya's Mobility Startup Heads to Startup World Cup",
-    "Meta Description": "Kenyan mobility startup BuuPass wins national competition, securing a spot at the global Startup World Cup in San Francisco for a chance at $1M.",
+    "meta_title": "BuuPass: Kenya's Mobility Startup at Startup World Cup",
+    "Meta Description": "Kenyan startup BuuPass wins Kenya's Startup World Cup, securing a spot in the San Francisco finals to compete for $1 million.",
     "slug": "buupass-kenya-startup-world-cup",
     "regions": [
       "Kenya"
@@ -535,19 +514,19 @@
       "Technology"
     ],
     "stages": [
-      "Series A"
+      "Stage Agnostic"
     ],
     "categories": [
       "Competition"
     ],
-    "draft_summary": "- **Introduction:** BuuPass, a Kenyan digital mobility platform, has been selected to represent Kenya in the global Startup World Cup competition.  This marks Kenya's first participation in the event.\n\n- **BuuPass: A Leading Mobility Solution:** Founded in 2016, BuuPass is a B2B2C marketplace facilitating travel ticket booking via web, app, and USSD.  Its SaaS platform assists bus operators in managing operations, inventory, and sales. The startup has already sold over 16 million tickets, generating over US$100 million in total value of goods sold.  It has also received support from Google for Startups Accelerator Africa and the Google for Startups Black Founders Fund.\n\n- **Kenya's Startup World Cup Selection Process:**  A partnership between Silicon Xchange, the Kenya National Innovation Agency (KeNIA), and NaiBAN facilitated Kenya's entry into the Startup World Cup. Ten startups competed, with BuuPass emerging as the winner.\n\n- **The Startup World Cup Grand Finale:** BuuPass will compete in the grand finale in San Francisco, vying for a US$1 million investment. The co-founder, Wyclife Omondi, expressed the team's honor and excitement at representing Kenya and African innovation on a global stage.\n\n- **Conclusion:** BuuPass's success highlights the growing potential of African startups in the global technology landscape.",
+    "draft_summary": "- **Introduction:** BuuPass, a Kenyan B2B2C mobility platform, has been selected to represent Kenya at the global Startup World Cup competition.  This marks Kenya's first participation in the competition.\n\n- **Company Overview:** Founded in 2016, BuuPass offers a marketplace for users to search, compare, and book travel tickets, and a SaaS platform for bus operators to manage their operations.  The startup has achieved significant milestones, including selling over 16 million tickets and generating over US$100 million in total value of goods sold. BuuPass has also participated in Google for Startups Accelerator Africa and received backing from the Google for Startups Black Founders Fund.\n\n- **Startup World Cup Selection:**  A partnership between Silicon Xchange, the Kenya National Innovation Agency (KeNIA), and NaiBAN facilitated Kenya's entry into the Startup World Cup.  BuuPass emerged victorious from a competition involving 10 other Kenyan startups.\n\n- **Competition Details:** BuuPass will represent Kenya at the Startup World Cup grand finale in San Francisco, competing for a US$1 million investment.\n\n- **Closing Statement:** BuuPass's success highlights the growing potential of African innovation in the global tech scene.  Their participation in the Startup World Cup represents a significant achievement for both the company and Kenya.",
     "main_image_alt": "BuuPass logo and team photo",
     "organizer_logo_alt": "Startup World Cup logo",
     "extracted_published_date": "2025-06-12T09:00:14+02:00",
     "extracted_deadline": null,
     "organization_name": "Startup World Cup",
     "organization_website": "https://www.startupworldcup.io/",
-    "organization_logo": null,
+    "organization_logo": "https://static.wixstatic.com/media/9a1d63_ab519186f938416c8846e0010be6186d~mv2_d_2001_2457_s_2.png/v1/fill/w_419,h_510,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20White.png",
     "serpapi_enhanced": true
   },
   {
@@ -557,95 +536,26 @@
     "description": "TheD-Prize Global Competitionis aimed at social ventures in any region of the world where extreme poverty exists that have the ability to positively impact millions of lives. Its suite of challenges covers the likes of health, water, agriculture, livelihoods, energy, public services, and education. Applications are openhereuntil June 29, with winning startups to be awarded up to US$20,000 to launch a pilot in any region where extreme poverty exists.",
     "content": "Entrepreneurs from around the world have been invited to apply for the D-Prize Competition, which offers funding of up to US$20,000 to social impact startups.TheD-Prize Global Competitionis aimed at social ventures in any region of the world where extreme poverty exists that have the ability to positively impact millions of lives.Its suite of challenges covers the likes of health, water, agriculture, livelihoods, energy, public services, and education.Applications are openhereuntil June 29, with winning startups to be awarded up to US$20,000 to launch a pilot in any region where extreme poverty exists.",
     "meta_title": "D-Prize Competition: $20k for Social Impact Startups",
-    "Meta Description": "Apply for the D-Prize Global Competition! Up to $20,000 for social ventures tackling extreme poverty. Deadline: June 29.",
+    "Meta Description": "Apply for the D-Prize Competition!  $20,000 funding for social ventures tackling extreme poverty. Deadline: June 29.",
     "slug": "d-prize-competition-20k-social-impact-startups",
-    "regions": [
-      "Algeria",
-      "Angola",
-      "Benin",
-      "Botswana",
-      "Burkina Faso",
-      "Burundi",
-      "Cabo Verde",
-      "Cameroon",
-      "Central African Republic",
-      "Chad",
-      "Comoros",
-      "Congo",
-      "Côte d'Ivoire",
-      "DR Congo",
-      "Djibouti",
-      "Egypt",
-      "Equatorial Guinea",
-      "Eritrea",
-      "Eswatini",
-      "Ethiopia",
-      "Gabon",
-      "Guinea",
-      "Guinea-Bissau",
-      "Kenya",
-      "Lesotho",
-      "Liberia",
-      "Libya",
-      "Madagascar",
-      "Malawi",
-      "Mali",
-      "Mauritania",
-      "Mauritius",
-      "Morocco",
-      "Mozambique",
-      "Namibia",
-      "Niger",
-      "Nigeria",
-      "Rwanda",
-      "Sao Tome & Principe",
-      "Senegal",
-      "Seychelles",
-      "Sierra Leone",
-      "Somalia",
-      "South Africa",
-      "South Sudan",
-      "Sudan",
-      "Tanzania",
-      "Togo",
-      "Tunisia",
-      "Uganda",
-      "Zambia",
-      "Zimbabwe"
-    ],
+    "regions": [],
     "sectors": [
       "HealthTech",
-      "Agribusiness",
       "AgriTech",
       "Energy",
       "CleanTech",
-      "EdTech",
-      "Economic Development"
+      "EdTech"
     ],
     "stages": [
-      "Pre-seed",
       "Seed",
-      "Stage Agnostic"
+      "Pre-seed"
     ],
     "categories": [
       "Competition",
       "Funding Opportunity"
     ],
-    "draft_summary": {
-      "introduction": "The D-Prize Global Competition is currently accepting applications from social impact startups worldwide. This competition offers significant funding to support ventures tackling extreme poverty in various sectors.",
-      "body": [
-        {
-          "heading": "Funding and Focus",
-          "content": "Winning startups can receive up to US$20,000 to launch a pilot program in a region struggling with extreme poverty. The competition focuses on ventures impacting multiple lives positively, spanning key sectors such as health, water, agriculture, livelihoods, energy, public services, and education."
-        },
-        {
-          "heading": "Eligibility and Application",
-          "content": "Entrepreneurs from any region affected by extreme poverty are encouraged to apply.  The application window closes on June 29th.  Further details and application information can be found on [link to application page - not provided in original text]."
-        }
-      ],
-      "closing": "The D-Prize Global Competition presents a valuable opportunity for social entrepreneurs to secure funding and advance their impactful initiatives in regions facing significant challenges. The competition's focus on diverse sectors and global reach underscores its commitment to fostering positive change on a broad scale."
-    },
-    "main_image_alt": "Image of the D-Prize Competition logo or related imagery.",
+    "draft_summary": "* **Introduction:** The D-Prize Global Competition is currently accepting applications from social impact startups worldwide. This competition offers significant funding to ventures addressing extreme poverty in various sectors.\n\n* **About the D-Prize Competition:** The D-Prize is a global competition that provides funding of up to US$20,000 to social ventures focused on tackling extreme poverty.  It supports initiatives across multiple sectors, including health, water, agriculture, livelihoods, energy, public services, and education.  Winning startups will receive funding to launch pilot programs in regions grappling with extreme poverty.\n\n* **Eligibility and Application:**  Entrepreneurs from around the world are encouraged to apply.  The competition is open to social ventures demonstrating the potential to impact millions of lives positively.\n\n* **Key Details:**\n    * **Funding:** Up to US$20,000\n    * **Deadline:** June 29\n    * **Focus Areas:** Health, water, agriculture, livelihoods, energy, public services, education.\n\n* **Conclusion:**  The D-Prize Global Competition presents a valuable opportunity for social impact startups working to alleviate poverty.  The substantial funding and support offered can significantly aid the growth and development of promising initiatives.",
+    "main_image_alt": "D-Prize Competition logo and graphic elements.",
     "organizer_logo_alt": "D-Prize logo",
     "extracted_published_date": "2025-06-10T09:00:54+02:00",
     "extracted_deadline": "june 29",
@@ -654,13 +564,63 @@
     "organization_logo": "https://images.squarespace-cdn.com/content/v1/58cdcd1f197aea52163b1b51/1492079786091-B160JXJUFVNGSBHOUQ28/forbes-logo.png"
   },
   {
+    "url": "https://disruptafrica.com/2025/08/04/sas-akha-ventures-launches-sandton-based-venture-studio/",
+    "title": "SA’s Akha Ventures launches Sandton-based venture studio",
+    "subtitle": "South Africa’s Akha Ventures has announced the launch of its Venture Studio – a dedicated, founder-first ecosystem built to back Africa’s boldest startups.",
+    "description": "Based in the heart of Sandton, theAkha Studiois a co-working space and a fully-equipped venture building hub designed to take startups from traction to scale – under one roof. Resident founders will get access to private office space and shared infrastructure in the a Sandton office; a 12-month venture-building programme with expert support, strategic guidance, and execution resources; and access to top engineers, marketers, and growth operators. It also includes support with go-to-market, sales systems, and investor readiness; opportunities to pitch to investors, compete on global stages, and access corporate partnerships; and perks from AWS, Stripe, HubSpot, Notion, and others.",
+    "content": "South Africa’s Akha Ventures has announced the launch of its Venture Studio – a dedicated, founder-first ecosystem built to back Africa’s boldest startups.Based in the heart of Sandton, theAkha Studiois a co-working space and a fully-equipped venture building hub designed to take startups from traction to scale – under one roof.Resident founders will get access to private office space and shared infrastructure in the a Sandton office; a 12-month venture-building programme with expert support, strategic guidance, and execution resources; and access to top engineers, marketers, and growth operators.It also includes support with go-to-market, sales systems, and investor readiness; opportunities to pitch to investors, compete on global stages, and access corporate partnerships; and perks from AWS, Stripe, HubSpot, Notion, and others.",
+    "meta_title": "Akha Ventures lance un Venture Studio à Sandton, Afrique du Sud",
+    "Meta Description": "Akha Ventures ouvre un Venture Studio à Sandton pour soutenir les startups africaines.  Programme de 12 mois avec accès à des experts et ressources.",
+    "slug": "akha-ventures-lance-venture-studio-sandton",
+    "regions": [
+      "South Africa"
+    ],
+    "sectors": [
+      "Technology",
+      "FinTech",
+      "Sector Agnostic"
+    ],
+    "stages": [
+      "Pre-seed",
+      "Seed",
+      "Series A",
+      "Stage Agnostic"
+    ],
+    "categories": [
+      "Incubator",
+      "Accelerator"
+    ],
+    "draft_summary": {
+      "introduction": "Akha Ventures, une société sud-africaine, a annoncé le lancement de son Akha Studio, un écosystème dédié aux startups africaines.",
+      "body": [
+        {
+          "heading": "Présentation de l'Akha Studio",
+          "content": "Situé à Sandton, en Afrique du Sud, l'Akha Studio est un espace de coworking et un hub de création d'entreprises entièrement équipé. Il vise à accompagner les startups de la phase de traction à l'échelle."
+        },
+        {
+          "heading": "Programme et ressources",
+          "content": "Le programme de 12 mois offre un accès à des bureaux privés, des infrastructures partagées, un soutien d'experts, des conseils stratégiques, des ressources d'exécution, et un accès à des ingénieurs, des spécialistes du marketing et des responsables de la croissance.  Un soutien pour la mise sur le marché, les systèmes de vente et la préparation aux investissements est également inclus, ainsi que des opportunités de présentation aux investisseurs, de participation à des compétitions mondiales et d'accès à des partenariats d'entreprise. Des avantages supplémentaires sont fournis par AWS, Stripe, HubSpot, Notion et d'autres."
+        }
+      ],
+      "closing": "L'Akha Studio propose un environnement complet pour soutenir la croissance des startups africaines ambitieuses.  Pour plus d'informations sur le programme, veuillez consulter le site web d'Akha Ventures."
+    },
+    "main_image_alt": "Image de l'Akha Studio à Sandton, Afrique du Sud",
+    "organizer_logo_alt": "Logo d'Akha Ventures",
+    "extracted_published_date": "2025-08-04T09:00:13+02:00",
+    "extracted_deadline": null,
+    "organization_name": "Akha Ventures",
+    "organization_website": "https://akhaventures.africa/",
+    "organization_logo": "https://akhaventures.africa/img/logo/logo.png",
+    "serpapi_enhanced": true
+  },
+  {
     "url": "https://disruptafrica.com/2025/07/31/applications-set-to-close-for-africa-impact-fundraising-grant/",
     "title": "Applications set to close for Africa Impact Fundraising Grant",
     "subtitle": "Applications are set to close for the Africa Impact Fundraising Grant 2025, which aims to build fundraising skills to power African solutions.",
     "description": "The Africa Impact Fundraising (AIF) Grant programme is a new initiative by the New Africa Fund, created to help African NGOs, community-based organisations, and social enterprises strengthen their fundraising capacity and access critical funding. Selected organisations will begin with an online training focused on small-donor campaigns, followed by a 30-day fundraising challenge. Top performers will receive up to US$5,000 in matching funds. Top-performing organisations will be invited to Kigali, Rwanda, for a week-long intensive training residency, which will dive deeper into all aspects of sustainable fundraising. Applications are open here until the end of today, July 31.",
     "content": "Applications are set to close for the Africa Impact Fundraising Grant 2025, which aims to build fundraising skills to power African solutions.The Africa Impact Fundraising (AIF) Grant programme is a new initiative by the New Africa Fund, created to help African NGOs, community-based organisations, and social enterprises strengthen their fundraising capacity and access critical funding.Selected organisations will begin with an online training focused on small-donor campaigns, followed by a 30-day fundraising challenge. Top performers will receive up to US$5,000 in matching funds.Top-performing organisations will be invited to Kigali, Rwanda, for a week-long intensive training residency, which will dive deeper into all aspects of sustainable fundraising.Applications are open here until the end of today, July 31.",
     "meta_title": "Africa Impact Fundraising Grant 2025: Applications Closing Soon!",
-    "Meta Description": "Apply now for the Africa Impact Fundraising Grant 2025!  Boost your NGO's fundraising skills & access up to US$5,000 in matching funds. Deadline: July 31st!",
+    "Meta Description": "Apply now for the Africa Impact Fundraising Grant 2025!  Build fundraising skills & access up to $5,000 in matching funds. Applications close July 31st!",
     "slug": "africa-impact-fundraising-grant-2025",
     "regions": [
       "Rwanda",
@@ -717,6 +677,7 @@
       "Zimbabwe"
     ],
     "sectors": [
+      "Economic Development",
       "Sector Agnostic"
     ],
     "stages": [
@@ -725,14 +686,14 @@
     "categories": [
       "Funding Opportunity"
     ],
-    "draft_summary": "* **Introduction:** The Africa Impact Fundraising (AIF) Grant 2025 is a new initiative designed to empower African NGOs, community-based organizations, and social enterprises with enhanced fundraising capabilities.  Applications are closing soon.\n\n* **Program Overview:**  The AIF Grant program, spearheaded by the New Africa Fund, offers a comprehensive approach to fundraising skill development.  The program begins with online training focusing on small-donor campaigns, followed by a 30-day fundraising challenge.\n\n* **Incentives and Rewards:** Top-performing organizations in the challenge will receive matching funds of up to US$5,000.  Furthermore, the highest achievers will be invited to Kigali, Rwanda for an intensive week-long training residency focusing on sustainable fundraising strategies.\n\n* **Application Details:**  The application deadline is July 31st. Interested organizations can apply via the provided link (link not provided here).\n\n* **Conclusion:** The Africa Impact Fundraising Grant presents a significant opportunity for African organizations to strengthen their fundraising capacity and secure crucial funding for their vital work.  The program's blended learning approach combines online training, practical challenges, and an intensive residency to ensure comprehensive skill development.",
+    "draft_summary": "- **Introduction:** The Africa Impact Fundraising (AIF) Grant 2025, a program by the New Africa Fund, offers a unique opportunity for African NGOs, community-based organizations, and social enterprises to enhance their fundraising capabilities.\n\n- **Program Overview:**  The AIF Grant aims to empower African organizations with the necessary fundraising skills to achieve their goals. The program commences with an online training session emphasizing small-donor campaigns, followed by a 30-day fundraising challenge.\n\n- **Incentives and Rewards:** Top-performing organizations in the challenge receive matching funds up to US$5,000.  Furthermore, the highest-performing organizations are invited to Kigali, Rwanda, for a week-long intensive training residency covering sustainable fundraising strategies.\n\n- **Application Process:** Applications for the Africa Impact Fundraising Grant 2025 were open until July 31st, 2025.\n\n- **Conclusion:** The Africa Impact Fundraising Grant 2025 provides invaluable resources and support to help African organizations secure critical funding for their impactful initiatives.",
     "main_image_alt": "Image related to the Africa Impact Fundraising Grant 2025",
     "organizer_logo_alt": "New Africa Fund logo",
     "extracted_published_date": "2025-07-31T09:00:33+02:00",
     "extracted_deadline": null,
     "organization_name": "New Africa Fund",
     "organization_website": "https://www.newafricafund.org/",
-    "organization_logo": null,
+    "organization_logo": "https://static.wixstatic.com/media/9c608a_4045aefc9d9e4d00ae94c0718258d899~mv2_d_4544_3029_s_4_2.jpg/v1/fill/w_55,h_37,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/9c608a_4045aefc9d9e4d00ae94c0718258d899~mv2_d_4544_3029_s_4_2.jpg",
     "serpapi_enhanced": true
   },
   {
@@ -742,7 +703,7 @@
     "description": "AfriLabsis a leading pan-African network of over 500 innovation and technology hubs across 53 African countries, while Konza Technopolis is a 5,000-acre, master-planned Kenyan smart city designed to drive economic growth through science, technology, innovation, and knowledge-based industries. The partnership will see the two institutions jointly design and implement a broad range of programmes and initiatives that support startups, build capacity, accelerate knowledge exchange, and unlock investment opportunities within and beyond Kenya. “This partnership represents our shared commitment to scaling African innovation through collaborative infrastructure, talent exchange, and knowledge networks. We’re proud to work alongside Konza Technopolis as we expand our mission to empower Africa’s next generation of innovators,” said Anna Ekeledo, executive director at AfriLabs.",
     "content": "AfriLabs, the largest pan-African network of innovation hubs, and Kenya’s Konza Technopolis Development Authority (KoTDA) have signed a strategic collaboration agreement to catalyse innovation, foster entrepreneurship, and promote inclusive technology development across Africa.AfriLabsis a leading pan-African network of over 500 innovation and technology hubs across 53 African countries, while Konza Technopolis is a 5,000-acre, master-planned Kenyan smart city designed to drive economic growth through science, technology, innovation, and knowledge-based industries.The partnership will see the two institutions jointly design and implement a broad range of programmes and initiatives that support startups, build capacity, accelerate knowledge exchange, and unlock investment opportunities within and beyond Kenya.“This partnership represents our shared commitment to scaling African innovation through collaborative infrastructure, talent exchange, and knowledge networks. We’re proud to work alongside Konza Technopolis as we expand our mission to empower Africa’s next generation of innovators,” said Anna Ekeledo, executive director at AfriLabs.",
     "meta_title": "AfriLabs & Konza Technopolis: Boosting African Innovation",
-    "Meta Description": "AfriLabs and Kenya's Konza Technopolis partner to foster entrepreneurship and tech development across Africa.  Learn more about this exciting collaboration.",
+    "Meta Description": "AfriLabs and Kenya's Konza Technopolis partner to foster entrepreneurship and inclusive tech development across Africa. Learn more!",
     "slug": "afrilabs-konza-technopolis-partnership",
     "regions": [
       "Kenya"
@@ -751,21 +712,24 @@
       "Technology",
       "FinTech",
       "EdTech",
-      "Economic Development"
+      "Economic Development",
+      "Sustainability"
     ],
     "stages": [
-      "Stage Agnostic"
+      "Stage Agnostic",
+      "Pre-seed",
+      "Seed"
     ],
     "categories": [
       "Accelerator",
       "Incubator"
     ],
-    "draft_summary": "* **Introduction:** AfriLabs, a pan-African network of innovation hubs, and Konza Technopolis Development Authority (KoTDA) in Kenya have formed a strategic partnership to drive innovation and entrepreneurship across Africa.\n\n* **Partnership Goals:** The collaboration aims to create and implement programs supporting startups, enhance capacity building, accelerate knowledge exchange, and unlock investment opportunities across the continent.\n\n* **AfriLabs' Role:** AfriLabs, with its network of over 500 innovation hubs in 53 African countries, brings extensive reach and experience in supporting tech entrepreneurs.\n\n* **Konza Technopolis' Role:** Konza Technopolis, a 5,000-acre smart city in Kenya, provides a strategic location and infrastructure for fostering innovation and technological advancements.\n\n* **Program Initiatives:** Joint programs will focus on startup support, capacity building, knowledge sharing, and investment facilitation.\n\n* **Expected Outcomes:** The partnership anticipates significant growth in African innovation through improved infrastructure, talent exchange, and expanded knowledge networks.\n\n* **Conclusion:** This collaboration represents a significant step towards fostering a vibrant and inclusive technological ecosystem across Africa, leveraging the combined strengths of AfriLabs and Konza Technopolis.",
+    "draft_summary": "- **Introduction:** AfriLabs, a pan-African network of over 500 innovation hubs, and Kenya's Konza Technopolis Development Authority (KoTDA) have formed a strategic partnership to drive innovation and entrepreneurship across Africa.\n\n- **The Partnership:** This collaboration aims to create and implement programs supporting startups, build capacity, enhance knowledge exchange, and attract investments across the continent.\n\n- **AfriLabs' Role:** AfriLabs brings its extensive network of innovation hubs across 53 African countries to the partnership, providing access to resources and expertise.\n\n- **Konza Technopolis' Role:** Konza Technopolis, a planned 5,000-acre smart city in Kenya, contributes its infrastructure and focus on science, technology, and innovation to the collaboration.\n\n- **Program Goals:** The joint initiatives will focus on startup support, capacity building, knowledge sharing, and investment opportunities, with the ultimate goal of empowering Africa's next generation of innovators.\n\n- **Conclusion:** This partnership between AfriLabs and Konza Technopolis signifies a significant step towards scaling innovation across Africa through collaborative efforts and resource sharing.  The programs and initiatives arising from this collaboration will be instrumental in fostering a thriving ecosystem for African entrepreneurs and tech developers.",
     "main_image_alt": "AfriLabs and Konza Technopolis logos together",
     "organizer_logo_alt": "AfriLabs logo",
     "extracted_published_date": "2025-07-28T09:00:25+02:00",
     "extracted_deadline": null,
-    "organization_name": "AfriLabs",
+    "organization_name": "AfriLabs and Konza Technopolis Development Authority (KoTDA)",
     "organization_website": "http://www.afrilabs.com",
     "organization_logo": "https://www.afrilabs.com/wp-content/uploads/elementor/thumbs/AfriLabs-Logo-qbh5z7mwsvrfp2gej0kwdumwafy2bqj96rj8xvlzdk.png"
   },
@@ -776,10 +740,11 @@
     "description": "Founded in 2021,Thrivyxis building a secure, cloud-native SCADA (Supervisory Control and Data Acquisition) platform for industrial and critical infrastructure systems. It provides real-time monitoring, control, and cybersecurity in a unified solution – designed for sectors like energy, utilities, manufacturing, and smart cities. Its platform integrates with legacy field equipment while enabling modern features like remote access, AI-powered anomaly detection, and digital twin visualisation. FasterCapital, meanwhile, is a global venture builder and online incubator dedicated to co-funding and co-founding innovative startups. Its LaunchUp programme is designed to help early-stage startups build scalable solutions with mentorship, strategic guidance, and network support. Thrivyx has now joined LaunchUp to accelerate its growth across Africa, Europe, and Asia by leveraging FasterCapital’s global network, capital resources, and industry expertise to address the urgent cybersecurity needs of mid-sized businesses in emerging markets. “The global cybersecurity and productivity SaaS market exceeds US$180 billion annually, driven by escalating cyber threats and the growing complexity of enterprise IT environments. However, many mid-sized companies – especially in regulated and tech-driven sectors such as fintech, healthtech, and logistics – struggle with fragmented, costly, and difficult-to-integrate security tools,” said Faster Capital. “This inefficiency creates significant operational risks and compliance challenges. Thrivyx targets this underserved segment by offering a unified, scalable platform that simplifies security monitoring, productivity analytics, and data management, filling a critical white space in the market.” Disrupt Africa reportedearlier this month Kenya’s Vumah Labs, a deep-tech innovation lab specialising in privacy-first AI, blockchain, and Zero-Knowledge Proof (ZKP) technologies, had also joined the LaunchUp programme.",
     "content": "Nigeria’s Thrivyx, an API-first SaaS startup delivering integrated security, productivity, and file-sharing solutions, has joined FasterCapital’s LaunchUp programme.Founded in 2021,Thrivyxis building a secure, cloud-native SCADA (Supervisory Control and Data Acquisition) platform for industrial and critical infrastructure systems. It provides real-time monitoring, control, and cybersecurity in a unified solution – designed for sectors like energy, utilities, manufacturing, and smart cities.Its platform integrates with legacy field equipment while enabling modern features like remote access, AI-powered anomaly detection, and digital twin visualisation.FasterCapital, meanwhile, is a global venture builder and online incubator dedicated to co-funding and co-founding innovative startups. Its LaunchUp programme is designed to help early-stage startups build scalable solutions with mentorship, strategic guidance, and network support.Thrivyx has now joined LaunchUp to accelerate its growth across Africa, Europe, and Asia by leveraging FasterCapital’s global network, capital resources, and industry expertise to address the urgent cybersecurity needs of mid-sized businesses in emerging markets.“The global cybersecurity and productivity SaaS market exceeds US$180 billion annually, driven by escalating cyber threats and the growing complexity of enterprise IT environments. However, many mid-sized companies – especially in regulated and tech-driven sectors such as fintech, healthtech, and logistics – struggle with fragmented, costly, and difficult-to-integrate security tools,” said Faster Capital.“This inefficiency creates significant operational risks and compliance challenges. Thrivyx targets this underserved segment by offering a unified, scalable platform that simplifies security monitoring, productivity analytics, and data management, filling a critical white space in the market.”Disrupt Africa reportedearlier this month Kenya’s Vumah Labs, a deep-tech innovation lab specialising in privacy-first AI, blockchain, and Zero-Knowledge Proof (ZKP) technologies, had also joined the LaunchUp programme.",
     "meta_title": "Thrivyx rejoint le programme d'accélération FasterCapital LaunchUp",
-    "Meta Description": "La startup nigériane Thrivyx, spécialisée en cybersécurité, rejoint le programme LaunchUp de FasterCapital pour accélérer sa croissance en Afrique, en Europe et en Asie.",
+    "Meta Description": "La startup nigériane Thrivyx, spécialisée dans la cybersécurité SaaS, rejoint le programme LaunchUp de FasterCapital pour accélérer sa croissance en Afrique, Europe et Asie.",
     "slug": "thrivyx-rejoint-fastercapital-launchup",
     "regions": [
       "Nigeria",
+      "Kenya",
       "Africa",
       "Europe",
       "Asia"
@@ -787,44 +752,22 @@
     "sectors": [
       "Cybersecurity & Digital ID",
       "Technology",
-      "Energy",
-      "Manufacturing",
       "FinTech",
       "HealthTech",
-      "Logistics"
+      "Logistics",
+      "Energy",
+      "Manufacturing"
     ],
     "stages": [
-      "Pre-Series A"
+      "Pre-Series A",
+      "Seed"
     ],
     "categories": [
-      "Accelerator"
+      "Accelerator",
+      "Incubator"
     ],
-    "draft_summary": [
-      {
-        "type": "introduction",
-        "content": "Thrivyx, une startup nigériane spécialisée dans les solutions SaaS de sécurité, de productivité et de partage de fichiers, a rejoint le programme d'accélération LaunchUp de FasterCapital."
-      },
-      {
-        "type": "body",
-        "heading": "À propos de Thrivyx",
-        "content": "Fondée en 2021, Thrivyx développe une plateforme SCADA (Supervisory Control and Data Acquisition) sécurisée et native du cloud pour les systèmes d'infrastructures industrielles et critiques.  Elle offre une solution unifiée pour la surveillance, le contrôle et la cybersécurité en temps réel, conçue pour les secteurs de l'énergie, des services publics, de la fabrication et des villes intelligentes. Sa plateforme s'intègre aux équipements existants tout en offrant des fonctionnalités modernes comme l'accès à distance, la détection d'anomalies basée sur l'IA et la visualisation de jumeaux numériques."
-      },
-      {
-        "type": "body",
-        "heading": "À propos de FasterCapital et LaunchUp",
-        "content": "FasterCapital est un constructeur d'entreprises et un incubateur en ligne qui cofinance et cofonde des startups innovantes. Son programme LaunchUp aide les startups en phase initiale à développer des solutions évolutives grâce à du mentorat, des conseils stratégiques et un soutien réseau.  Thrivyx a rejoint LaunchUp pour accélérer sa croissance."
-      },
-      {
-        "type": "body",
-        "heading": "Opportunité et Marché",
-        "content": "Le marché mondial des logiciels SaaS de cybersécurité et de productivité dépasse 180 milliards de dollars par an.  De nombreuses entreprises de taille moyenne, notamment dans les secteurs réglementés et technologiques, ont du mal à utiliser des outils de sécurité fragmentés, coûteux et difficiles à intégrer. Thrivyx cible ce segment en proposant une plateforme unifiée et évolutive."
-      },
-      {
-        "type": "conclusion",
-        "content": "L'adhésion de Thrivyx au programme LaunchUp témoigne de l'importance croissante des solutions de cybersécurité unifiées pour les entreprises de taille moyenne sur les marchés émergents."
-      }
-    ],
-    "main_image_alt": "Logo de Thrivyx",
+    "draft_summary": "- **Introduction:** Ce communiqué de presse annonce que Thrivyx, une startup nigériane spécialisée dans les solutions SaaS de sécurité, de productivité et de partage de fichiers, a rejoint le programme d'accélération LaunchUp de FasterCapital.\n\n- **Thrivyx: Une Solution SaaS Intégrée:** Fondée en 2021, Thrivyx développe une plateforme SCADA (Supervisory Control and Data Acquisition) sécurisée et native du cloud pour les systèmes industriels et les infrastructures critiques.  Sa solution unifiée offre une surveillance, un contrôle et une cybersécurité en temps réel pour les secteurs de l'énergie, des services publics, de la fabrication et des villes intelligentes.  Elle s'intègre aux équipements existants tout en proposant des fonctionnalités modernes comme l'accès à distance, la détection d'anomalies basée sur l'IA et la visualisation de jumeaux numériques.\n\n- **FasterCapital et le Programme LaunchUp:** FasterCapital est un créateur d'entreprises et un incubateur en ligne qui cofinance et cofonde des startups innovantes.  Son programme LaunchUp aide les startups en phase initiale à développer des solutions évolutives grâce à du mentorat, des conseils stratégiques et un réseau de soutien.\n\n- **Objectifs de Thrivyx:** En rejoignant LaunchUp, Thrivyx vise à accélérer sa croissance en Afrique, en Europe et en Asie en tirant parti du réseau mondial, des ressources financières et de l'expertise sectorielle de FasterCapital pour répondre aux besoins urgents en matière de cybersécurité des PME sur les marchés émergents.\n\n- **Marché Ciblé:** Le marché mondial des logiciels SaaS de cybersécurité et de productivité dépasse 180 milliards de dollars par an.  De nombreuses PME, en particulier dans les secteurs réglementés et axés sur la technologie, rencontrent des difficultés avec des outils de sécurité fragmentés, coûteux et difficiles à intégrer. Thrivyx cible ce segment sous-desservi en offrant une plateforme unifiée et évolutive qui simplifie la surveillance de la sécurité, l'analyse de la productivité et la gestion des données.\n\n- **Conclusion:** Le partenariat entre Thrivyx et FasterCapital souligne l'importance croissante de la cybersécurité pour les PME et le rôle des programmes d'accélération dans le soutien des startups innovantes.",
+    "main_image_alt": "Logo de Thrivyx et FasterCapital",
     "organizer_logo_alt": "Logo de FasterCapital",
     "extracted_published_date": "2025-07-21T09:00:54+02:00",
     "extracted_deadline": null,
@@ -838,9 +781,9 @@
     "subtitle": "African startups are invited to apply for the globally-focused TractionBoost Accelerator, which aims to help early-stage startups get themselves ready for pre-seed funding.",
     "description": "TheTractionBoost Acceleratoris a two-month intensive programme designed specifically for early-stage startups focused on product testing and customer acquisition. Its goal is to provide founders with the necessary traction to secure pre-seed funding. Through micro-managed funds, expert mentorship, and a structured accelerator programme, TractionBoost empowers startups to refine their products, expand their customer base, and achieve significant milestones. Key benefits of the programme included tailored funding of between US$2,000 and US$5,000 per startup, access to industry-leading mentors and resources, a structured milestone-driven approach, and networking opportunities with potential investors. Applications are openhereuntil September 30.",
     "content": "African startups are invited to apply for the globally-focused TractionBoost Accelerator, which aims to help early-stage startups get themselves ready for pre-seed funding.TheTractionBoost Acceleratoris a two-month intensive programme designed specifically for early-stage startups focused on product testing and customer acquisition.Its goal is to provide founders with the necessary traction to secure pre-seed funding. Through micro-managed funds, expert mentorship, and a structured accelerator programme, TractionBoost empowers startups to refine their products, expand their customer base, and achieve significant milestones.Key benefits of the programme included tailored funding of between US$2,000 and US$5,000 per startup, access to industry-leading mentors and resources, a structured milestone-driven approach, and networking opportunities with potential investors.Applications are openhereuntil September 30.",
-    "meta_title": "TractionBoost Accelerator: Pré-amorçage pour startups africaines",
-    "Meta Description": "Startups africaines, postulez au TractionBoost Accelerator ! Programme intensif de 2 mois pour obtenir un financement de pré-amorçage. Date limite : 30 septembre.",
-    "slug": "tractionboost-accelerator-startups-africaines",
+    "meta_title": "TractionBoost Accelerator: Pre-Seed Funding for African Startups",
+    "Meta Description": "African early-stage startups can apply for the TractionBoost Accelerator, a 2-month program offering funding, mentorship, and resources for pre-seed funding.",
+    "slug": "tractionboost-accelerator-african-startups",
     "regions": [
       "Algeria",
       "Angola",
@@ -896,7 +839,8 @@
       "Zimbabwe"
     ],
     "sectors": [
-      "Sector Agnostic"
+      "Sector Agnostic",
+      "Technology"
     ],
     "stages": [
       "Pre-seed"
@@ -904,15 +848,14 @@
     "categories": [
       "Accelerator"
     ],
-    "draft_summary": "- **Introduction:** Le TractionBoost Accelerator est un programme d'accélération intensif de deux mois destiné aux startups africaines en phase de pré-amorçage.\n\n- **Objectif du programme:** Préparer les startups à obtenir un financement de pré-amorçage en améliorant leurs produits, en développant leur clientèle et en atteignant des jalons importants.\n\n- **Programme et bénéfices:**  Le programme comprend un financement personnalisé (entre 2 000 et 5 000 USD), un mentorat d'experts, un programme structuré axé sur les résultats, et des opportunités de réseautage avec des investisseurs potentiels.\n\n- **Focus:** Le programme se concentre sur les tests de produits et l'acquisition de clients.\n\n- **Durée:** Deux mois.\n\n- **Candidatures:** Les candidatures sont ouvertes jusqu'au 30 septembre.  Pour plus d'informations, veuillez consulter le lien [lien vers la page de candidature non fourni].\n\n- **Conclusion:** Le TractionBoost Accelerator offre une opportunité unique aux startups africaines en phase de pré-amorçage de développer leur entreprise et d'attirer des investisseurs.",
-    "main_image_alt": "Image du logo TractionBoost Accelerator ou une image représentative du programme.",
+    "draft_summary": "* **Introduction:** The TractionBoost Accelerator is a program designed to support early-stage African startups in securing pre-seed funding.\n\n* **Program Overview:** This two-month intensive program focuses on product testing and customer acquisition.  It provides participants with micro-managed funds, expert mentorship, and a structured curriculum to help them achieve significant milestones.\n\n* **Key Benefits:** Participants receive tailored funding (US$2,000 - US$5,000), access to industry-leading mentors and resources, a structured milestone-driven approach, and networking opportunities with potential investors.\n\n* **Eligibility:** The program is specifically designed for early-stage African startups.\n\n* **Application Process:** Applications are open until September 30th.  [Insert application link here]\n\n* **Conclusion:** The TractionBoost Accelerator offers a valuable opportunity for African startups seeking pre-seed funding and support in refining their products and expanding their customer base.",
+    "main_image_alt": "Image of the TractionBoost Accelerator program logo or a relevant image showcasing African entrepreneurship.",
     "organizer_logo_alt": "null",
     "extracted_published_date": "2025-07-17T09:00:28+02:00",
     "extracted_deadline": "september 30",
-    "organization_name": "null",
-    "organization_website": "https://null.foundation/",
-    "organization_logo": "https://null.foundation/static/img/logo.jpg",
-    "serpapi_enhanced": true
+    "organization_name": "TractionBoost",
+    "organization_website": "https://accelerator.leoelysium.ng/",
+    "organization_logo": "https://accelerator.leoelysium.ng/assets/images/tractionboost-logo.png"
   },
   {
     "url": "https://disruptafrica.com/2025/07/17/5-african-esos-secure-backing-from-village-capitals-4m-ecosystem-catalysts-facility/",
@@ -920,9 +863,9 @@
     "subtitle": "Five Entrepreneur Support Organisations (ESOs) have been named as venture partners for Village Capital’s Africa Ecosystem Catalysts Facility (AECF), a US$4 million initiative designed to invest in startups developing context-specific solutions that enhance economic mobility and climate resilience in Ghana, Nigeria, and Tanzania.",
     "description": "Run byVillage Capitalin collaboration with the Dutch Entrepreneurial Development Bank (FMO) and the Netherlands Enterprise Agency (RVO), the AECF aims to bridge funding gaps by investing appropriately-structured capital and aligning the investment process with the insights of ESOs who know their markets best. The AECF takes an ecosystem-embedded approach to investment by collaborating with locally-led ESOs to enable a more effective deployment of capital, anchored in deep local insight, to startups developing solutions that improve livelihoods, drive financial inclusion, and enhance resilience to climate change. By investing in high-impact startups and empowering ESOs as co-evaluators in the investment process, the AECF seeks to strengthen the broader entrepreneurial ecosystems in each country and accelerate the flow of appropriate, early-stage capital to where it’s needed most. Five ESOs have now been named as venture partners for the US$4 million initiative, namelyReach for Change(Ghana),Africa Fintech FoundryandFate Foundation(Nigeria), andAnzaEntrepreneurs andEnnovate Ventures(Tanzania). “No single investor can be an expert in every context – and that’s why this partnership matters,” said Nathaly Botero, innovations manager at Village Capital. “This model allows us to invest across markets while staying grounded in local realities. For us, this isn’t just about sourcing deals, it’s about making smarter, more informed investments by working alongside those already building and strengthening their entrepreneurial communities.”",
     "content": "Five Entrepreneur Support Organisations (ESOs) have been named as venture partners for Village Capital’s Africa Ecosystem Catalysts Facility (AECF), a US$4 million initiative designed to invest in startups developing context-specific solutions that enhance economic mobility and climate resilience in Ghana, Nigeria, and Tanzania.Run byVillage Capitalin collaboration with the Dutch Entrepreneurial Development Bank (FMO) and the Netherlands Enterprise Agency (RVO), the AECF aims to bridge funding gaps by investing appropriately-structured capital and aligning the investment process with the insights of ESOs who know their markets best.The AECF takes an ecosystem-embedded approach to investment by collaborating with locally-led ESOs to enable a more effective deployment of capital, anchored in deep local insight, to startups developing solutions that improve livelihoods, drive financial inclusion, and enhance resilience to climate change.By investing in high-impact startups and empowering ESOs as co-evaluators in the investment process, the AECF seeks to strengthen the broader entrepreneurial ecosystems in each country and accelerate the flow of appropriate, early-stage capital to where it’s needed most.Five ESOs have now been named as venture partners for the US$4 million initiative, namelyReach for Change(Ghana),Africa Fintech FoundryandFate Foundation(Nigeria), andAnzaEntrepreneurs andEnnovate Ventures(Tanzania).“No single investor can be an expert in every context – and that’s why this partnership matters,” said Nathaly Botero, innovations manager at Village Capital. “This model allows us to invest across markets while staying grounded in local realities. For us, this isn’t just about sourcing deals, it’s about making smarter, more informed investments by working alongside those already building and strengthening their entrepreneurial communities.”",
-    "meta_title": "5 ESOs Partner with Village Capital's $4M Africa Fund",
-    "Meta Description": "Village Capital's $4M Africa Ecosystem Catalysts Facility partners with 5 ESOs to invest in startups boosting economic mobility and climate resilience in Ghana, Nigeria, & Tanzania.",
-    "slug": "village-capital-4m-africa-ecosystem-catalysts-facility",
+    "meta_title": "5 African ESOs Get $4M Backing from Village Capital",
+    "Meta Description": "Village Capital's $4M Africa Ecosystem Catalysts Facility invests in startups boosting economic mobility and climate resilience in Ghana, Nigeria, & Tanzania.",
+    "slug": "5-african-esos-secure-backing-from-village-capitals-4m-ecosystem-catalysts-facility",
     "regions": [
       "Ghana",
       "Nigeria",
@@ -942,15 +885,14 @@
     "categories": [
       "Funding Opportunity"
     ],
-    "draft_summary": "- **Introduction:** Village Capital's Africa Ecosystem Catalysts Facility (AECF), a US$4 million initiative, has selected five Entrepreneur Support Organisations (ESOs) as venture partners.\n\n- **AECF's Goal:**  The AECF aims to bridge funding gaps for startups in Ghana, Nigeria, and Tanzania developing solutions for economic mobility and climate resilience.  The initiative prioritizes context-specific solutions and leverages local ESO expertise for investment decisions.\n\n- **Partnership Model:** The AECF utilizes an ecosystem-embedded approach, collaborating closely with locally-led ESOs to ensure effective capital deployment based on deep market understanding.  ESOs act as co-evaluators, providing crucial local insights into the investment process.\n\n- **Selected ESO Partners:** The five chosen ESO venture partners are Reach for Change (Ghana), Africa Fintech Foundry and Fate Foundation (Nigeria), and Anza Entrepreneurs and Ennovate Ventures (Tanzania).\n\n- **Investment Focus:** Investments target high-impact startups working on solutions that improve livelihoods, drive financial inclusion, and enhance resilience to climate change.\n\n- **Conclusion:**  By collaborating with local ESOs, the AECF aims to strengthen entrepreneurial ecosystems and direct early-stage capital where it is most needed, fostering sustainable economic growth and climate adaptation across Africa.",
-    "main_image_alt": "Village Capital's Africa Ecosystem Catalysts Facility logo and map of Ghana, Nigeria, and Tanzania.",
+    "draft_summary": "- **Introduction:** Village Capital's Africa Ecosystem Catalysts Facility (AECF), a US$4 million initiative, has selected five Entrepreneur Support Organisations (ESOs) as venture partners.  The AECF aims to invest in startups developing solutions for economic mobility and climate resilience in Ghana, Nigeria, and Tanzania.\n\n- **AECF Overview:**  The AECF is a collaboration between Village Capital, the Dutch Entrepreneurial Development Bank (FMO), and the Netherlands Enterprise Agency (RVO). It focuses on bridging funding gaps by providing appropriately-structured capital and leveraging the local market expertise of ESOs.\n\n- **Investment Strategy:** The AECF employs an ecosystem-embedded approach, working with locally-led ESOs to ensure effective capital deployment.  This includes empowering ESOs as co-evaluators in the investment process, strengthening local entrepreneurial ecosystems, and accelerating the flow of early-stage capital.\n\n- **Participating ESOs:** Five ESOs have been chosen as venture partners: Reach for Change (Ghana), Africa Fintech Foundry and Fate Foundation (Nigeria), and Anza Entrepreneurs and Ennovate Ventures (Tanzania).\n\n- **Partnership Rationale:** The partnership emphasizes the importance of local expertise in investment decisions, ensuring investments are grounded in local realities.  The goal is to make more informed investments by working alongside those actively building entrepreneurial communities.\n\n- **Conclusion:** The AECF represents a strategic initiative to support high-impact startups and strengthen entrepreneurial ecosystems across Ghana, Nigeria, and Tanzania by fostering collaborations between international investors and local ESOs.",
+    "main_image_alt": "Image of the Africa Ecosystem Catalysts Facility logo or a relevant image representing the initiative.",
     "organizer_logo_alt": "Village Capital logo",
     "extracted_published_date": "2025-07-17T08:00:47+02:00",
     "extracted_deadline": null,
     "organization_name": "Village Capital",
     "organization_website": "https://vilcap.com/",
-    "organization_logo": null,
-    "serpapi_enhanced": true
+    "organization_logo": "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic2MtYmI0ZDhlNjItMCBianBPVnUiIGNvbG9yPSJ2YXIoLS1oZWFkZXItbG9nby1jb2xvcikiIGhlaWdodD0iMTAwJSIgdmlld2JveD0iMCAwIDE5ODQuMyAzNDAuMiIgd2lkdGg9InZhcigtLWhlYWRlci1sb2dvLXdpZHRoKSI+PHRpdGxlPlZpbGxhZ2UgQ2FwaXRhbDwvdGl0bGU+PHBhdGggZD0ibTQ2MS44IDEwMC4xLTUzIDEzNy45SDM4OGwtNTMtMTM3LjloMjRsNTAuMSAxMjkuMSAyNC44LTY1LjFjNC4xLTExLjEgNy4xLTIxLjUgOC44LTMxLjEgMS44LTkuNiAyLjUtMjAuNiAyLjQtMzIuOGwxNi43LS4xek00ODEuMyA2Ni40Yy0yLjYtMi42LTMuOS01LjgtMy45LTkuNCAwLTMuNyAxLjMtNi44IDMuOS05LjQgMi42LTIuNiA1LjgtMy45IDkuNC0zLjkgMy43IDAgNi44IDEuMyA5LjQgMy45IDIuNiAyLjYgMy45IDUuOCAzLjkgOS40IDAgMy43LTEuMyA2LjgtMy45IDkuNC0yLjYgMi42LTUuOCAzLjktOS40IDMuOS0zLjYuMS02LjgtMS4yLTkuNC0zLjl6TTQ3OC44IDEwMC4xaDIzLjlWMjM4aC0yMy45ek01NjMgMjM4aC0yMy45VjcwLjVINTYzVjIzOHpNNjI0LjYgMjM4aC0yMy45VjcwLjVoMjMuOVYyMzh6TTY2MS4xIDIzMGMtOC4xLTcuNy0xMi4yLTE3LjktMTIuMi0zMC40IDAtMTguOSA4LjctMzQgMjYuMS00NS4xIDE3LjQtMTEuMSA0MC41LTIwIDY5LjMtMjYuNyAwLTkuNS0yLjMtMTYuOC02LjktMjEuNy00LjYtNC45LTEwLjktNy40LTE4LjgtNy40LTguNiAwLTE3LjYgMi42LTI3IDcuOC05LjQgNS4yLTE3LjggMTItMjUuMyAyMC42bC00LjgtMTguNGM4LjYtNCAxNy44LTcuMSAyNy43LTkuNCA5LjktMi4zIDE5LjQtMy41IDI4LjYtMy41IDE1LjEgMCAyNy4zIDMuNCAzNi41IDEwLjEgOS4yIDYuOCAxMy44IDE3LjUgMTMuOCAzMi4zVjIzOGgtMjMuOXYtMjEuMmMtNyA3LjYtMTUgMTMuNy0yMy45IDE4LjEtOC45IDQuNS0xNy43IDYuNy0yNi41IDYuNy0xMy42IDAtMjQuNi0zLjktMzIuNy0xMS42em02My44LTEuOWM3LjUtMy45IDE0LTguOCAxOS41LTE0Ljd2LTgyLjNjLTI1LjYgNS42LTQ0IDEzLjgtNTUgMjQuNi0xMS4xIDEwLjgtMTYuNiAyNC4zLTE2LjYgNDAuMyAwIDEyLjIgMi45IDIxLjYgOC42IDI4LjIgNS43IDYuNSAxMyA5LjggMjIgOS44IDYuNy0uMSAxMy45LTIgMjEuNS01Ljl6TTc5MS4xIDI5Mi4xbDMuNi0xNi43YzE3LjMgMTEuMSAzMi41IDE2LjcgNDUuNiAxNi43IDE1LjEgMCAyNi44LTYuMSAzNS4xLTE4LjIgOC4zLTEyLjIgMTIuNC0yOC4yIDEyLjQtNDguMXYtMTYuMmgtLjdjLTQgMTAuMi05LjkgMTguMS0xNy44IDIzLjktNy45IDUuNy0xNi40IDguNi0yNS43IDguNi05LjEgMC0xNy42LTIuNS0yNS41LTcuNi04LTUuMS0xNC40LTEzLTE5LjMtMjMuOXMtNy40LTI0LjMtNy40LTQwLjZjMC0xNC4yIDIuNi0yNi44IDcuOC0zOC4xIDUuMi0xMS4yIDEyLjItMjAgMjEuMS0yNi4yIDguOS02LjMgMTguOC05LjQgMjkuNi05LjQgMTIuNyAwIDI1LjQgNC41IDM3LjkgMTMuNHYtOS41aDIzLjl2MTEyLjRjMCAxNi45LTMuNiAzMS42LTEwLjkgNDQuNC03LjIgMTIuNy0xNy40IDIyLjUtMzAuNCAyOS40cy0yOC4xIDEwLjMtNDUuMSAxMC4zYy0xMC45LS4zLTIyLjMtMS43LTM0LjItNC42em03NS41LTYyLjFjNS4zLTMuMyA5LjktOC4xIDEzLjYtMTQuNCAzLjctNi40IDYuMi0xMy45IDcuNS0yMi43di03OS4yYy0xMS4xLTguMS0yMS40LTEyLjItMzAuOC0xMi4yLTguOSAwLTE2LjYgMy4yLTIzIDkuNS02LjQgNi40LTExLjQgMTQuNy0xNC44IDI1LTMuNCAxMC4zLTUuMSAyMS41LTUuMSAzMy40IDAgMTMuMiAxLjYgMjQuOCA0LjggMzQuN3M3LjUgMTcuNSAxMy4xIDIyLjggMTEuNyA3LjkgMTguNCA3LjljNS42LjEgMTEtMS42IDE2LjMtNC44ek05NzQuMSAyMzEuOWMtMTEuMy02LjMtMjAuMy0xNS4xLTI3LTI2LjYtNi43LTExLjUtMTAtMjQuNi0xMC0zOS40IDAtMTQuNiAzLjQtMjcuMiAxMC4xLTM3LjggNi44LTEwLjYgMTUuNi0xOC42IDI2LjQtMjRzMjIuMi04LjEgMzQuMS04LjFjMTAuNyAwIDIwLjYgMi4yIDI5LjcgNi42IDkuMSA0LjQgMTYuNSAxMC45IDIyLjEgMTkuNSA1LjYgOC42IDguMyAxOS4xIDguMyAzMS41IDAgNS4xLS43IDEwLjctMi4yIDE2LjdIOTYxYy4zIDEzLjcgMi42IDI1LjYgNi44IDM1LjkgNC4yIDEwLjMgOS45IDE4LjIgMTcuMSAyMy43IDcuMiA1LjYgMTUuMiA4LjQgMjQuMSA4LjQgOC40IDAgMTcuMy0yLjkgMjYuNS04LjZzMTguMy0xNC4zIDI3LjItMjUuOGw1IDE2LjdjLTguOSA3LTE4LjIgMTIuMi0yNy44IDE1LjZzLTE5LjIgNS4xLTI4LjcgNS4xYy0xMy41IDAtMjUuOC0zLjEtMzcuMS05LjR6bTcwLjktNjVjMS01LjIgMS40LTEwLjMgMS40LTE1IDAtMTEuMy0xLjgtMjAuOS01LjItMjguOHMtOC4yLTEzLjgtMTQuMS0xNy44LTEyLjItNi0xOS4xLTZjLTcuOCAwLTE1LjMgMi42LTIyLjQgNy45cy0xMyAxMy0xNy43IDIzLjEtNi45IDIyLjQtNi45IDM2LjVoODR6TTExODMgMjMyLjRjLTEyLjgtNi4xLTIzLTE1LTMwLjUtMjYuNS03LjYtMTEuNS0xMS4zLTI1LjItMTEuMy00MC45IDAtMjEuMSA2LjYtMzggMTkuNy01MC41czMyLjctMTguNyA1OC44LTE4LjdjMTUuNCAwIDMwLjggMi40IDQ2LjEgNy4ybC0zLjEgMTYuN2MtNy42LTYuNC0xNS43LTExLjItMjQuMS0xNC42LTguNC0zLjMtMTYuMy01LTIzLjYtNS0xMC4yIDAtMTkuMSAyLjctMjYuNiA4LjEtNy42IDUuNC0xMy4zIDEzLjEtMTcuMyAyM3MtNiAyMS41LTYgMzQuN2MwIDE0LjIgMi4yIDI2LjYgNi42IDM3LjIgNC40IDEwLjcgMTAuNiAxOC45IDE4LjYgMjQuN3MxNy4zIDguNyAyNy44IDguN2MxNCAwIDI5LjItNyA0NS42LTIxbDMuNiAxNi43Yy0xMyA2LjItMjcgOS4zLTQxLjggOS4zLTE1LjUuMS0yOS43LTMtNDIuNS05LjF6TTEyOTYuNyAyMzBjLTguMS03LjctMTIuMi0xNy45LTEyLjItMzAuNCAwLTE4LjkgOC43LTM0IDI2LjEtNDUuMSAxNy40LTExLjEgNDAuNS0yMCA2OS4zLTI2LjcgMC05LjUtMi4zLTE2LjgtNi45LTIxLjctNC42LTQuOS0xMC45LTcuNC0xOC44LTcuNC04LjYgMC0xNy42IDIuNi0yNyA3LjgtOS40IDUuMi0xNy44IDEyLTI1LjMgMjAuNmwtNC44LTE4LjRjOC42LTQgMTcuOC03LjEgMjcuNy05LjQgOS45LTIuMyAxOS40LTMuNSAyOC42LTMuNSAxNS4xIDAgMjcuMyAzLjQgMzYuNSAxMC4xIDkuMiA2LjggMTMuOCAxNy41IDEzLjggMzIuM1YyMzhIMTM4MHYtMjEuMmMtNyA3LjYtMTUgMTMuNy0yMy45IDE4LjEtOC45IDQuNS0xNy43IDYuNy0yNi41IDYuNy0xMy44IDAtMjQuOC0zLjktMzIuOS0xMS42em02My45LTEuOWM3LjYtMy45IDE0LTguOCAxOS40LTE0Ljd2LTgyLjNjLTI1LjYgNS42LTQzLjkgMTMuOC01NSAyNC42LTExLjEgMTAuOC0xNi42IDI0LjMtMTYuNiA0MC4zIDAgMTIuMiAyLjkgMjEuNiA4LjYgMjguMnMxMyA5LjggMjEuOSA5LjhjNi45LS4xIDE0LjEtMiAyMS43LTUuOXpNMTQzMy40IDI5Ni41VjEwMC4xaDIzLjlWMTE4YzUuNy03IDEyLjQtMTIuMyAyMC4yLTE2IDcuNy0zLjcgMTUuNi01LjUgMjMuNS01LjUgOS43IDAgMTguNyAyLjUgMjcgNy42czE0LjkgMTIuOCAyMCAyMy4xIDcuNiAyMi44IDcuNiAzNy41YzAgMTQuOC0zIDI4LTkuMSAzOS43LTYuMSAxMS43LTE0LjIgMjAuOC0yNC4zIDI3LjMtMTAuMiA2LjUtMjEuMiA5LjgtMzMuMiA5LjgtMTEgMC0yMS42LTMtMzEuNy05LjF2NjRoLTIzLjl6bTc2LjQtNjguN2M3LjUtNi4zIDEzLjItMTQuOCAxNy4zLTI1LjZzNi4xLTIyLjggNi4xLTM2YzAtMTMtMS44LTI0LjMtNS40LTMzLjlzLTguNC0xNi45LTE0LjYtMjJjLTYuMS01LjEtMTIuOS03LjYtMjAuNC03LjYtNi4yIDAtMTIuNCAxLjctMTguNyA1LTYuMyAzLjMtMTEuOSA4LTE2LjggMTQuMXYxMDcuNGM5LjIgNS40IDE4LjIgOC4xIDI3IDguMSA5LjUgMCAxOC0zLjIgMjUuNS05LjV6TTE1NzkuOCA2Ni40Yy0yLjYtMi42LTMuOS01LjgtMy45LTkuNCAwLTMuNyAxLjMtNi44IDMuOS05LjQgMi42LTIuNiA1LjgtMy45IDkuNC0zLjlzNi44IDEuMyA5LjQgMy45YzIuNiAyLjYgMy45IDUuOCAzLjkgOS40IDAgMy43LTEuMyA2LjgtMy45IDkuNC0yLjYgMi42LTUuOCAzLjktOS40IDMuOS0zLjYuMS02LjctMS4yLTkuNC0zLjl6TTE1NzcuMyAxMDAuMWgyMy45VjIzOGgtMjMuOXpNMTY2Mi40IDIzNy4xYy03LjItMy42LTEzLjEtOC44LTE3LjUtMTUuNi00LjUtNi44LTYuNy0xNC45LTYuNy0yNC4xdi05NGgtMTQuM3YtMy4zaDE3LjdjNS43LTYuNCAxMC0xNC4xIDEyLjktMjMuMyAyLjktOS4xIDQuMy0yMi4yIDQuMy0zMy4yaDMuMWwuMiA1Ni40aDM2LjV2My4zSDE2NjJ2MTA5LjhjMCA4LjQgMS45IDE1IDUuNyAxOS42czguNiA2LjkgMTQuMyA2LjljNi43IDAgMTMuNS0zLjIgMjAuNC05LjUgNi45LTYuNCAxMi44LTE1LjEgMTcuNS0yNi4ybDYuNyAxNC41Yy00LjMgOC0xMC4xIDE0LTE3LjUgMThzLTE1LjMgNi4xLTIzLjcgNi4xYy04LjEgMC0xNS44LTEuOC0yMy01LjR6TTE3NDguOSAyMzBjLTguMS03LjctMTIuMi0xNy45LTEyLjItMzAuNCAwLTE4LjkgOC43LTM0IDI2LjEtNDUuMSAxNy40LTExLjEgNDAuNS0yMCA2OS4zLTI2LjcgMC05LjUtMi4zLTE2LjgtNi45LTIxLjctNC42LTQuOS0xMC45LTcuNC0xOC44LTcuNC04LjYgMC0xNy42IDIuNi0yNyA3LjgtOS40IDUuMi0xNy44IDEyLTI1LjMgMjAuNmwtNC44LTE4LjRjOC42LTQgMTcuOC03LjEgMjcuNy05LjQgOS45LTIuMyAxOS40LTMuNSAyOC42LTMuNSAxNS4xIDAgMjcuMyAzLjQgMzYuNSAxMC4xIDkuMiA2LjggMTMuOCAxNy41IDEzLjggMzIuM1YyMzhIMTgzMnYtMjEuMmMtNyA3LjYtMTUgMTMuNy0yMy45IDE4LjEtOC45IDQuNS0xNy43IDYuNy0yNi41IDYuNy0xMy42IDAtMjQuNi0zLjktMzIuNy0xMS42em02My44LTEuOWM3LjYtMy45IDE0LTguOCAxOS40LTE0Ljd2LTgyLjNjLTI1LjYgNS42LTQzLjkgMTMuOC01NSAyNC42LTExLjEgMTAuOC0xNi42IDI0LjMtMTYuNiA0MC4zIDAgMTIuMiAyLjkgMjEuNiA4LjYgMjguMnMxMyA5LjggMjEuOSA5LjhjNy0uMSAxNC4yLTIgMjEuNy01Ljl6TTE5MTQgMjM4aC0yMy45VjcwLjVoMjMuOVYyMzh6TTE5MC40IDU2LjljMCA3LjQtNS45IDEzLjQtMTMuMyAxMy40cy0xMy40LTUuOS0xMy40LTEzLjMgNS45LTEzLjQgMTMuMy0xMy40IDEzLjQgNiAxMy40IDEzLjNNMTc2LjUgMTA5LjRjLTE0LjUgMC0yOC4yLTYuMS00NC40LTIzLjVsMTUuNy0xMS4zYzIwLjQgMTkgMzAuNSAyMi42IDU4LjUtLjFsMTUuNSAxMS4yYy0xNi45IDE2LjEtMzAuOCAyMy43LTQ1LjMgMjMuN3pNMjQ4LjUgMjIxLjZjLTQuMy02LTEyLjctNy40LTE4LjYtMy02IDQuMy03LjQgMTIuNy0zIDE4LjcgNC4zIDYgMTIuNyA3LjMgMTguNiAzIDUuOS00LjMgNy4zLTEyLjcgMy0xOC43TTIwMi40IDIzNy45aC0xOS4xYzIuNy00NC40IDI3LjUtNjcuNiA3Mi45LTU4LjlsLTYgMTguNGMtMjkuNi00LjEtNDIuNSAzLjktNDcuOCA0MC41ek0yNzQuNyAxMzUuNWMtNyAyLjMtMTQuNi0xLjUtMTYuOS04LjUtMi4zLTcgMS41LTE0LjYgOC41LTE2LjkgNy0yLjMgMTQuNSAxLjUgMTYuOSA4LjUgMi4zIDctMS41IDE0LjYtOC41IDE2LjlNMjU3LjMgMTc1LjNjLTQ0LjQtMjIuNi00OC4zLTQ4LTI5LjQtODUuMWwxNS42IDExLjRjLTEyLjggMjYuMi05LjMgMzkuMSAxOS44IDU1LjNsLTYgMTguNHpNMTA3LjYgMjIzYzQuMy02IDEyLjctNy40IDE4LjctMyA2IDQuMyA3LjMgMTIuNyAzIDE4LjdzLTEyLjcgNy4zLTE4LjYgM2MtNi4xLTQuMy03LjUtMTIuNy0zLjEtMTguN00xNTIuOCAyMzcuOWMtMy4xLTMyLjUtMTguNC00MC4yLTQ4LjQtMzkuM2wtNS45LTE4YzQ2LjItNiA2OC4yIDEyLjUgNzQuMiA1Ny4zaC0xOS45ek03OS40IDEzNS41YzcgMi4zIDE0LjYtMS41IDE2LjktOC41IDIuMy03LTEuNS0xNC42LTguNS0xNi45LTctMi4zLTE0LjYgMS41LTE2LjkgOC41LTIuMyA3IDEuNSAxNC42IDguNSAxNi45TTk2LjggMTc1LjVsLTYtMTguNWMyMi45LTkuMiAzNC4zLTIyLjQgMTkuOC01NS4ybDE1LjYtMTEuNGMyMCA0MS40IDkuNCA3MC42LTI5LjQgODUuMXoiPjwvcGF0aD48L3N2Zz4="
   },
   {
     "url": "https://disruptafrica.com/2025/07/15/applications-open-for-5th-visa-africa-fintech-accelerator/",
@@ -959,61 +901,10 @@
     "description": "Launched in 2023in line with Visa’s pledge to invest US$1 billion in financial inclusion in Africa by 2027, the Africa Fintech Accelerator has so far accelerated dozens of startups across four cohorts, with almost 20 active partnerships now in place. Four startupsthat took part in the first programmein 2023recently secured strategic funding from Visa, while it also recentlyinvested in two ventures from the third programme. Startups are now invited to participate in the fifth edition of the three-month initiative, which is designed to provide mentorship, technological resources, and funding opportunities. Applications are openhereuntil August 15.",
     "content": "Global payment card network Visa has opened applications for the fifth edition of its biannual Africa Fintech Accelerator, which provides ventures with access to tools, industry connections, and mentorship to help them scale their innovative solutions.Launched in 2023in line with Visa’s pledge to invest US$1 billion in financial inclusion in Africa by 2027, the Africa Fintech Accelerator has so far accelerated dozens of startups across four cohorts, with almost 20 active partnerships now in place.Four startupsthat took part in the first programmein 2023recently secured strategic funding from Visa, while it also recentlyinvested in two ventures from the third programme.Startups are now invited to participate in the fifth edition of the three-month initiative, which is designed to provide mentorship, technological resources, and funding opportunities.Applications are openhereuntil August 15.",
     "meta_title": "Visa Africa Fintech Accelerator: Applications Open",
-    "Meta Description": "Apply now for Visa's Africa Fintech Accelerator!  Get mentorship, resources & funding to scale your fintech startup. Deadline: August 15th.",
-    "slug": "visa-africa-fintech-accelerator-applications-open",
+    "Meta Description": "Apply now for the 5th Visa Africa Fintech Accelerator!  Get mentorship, resources & funding to scale your fintech solution. Deadline: August 15.",
+    "slug": "visa-africa-fintech-accelerator",
     "regions": [
-      "Algeria",
-      "Angola",
-      "Benin",
-      "Botswana",
-      "Burkina Faso",
-      "Burundi",
-      "Cabo Verde",
-      "Cameroon",
-      "Central African Republic",
-      "Chad",
-      "Comoros",
-      "Congo",
-      "Côte d'Ivoire",
-      "DR Congo",
-      "Djibouti",
-      "Egypt",
-      "Equatorial Guinea",
-      "Eritrea",
-      "Eswatini",
-      "Ethiopia",
-      "Gabon",
-      "Guinea",
-      "Guinea-Bissau",
-      "Kenya",
-      "Lesotho",
-      "Liberia",
-      "Libya",
-      "Madagascar",
-      "Malawi",
-      "Mali",
-      "Mauritania",
-      "Mauritius",
-      "Morocco",
-      "Mozambique",
-      "Namibia",
-      "Niger",
-      "Nigeria",
-      "Rwanda",
-      "Sao Tome & Principe",
-      "Senegal",
-      "Seychelles",
-      "Sierra Leone",
-      "Somalia",
-      "South Africa",
-      "South Sudan",
-      "Sudan",
-      "Tanzania",
-      "Togo",
-      "Tunisia",
-      "Uganda",
-      "Zambia",
-      "Zimbabwe"
+      "Africa"
     ],
     "sectors": [
       "FinTech"
@@ -1022,12 +913,11 @@
       "Stage Agnostic"
     ],
     "categories": [
-      "Accelerator",
-      "Funding Opportunity"
+      "Accelerator"
     ],
-    "draft_summary": "- **Introduction:** Visa's Africa Fintech Accelerator, a three-month initiative, is now accepting applications for its fifth cohort.\n\n- **Program Overview:** Launched in 2023 as part of Visa's commitment to invest US$1 billion in African financial inclusion by 2027, the accelerator provides startups with mentorship, technological resources, and funding opportunities.\n\n- **Past Successes:**  Previous cohorts have seen dozens of startups participate, with almost 20 active partnerships established.  Several startups from earlier programs have already secured strategic funding from Visa.\n\n- **Application Details:** Applications for the fifth cohort are open until August 15th.  The program offers a three-month duration and focuses on scaling innovative fintech solutions.\n\n- **Conclusion:**  The Visa Africa Fintech Accelerator presents a valuable opportunity for African fintech startups seeking to expand their reach and impact.",
-    "main_image_alt": "Visa Africa Fintech Accelerator Logo",
-    "organizer_logo_alt": "Visa Logo",
+    "draft_summary": "- **Introduction:** Visa's Africa Fintech Accelerator program is now accepting applications for its fifth cohort. This three-month initiative offers mentorship, resources, and funding opportunities for African fintech startups.\n\n- **Program Overview:** Launched in 2023, the accelerator aligns with Visa's commitment to invest US$1 billion in African financial inclusion by 2027.  Previous cohorts have supported dozens of startups, fostering almost 20 active partnerships.  Several participating startups have secured strategic funding from Visa.\n\n- **Program Benefits:** The program provides participants with:\n    - Mentorship from industry experts\n    - Access to technological resources\n    - Funding opportunities\n\n- **Application Details:** Applications are open until August 15th.  Further details on how to apply are not provided in the source material.\n\n- **Conclusion:** The Visa Africa Fintech Accelerator presents a valuable opportunity for African fintech startups seeking to scale their innovative solutions. The program’s track record of success and partnerships with Visa make it an attractive option for aspiring entrepreneurs.",
+    "main_image_alt": "Visa Africa Fintech Accelerator logo and imagery",
+    "organizer_logo_alt": "Visa logo",
     "extracted_published_date": "2025-07-15T09:00:40+02:00",
     "extracted_deadline": "august 15",
     "organization_name": "Visa",
@@ -1041,9 +931,9 @@
     "subtitle": "Kenya’s Vumah Labs, a deep-tech innovation lab specialising in privacy-first AI, blockchain, and Zero-Knowledge Proof (ZKP) technologies, has joined FasterCapital’s LaunchUp programme.",
     "description": "Founded in 2023 and rebranded in 2025, Vumah Labs is a Nairobi-based deeptech innovation lab dedicated to developing privacy-first AI, blockchain, and Zero-Knowledge Proof solutions. The company focuses on combating misinformation, securing legal and health data, and enhancing civic transparency across Africa. Vumah Labs combines cutting-edge technology with local insights to build ethical, scalable systems that restore trust in critical sectors. FasterCapital, meanwhile, is a global venture builder and online incubator dedicated to co-funding and co-founding innovative startups. Its LaunchUp programme is designed to help early-stage startups build scalable solutions with mentorship, strategic guidance, and network support. Vumah Labs has now joined LaunchUp to boost its mission to tackle misinformation, secure legal and health data, and enhance civic transparency across Africa by leveraging FasterCapital’s global reach, expertise, and capital-raising support. The company’s flagship products include Kweli, an AI-powered deepfake detection platform; ZK Consent & Research Gateway for privacy-compliant health research consent management; Digital Evidence Validator ensuring secure legal evidence chain-of-custody; and Civic ID & Record Hashing Tool for verifiable public record integrity. Through the LaunchUp programme, Vumah Labs gains access to FasterCapital’s extensive global network, technical mentorship, and capital-raising expertise. FasterCapital’s rigorous selection process ensures only high-potential startups join its portfolio, affirming Vumah Labs’ innovation and market fit. The partnership will accelerate MVP development, pilot deployments, and SaaS rollout, positioning Vumah Labs for rapid regional scale-up. FasterCapital’s strategic guidance and funding support are critical to unlocking Vumah Labs’ full potential as Africa’s leader in digital trust infrastructure. “Partnering with FasterCapital is a pivotal step in realising our vision of building scalable, ethical systems that protect privacy and secure critical data across Africa. Their expertise and network provide the perfect launchpad to accelerate our solutions from pilot to widespread adoption, ultimately restoring trust in vital sectors like health, legal, and civic institutions,” said Chepkemoi Chepkwony, CEO and founder of Vumah Labs.",
     "content": "Kenya’s Vumah Labs, a deep-tech innovation lab specialising in privacy-first AI, blockchain, and Zero-Knowledge Proof (ZKP) technologies, has joined FasterCapital’s LaunchUp programme.Founded in 2023 and rebranded in 2025, Vumah Labs is a Nairobi-based deeptech innovation lab dedicated to developing privacy-first AI, blockchain, and Zero-Knowledge Proof solutions. The company focuses on combating misinformation, securing legal and health data, and enhancing civic transparency across Africa. Vumah Labs combines cutting-edge technology with local insights to build ethical, scalable systems that restore trust in critical sectors.FasterCapital, meanwhile, is a global venture builder and online incubator dedicated to co-funding and co-founding innovative startups. Its LaunchUp programme is designed to help early-stage startups build scalable solutions with mentorship, strategic guidance, and network support.Vumah Labs has now joined LaunchUp to boost its mission to tackle misinformation, secure legal and health data, and enhance civic transparency across Africa by leveraging FasterCapital’s global reach, expertise, and capital-raising support.The company’s flagship products include Kweli, an AI-powered deepfake detection platform; ZK Consent & Research Gateway for privacy-compliant health research consent management; Digital Evidence Validator ensuring secure legal evidence chain-of-custody; and Civic ID & Record Hashing Tool for verifiable public record integrity.Through the LaunchUp programme, Vumah Labs gains access to FasterCapital’s extensive global network, technical mentorship, and capital-raising expertise. FasterCapital’s rigorous selection process ensures only high-potential startups join its portfolio, affirming Vumah Labs’ innovation and market fit.The partnership will accelerate MVP development, pilot deployments, and SaaS rollout, positioning Vumah Labs for rapid regional scale-up. FasterCapital’s strategic guidance and funding support are critical to unlocking Vumah Labs’ full potential as Africa’s leader in digital trust infrastructure.“Partnering with FasterCapital is a pivotal step in realising our vision of building scalable, ethical systems that protect privacy and secure critical data across Africa. Their expertise and network provide the perfect launchpad to accelerate our solutions from pilot to widespread adoption, ultimately restoring trust in vital sectors like health, legal, and civic institutions,” said Chepkemoi Chepkwony, CEO and founder of Vumah Labs.",
-    "meta_title": "Vumah Labs rejoint le programme LaunchUp de FasterCapital",
-    "Meta Description": "Vumah Labs, un laboratoire d'innovation kenyan spécialisé en IA, blockchain et ZKP, rejoint le programme LaunchUp de FasterCapital pour accélérer son développement.",
-    "slug": "vumah-labs-rejoint-fastercapital-launchup",
+    "meta_title": "Vumah Labs Joins FasterCapital's LaunchUp Program",
+    "Meta Description": "Kenya's Vumah Labs, a privacy-first AI innovator, joins FasterCapital's LaunchUp program to scale its solutions across Africa.",
+    "slug": "vumah-labs-joins-fastercapital-launchup-programme",
     "regions": [
       "Kenya"
     ],
@@ -1052,8 +942,8 @@
       "Blockchain",
       "DeepTech",
       "HealthTech",
-      "Regulatory Tech",
-      "Cybersecurity & Digital ID"
+      "Cybersecurity & Digital ID",
+      "Regulatory Tech"
     ],
     "stages": [
       "Pre-Series A"
@@ -1061,9 +951,9 @@
     "categories": [
       "Incubator"
     ],
-    "draft_summary": "- **Introduction:** Vumah Labs, un laboratoire d'innovation deep-tech kenyan, a rejoint le programme LaunchUp de FasterCapital.\n\n- **À propos de Vumah Labs:** Fondé en 2023 et rebaptisé en 2025, Vumah Labs se concentre sur le développement de solutions d'IA respectueuses de la vie privée, de blockchain et de Zero-Knowledge Proof (ZKP).  Ses solutions visent à lutter contre la désinformation, à sécuriser les données juridiques et de santé, et à améliorer la transparence civique en Afrique.  Ses produits phares incluent une plateforme de détection des deepfakes, une passerelle de consentement pour la recherche en santé, un validateur de preuves numériques et un outil de hachage des registres publics.\n\n- **À propos de FasterCapital:** FasterCapital est un constructeur de projets et un incubateur en ligne qui cofinance et cofonde des startups innovantes. Son programme LaunchUp offre mentorat, conseils stratégiques et soutien réseau aux startups.\n\n- **Le partenariat:** Grâce à LaunchUp, Vumah Labs bénéficiera du réseau mondial, de l'expertise et du soutien au financement de FasterCapital. Ce partenariat permettra d'accélérer le développement de MVP, les déploiements pilotes et le déploiement SaaS, positionnant Vumah Labs pour une croissance rapide en Afrique.\n\n- **Conclusion:** Ce partenariat stratégique marque une étape importante pour Vumah Labs dans sa mission de construire des systèmes éthiques et évolutifs qui protègent la confidentialité et sécurisent les données critiques en Afrique.",
-    "main_image_alt": "Logo de Vumah Labs et FasterCapital",
-    "organizer_logo_alt": "Logo de FasterCapital",
+    "draft_summary": "- **Introduction:** This article highlights Vumah Labs' participation in FasterCapital's LaunchUp program, an incubator supporting early-stage startups.\n\n- **Vumah Labs Overview:** Vumah Labs, a Nairobi-based deep-tech company founded in 2023 and rebranded in 2025, specializes in privacy-first AI, blockchain, and Zero-Knowledge Proof technologies.  Their focus is on combating misinformation, securing sensitive data (legal and health), and enhancing civic transparency across Africa.  Key products include Kweli (deepfake detection), ZK Consent & Research Gateway, Digital Evidence Validator, and Civic ID & Record Hashing Tool.\n\n- **FasterCapital's LaunchUp Program:** FasterCapital is a global venture builder and online incubator providing co-funding, co-founding, mentorship, strategic guidance, and network support to early-stage startups. The LaunchUp program is designed to help these startups build scalable solutions.\n\n- **The Partnership:** Vumah Labs joined LaunchUp to leverage FasterCapital's resources for accelerating MVP development, pilot deployments, and SaaS rollout, aiming for rapid regional expansion.  This collaboration will enhance Vumah Labs' mission and establish them as a leader in digital trust infrastructure in Africa. \n\n- **Conclusion:** The partnership between Vumah Labs and FasterCapital signifies a crucial step in advancing privacy-focused technological solutions across Africa, aiming to enhance trust and security in various sectors.",
+    "main_image_alt": "Vumah Labs logo and FasterCapital logo together",
+    "organizer_logo_alt": "FasterCapital logo",
     "extracted_published_date": "2025-07-14T09:00:50+02:00",
     "extracted_deadline": null,
     "organization_name": "FasterCapital",
@@ -1076,14 +966,15 @@
     "subtitle": "Thinkroom and The Oracle Group have partnered to launch the Oracle Innovate Lab, a founder-focused programme designed to support  early and growth-stage entrepreneurs in Eswatini in scaling their businesses and stepping into new markets.",
     "description": "Launching in August 2025, the six-month programme will combine one-on-one mentorship, hands-on masterclasses, and practical sessions to help founders build, pitch, and grow with purpose. The hybrid format allows for both online learning and in-person connection, creating a balance between access and accountability. “Founders in Eswatini are not short on innovation, grit, or drive. However, they need the support infrastructure around them to take that next big step. With Oracle Innovate Lab, we are creating a space where we can intentionally build growth in ten high-potential SMEs,” said Catherine Young, founder of Thinkroom. “This partnership with Oracle is an example of what it means to build meaningful growth with partners who want to make real impact. We are excited to kick off our first cohort with the Oracle Innovate Lab.” Applications are openhereuntil July 23.",
     "content": "Thinkroom and The Oracle Group have partnered to launch the Oracle Innovate Lab, a founder-focused programme designed to support  early and growth-stage entrepreneurs in Eswatini in scaling their businesses and stepping into new markets.Launching in August 2025, the six-month programme will combine one-on-one mentorship, hands-on masterclasses, and practical sessions to help founders build, pitch, and grow with purpose. The hybrid format allows for both online learning and in-person connection, creating a balance between access and accountability.“Founders in Eswatini are not short on innovation, grit, or drive. However, they need the support infrastructure around them to take that next big step. With Oracle Innovate Lab, we are creating a space where we can intentionally build growth in ten high-potential SMEs,” said Catherine Young, founder of Thinkroom.“This partnership with Oracle is an example of what it means to build meaningful growth with partners who want to make real impact. We are excited to kick off our first cohort with the Oracle Innovate Lab.”Applications are openhereuntil July 23.",
-    "meta_title": "Oracle Innovate Lab: Programme pour entrepreneurs au Eswatini",
-    "Meta Description": "Oracle Innovate Lab soutient les entrepreneurs du Eswatini. Programme de 6 mois avec mentorat, masterclasses et sessions pratiques. Candidatures jusqu'au 23 juillet.",
+    "meta_title": "Oracle Innovate Lab: Programme pour entrepreneurs d'Eswatini",
+    "Meta Description": "Oracle Innovate Lab soutient les entrepreneurs d'Eswatini. Programme de 6 mois combinant mentorat, masterclasses et sessions pratiques. Candidatures jusqu'au 23 juillet.",
     "slug": "oracle-innovate-lab-eswatini",
     "regions": [
       "Eswatini"
     ],
     "sectors": [
-      "Sector Agnostic"
+      "Sector Agnostic",
+      "Technology"
     ],
     "stages": [
       "Pre-Series A",
@@ -1093,44 +984,27 @@
       "Accelerator",
       "Incubator"
     ],
-    "draft_summary": [
-      {
-        "type": "introduction",
-        "content": "L'Oracle Innovate Lab, un programme lancé par Thinkroom et The Oracle Group, vise à soutenir les entrepreneurs en phase de démarrage et de croissance au Eswatini."
+    "draft_summary": {
+      "introduction": "L'Oracle Innovate Lab, un programme collaboratif lancé par Thinkroom et The Oracle Group, offre un soutien aux entrepreneurs en phase de démarrage et de croissance en Eswatini.",
+      "programme_details": {
+        "objectif": "Ce programme vise à aider les entrepreneurs à développer leurs entreprises et à accéder à de nouveaux marchés.",
+        "duree": "D'une durée de six mois, il débutera en août 2025.",
+        "format": "Il adopte un format hybride, alliant apprentissage en ligne et rencontres en personne.",
+        "composantes": "Le programme comprend un mentorat individuel, des masterclasses pratiques et des sessions de travail concrètes pour aider les fondateurs à construire, présenter et développer leurs entreprises.",
+        "cibles": "Il s'adresse à dix PME à fort potentiel en Eswatini."
       },
-      {
-        "type": "body",
-        "heading": "Détails du Programme",
-        "content": "Ce programme de six mois, débutant en août 2025, offre un accompagnement personnalisé par le biais de mentorat individuel, de masterclasses pratiques et de sessions interactives.  Il adopte un format hybride, combinant apprentissage en ligne et rencontres en présentiel pour un équilibre entre accessibilité et suivi."
-      },
-      {
-        "type": "body",
-        "heading": "Objectifs",
-        "content": "L'objectif est d'aider les entrepreneurs à développer, présenter et faire croître leurs entreprises de manière stratégique.  Le programme se concentrera sur dix PME à fort potentiel."
-      },
-      {
-        "type": "body",
-        "heading": "Témoignages",
-        "content": "Catherine Young, fondatrice de Thinkroom, souligne le potentiel d'innovation des entrepreneurs du Eswatini mais met l'accent sur la nécessité d'une infrastructure de soutien pour franchir les étapes suivantes.  Elle décrit le partenariat avec Oracle comme constructif et axé sur un impact réel."
-      },
-      {
-        "type": "body",
-        "heading": "Informations Pratiques",
-        "content": "Les candidatures sont ouvertes jusqu'au 23 juillet.  Pour plus d'informations et pour soumettre une candidature, veuillez vous rendre sur le lien indiqué dans le texte original (lien non fourni ici)."
-      },
-      {
-        "type": "conclusion",
-        "content": "L'Oracle Innovate Lab représente une initiative importante pour le développement entrepreneurial au Eswatini, offrant un soutien structuré aux entreprises en phase de croissance."
-      }
-    ],
-    "main_image_alt": "Image du logo Oracle Innovate Lab ou une photo représentative du programme",
-    "organizer_logo_alt": "Logo de Thinkroom et/ou The Oracle Group",
+      "partenaires": "Le partenariat entre Thinkroom et The Oracle Group souligne l'engagement envers une croissance significative et un impact réel pour les entrepreneurs.",
+      "candidatures": "Les candidatures sont ouvertes jusqu'au 23 juillet.  Pour plus d'informations et soumettre votre candidature, veuillez vous rendre sur le site web indiqué dans le texte source.",
+      "conclusion": "L'Oracle Innovate Lab représente une opportunité unique pour les entrepreneurs d'Eswatini de bénéficier d'un soutien et d'un encadrement adaptés à leurs besoins spécifiques, favorisant ainsi leur croissance et leur développement."
+    },
+    "main_image_alt": "Image du logo Oracle Innovate Lab ou d'une photo représentant le programme.",
+    "organizer_logo_alt": "Logos de Thinkroom et Oracle Group",
     "extracted_published_date": "2025-07-11T09:00:51+02:00",
     "extracted_deadline": "july 23",
     "organization_name": "Thinkroom and The Oracle Group",
-    "organization_website": "https://www.zawya.com/en/economy/africa/thinkroom-and-the-oracle-group-launch-oracle-innovate-lab-to-support-eswatini-entrepreneurs-eh7gax9h",
-    "organization_logo": "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iemF3eWFfbG9nb19zdmdfX3phd3lhX2xvZ28iIHZpZXdib3g9IjAgMCA1NDMuOCAyNDQuNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBjbGFzcz0iemF3eWFfbG9nb19zdmdfX3N0MCIgZD0iTTAgMGg1NDMuOHYyNDQuNEgweiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwNjQiPjxwYXRoIGQ9Ik0yODUuOSAxNjhsMTEuOS0zNS44IDExLjggMzUuOGgtMjMuN3ptMTcyLjIgMGwxMS45LTM1LjggMTEuOCAzNS44aC0yMy43em0tMTA1LjMgMGw3LjMtMzAuMSA3LjMgMzAuMWgtMTQuNnptMTQzIDBWNDhMNDggMTY4aDE3OS4ydi05LjlsMjAuNC0yNy40aC0yMC40VjEyMEgyNjR2OS44bC0yMC41IDI3LjRoMjFWMTY4aDcuM2wxOC4xLTQ4aDE1LjZsMTguMSA0OGgxNi4xTDMyNiAxMjBoMTMuOWw3LjMgMzIgOC4yLTMyaDkuNWw4LjIgMzIgNy4yLTMyaDE0bC0xMy44IDQ4SDQxNnYtMTkuNEwzOTcuNyAxMjBoMTRsMTAuNCAxNy43IDEwLjMtMTcuN2gxNGwtMTguMSAyOC43VjE2OEg0NDRsMTguMS00OGgxNS42bDE4LjEgNDh6TTQxNC4yIDE4Mi40aDcuMWMyLjYgMCA0LjEgMS42IDQuMSAzLjcgMCAxLjgtMS4yIDMtMi41IDMuMyAxLjUuMiAyLjggMS44IDIuOCAzLjUgMCAyLjItMS41IDMuOS00LjIgMy45aC03LjJ2LTE0LjR6bTYuNiA2YzEuMyAwIDItLjggMi0xLjggMC0xLjEtLjctMS45LTItMS45aC00djMuN2g0em0uMSA2LjJjMS40IDAgMi4yLS44IDIuMi0yIDAtMS4xLS44LTItMi4yLTJoLTQuMXY0aDQuMXpNNDMxLjYgMTkwLjhsLTUuNi04LjRoMi45bDQgNi4xIDMuOS02LjFoMi45bC01LjUgOC40djZoLTIuNXYtNnpNNDQ2LjcgMTgyLjRoMi41djEyLjFoNi4zdjIuMmgtOC44di0xNC4zek00NTguMyAxOTIuOGMxIDEuMSAyLjUgMiA0LjUgMiAyLjEgMCAyLjktMSAyLjktMiAwLTEuMy0xLjUtMS43LTMuMy0yLjEtMi4zLS42LTUuMS0xLjMtNS4xLTQuMyAwLTIuNCAyLjEtNC4yIDUuMi00LjIgMi4yIDAgNCAuNyA1LjQgMmwtMS40IDEuOWMtMS4xLTEuMS0yLjYtMS42LTQuMS0xLjYtMS41IDAtMi40LjctMi40IDEuOHMxLjUgMS41IDMuMiAxLjljMi40LjYgNS4yIDEuMyA1LjIgNC41IDAgMi40LTEuNyA0LjQtNS41IDQuNC0yLjYgMC00LjYtLjktNS44LTIuM2wxLjItMnpNNDcwLjYgMTgyLjRoOS44djIuMmgtNy4zdjMuN2g3LjJ2Mi4yaC03LjJ2NGg3LjN2Mi4yaC05Ljh2LTE0LjN6TTQ4OS45IDE4Mi4yYzIuOCAwIDQuNiAxLjMgNS44IDNsLTIuMSAxLjJjLS44LTEuMS0yLjEtMS45LTMuNy0xLjktMi44IDAtNC45IDIuMi00LjkgNS4yczIuMSA1LjIgNC45IDUuMmMxLjUgMCAyLjgtLjcgMy40LTEuM3YtMi4ySDQ4OXYtMi4yaDYuOHY1LjRjLTEuNCAxLjYtMy40IDIuNi01LjkgMi42LTQuMSAwLTcuNS0yLjktNy41LTcuNHMzLjMtNy42IDcuNS03LjZ6Ij48L3BhdGg+PC9nPjwvc3ZnPg==",
-    "serpapi_enhanced": true
+    "organization_website": null,
+    "organization_logo": null,
+    "serpapi_enhanced": false
   },
   {
     "url": "https://disruptafrica.com/2025/07/10/applications-open-for-mest-ai-startup-programme/",
@@ -1139,23 +1013,25 @@
     "description": "MEST, a pan-African software and entrepreneurship training programme, seed fund, and incubator, has for the last 17 years trained and supported software entrepreneurs across the continent, contributing to Africa’s innovation economy. Now, as artificial intelligence transforms industries at a very rapid pace, MEST is positioning Africa’s tech entrepreneurs at the forefront of this shift. The redesign of its flagship programme is built to prepare Africa’s most promising tech talents to build, launch, and scale world-class AI startups. “Africa has world-class tech talent, and it’s time AI solutions built on the continent reach users everywhere,” said Emily Fiagbedzi, director of the MEST AI Startup Programme. “MEST is proud to contribute to this reality through our training and incubation programme that equips talent from across Africa with training and mentoring from international experts for the development of globally relevant AI software.” The MEST AI Startup Programme is a fully-funded, immersive experience hosted in Accra, Ghana, which equips Africa’s most promising AI entrepreneurs with the technical, business, and leadership skills to build and scale globally competitive startups. Over an intensive seven-month training phase, founders receive hands-on instruction, technical mentorship, and business coaching from global experts while developing AI-powered solutions to real-world challenges. The top ventures then advance to a four-month incubation period, where they refine their products, secure market traction, and sharpen their go-to-market strategies. At the end of incubation, startups have an opportunity to pitch for pre-seed investment of up to US$100, 000 and join the MEST portfolio. “Mastering AI and the advanced AI tools available today is a must for any entrepreneur and further levelling the playing field. The world has never been flatter. We are proud and excited to announce that the next batch of MEST entrepreneurs will be trained by some of the most knowledgeable people in the industry from companies such as OpenAI, Perplexity, Google, and Meltwater,” said MEST founder Jorn Lyseggen. For the 2026 intake, the programme is open to African founders based in West Africa aged 21 – 30 with software development experience who want to start their own AI startup. Applications are openhere.",
     "content": "The Meltwater Entrepreneurial School of Technology (MEST), a leader in tech entrepreneurship training and early-to-growth-stage startup support, has opened applications for its newly-evolved MEST AI Startup Programme.MEST, a pan-African software and entrepreneurship training programme, seed fund, and incubator, has for the last 17 years trained and supported software entrepreneurs across the continent, contributing to Africa’s innovation economy.Now, as artificial intelligence transforms industries at a very rapid pace, MEST is positioning Africa’s tech entrepreneurs at the forefront of this shift. The redesign of its flagship programme is built to prepare Africa’s most promising tech talents to build, launch, and scale world-class AI startups.“Africa has world-class tech talent, and it’s time AI solutions built on the continent reach users everywhere,” said Emily Fiagbedzi, director of the MEST AI Startup Programme. “MEST is proud to contribute to this reality through our training and incubation programme that equips talent from across Africa with training and mentoring from international experts for the development of globally relevant AI software.”The MEST AI Startup Programme is a fully-funded, immersive experience hosted in Accra, Ghana, which equips Africa’s most promising AI entrepreneurs with the technical, business, and leadership skills to build and scale globally competitive startups. Over an intensive seven-month training phase, founders receive hands-on instruction, technical mentorship, and business coaching from global experts while developing AI-powered solutions to real-world challenges.The top ventures then advance to a four-month incubation period, where they refine their products, secure market traction, and sharpen their go-to-market strategies. At the end of incubation, startups have an opportunity to pitch for pre-seed investment of up to US$100, 000 and join the MEST portfolio.“Mastering AI and the advanced AI tools available today is a must for any entrepreneur and further levelling the playing field. The world has never been flatter. We are proud and excited to announce that the next batch of MEST entrepreneurs will be trained by some of the most knowledgeable people in the industry from companies such as OpenAI, Perplexity, Google, and Meltwater,” said MEST founder Jorn Lyseggen.For the 2026 intake, the programme is open to African founders based in West Africa aged 21 – 30 with software development experience who want to start their own AI startup. Applications are openhere.",
     "meta_title": "MEST AI Startup Programme: Applications Open",
-    "Meta Description": "Apply now for the MEST AI Startup Programme in Accra, Ghana.  Fully funded, 7-month training & 4-month incubation for African AI entrepreneurs.",
+    "Meta Description": "Apply now for the MEST AI Startup Programme!  A fully funded, 7-month program in Accra, Ghana, equipping African AI entrepreneurs with skills to build & scale globally.",
     "slug": "mest-ai-startup-programme",
     "regions": [
-      "Togo",
       "Benin",
-      "Nigeria",
-      "Ghana",
-      "Côte d'Ivoire",
-      "Liberia",
-      "Sierra Leone",
-      "Guinea",
-      "Senegal",
-      "Gabon",
-      "Cameroon",
       "Burkina Faso",
+      "Cabo Verde",
+      "Cameroon",
+      "Côte d'Ivoire",
+      "Gabon",
+      "Guinea",
+      "Guinea-Bissau",
+      "Liberia",
       "Mali",
-      "Mauritania"
+      "Mauritania",
+      "Niger",
+      "Nigeria",
+      "Senegal",
+      "Sierra Leone",
+      "Togo"
     ],
     "sectors": [
       "Artificial Intelligence",
@@ -1165,48 +1041,56 @@
       "Pre-seed"
     ],
     "categories": [
-      "Incubator",
-      "Accelerator"
+      "Accelerator",
+      "Incubator"
     ],
-    "draft_summary": "- **Introduction:** The Meltwater Entrepreneurial School of Technology (MEST) has announced the opening of applications for its revamped MEST AI Startup Programme, designed to foster AI-driven startups in Africa.\n\n- **Programme Overview:**  MEST, a pan-African software and entrepreneurship training program, seed fund, and incubator, is launching this fully-funded, immersive program in Accra, Ghana. The program aims to equip promising AI entrepreneurs with the necessary technical, business, and leadership skills.\n\n- **Training and Incubation:** The seven-month training phase involves hands-on instruction, technical mentorship, and business coaching from global experts. Successful ventures then progress to a four-month incubation period to refine products, secure market traction, and develop go-to-market strategies.\n\n- **Funding Opportunity:**  Top-performing startups have the opportunity to secure pre-seed funding of up to US$100,000 and join the MEST portfolio.\n\n- **Eligibility:** The 2026 intake is open to African founders based in West Africa, aged 21-30, with software development experience and a desire to launch an AI startup.\n\n- **Mentorship:**  The program boasts a prestigious roster of mentors from companies such as OpenAI, Perplexity, Google, and Meltwater.\n\n- **Conclusion:** The MEST AI Startup Programme represents a significant opportunity for aspiring African AI entrepreneurs to receive comprehensive training, mentorship, and funding to develop globally competitive startups.",
+    "draft_summary": {
+      "introduction": "The Meltwater Entrepreneurial School of Technology (MEST) has opened applications for its newly evolved MEST AI Startup Programme, a fully funded initiative designed to empower African AI entrepreneurs.",
+      "programme_details": {
+        "title": "Programme Overview",
+        "points": [
+          "This immersive programme takes place in Accra, Ghana, and provides comprehensive training and mentorship to promising AI entrepreneurs across Africa.",
+          "The programme covers technical skills, business acumen, and leadership development, equipping participants to build globally competitive AI startups.",
+          "It comprises two phases: a seven-month intensive training phase followed by a four-month incubation period."
+        ]
+      },
+      "training_phase": {
+        "title": "Intensive Training Phase",
+        "points": [
+          "Participants receive hands-on instruction, technical mentorship, and business coaching from global experts.",
+          "The focus is on developing AI-powered solutions to address real-world challenges."
+        ]
+      },
+      "incubation_phase": {
+        "title": "Incubation Phase",
+        "points": [
+          "Top ventures progress to a four-month incubation period.",
+          "During this phase, startups refine their products, secure market traction, and hone their go-to-market strategies.",
+          "At the conclusion of the incubation period, there is an opportunity to pitch for pre-seed investment of up to US$100,000."
+        ]
+      },
+      "eligibility": {
+        "title": "Eligibility Criteria",
+        "points": [
+          "Open to African founders based in West Africa, aged 21-30.",
+          "Applicants must possess software development experience and a strong desire to launch their own AI startup."
+        ]
+      },
+      "mentorship": {
+        "title": "Mentorship",
+        "points": [
+          "The programme boasts a roster of leading industry experts from companies such as OpenAI, Perplexity, Google, and Meltwater.",
+          "This high-caliber mentorship further levels the playing field for African entrepreneurs in the global AI landscape."
+        ]
+      },
+      "conclusion": "The MEST AI Startup Programme presents a unique opportunity for talented African entrepreneurs to gain the skills and resources necessary to build and scale world-class AI startups.  For details on how to apply, please refer to the link provided in the original article."
+    },
     "main_image_alt": "Image of the MEST AI Startup Programme",
-    "organizer_logo_alt": "Meltwater Entrepreneurial School of Technology Logo",
+    "organizer_logo_alt": "Meltwater Entrepreneurial School of Technology (MEST) logo",
     "extracted_published_date": "2025-07-10T09:00:26+02:00",
     "extracted_deadline": null,
     "organization_name": "Meltwater Entrepreneurial School of Technology (MEST)",
     "organization_website": "https://www.meltwater.org/",
     "organization_logo": "https://meltwater.org/wp-content/uploads/2024/01/MEST-Logo_landscape_03-e1704132329210-300x49.png"
-  },
-  {
-    "url": "https://disruptafrica.com/2025/07/09/revup-women-initiative-launches-nigeria-edition-to-boost-female-founders/",
-    "title": "RevUp Women Initiative launches Nigeria edition to boost female founders",
-    "subtitle": "The RevUp Women Initiative has launched a Nigeria edition following the success and impact of its inaugural cohort, as it bids to empower women-led businesses through a combination of enterprise development, strategic mentorship, and access to funding.",
-    "description": "RevUp Womenis an initiative dedicated to empowering women entrepreneurs across Africa. Through mentorship, training, and access to resources, RevUp Women provides women with the support they need to start and grow successful businesses, driving economic growth and fostering gender equality. Hosted by AfriLabs and Visa Foundation, the initiativeran its first programme last year, and has now launched the RevUp Women Initiative: Nigeria Edition, which will support 150 women-led businesses in Lagos, Abuja, and Abia, with a focus on agribusiness and e-commerce. The programme’s participants will connect with successful women entrepreneurs, and six outstanding participants will be considered for grant funding totaling US$24,000 and distributed among the selected awardees. “We’ve seen firsthand how intentional support and access to the right tools and networks can shift the trajectory of women-led businesses, not just helping them survive but thrive. Through tailored capacity building, mentorship, and meaningful partnerships, we’ve watched ideas turn into impactful ventures. With this new phase, we are doubling down on both impact and inclusivity, ensuring that more women across Nigeria have the resources, visibility, and community they need to grow scalable, sustainable businesses and become key players in the innovation ecosystem,” said Nanko Madu, director of programme at AfriLabs. Applications are openhereuntil August 8.",
-    "content": "The RevUp Women Initiative has launched a Nigeria edition following the success and impact of its inaugural cohort, as it bids to empower women-led businesses through a combination of enterprise development, strategic mentorship, and access to funding.RevUp Womenis an initiative dedicated to empowering women entrepreneurs across Africa. Through mentorship, training, and access to resources, RevUp Women provides women with the support they need to start and grow successful businesses, driving economic growth and fostering gender equality.Hosted by AfriLabs and Visa Foundation, the initiativeran its first programme last year, and has now launched the RevUp Women Initiative: Nigeria Edition, which will support 150 women-led businesses in Lagos, Abuja, and Abia, with a focus on agribusiness and e-commerce.The programme’s participants will connect with successful women entrepreneurs, and six outstanding participants will be considered for grant funding totaling US$24,000 and distributed among the selected awardees.“We’ve seen firsthand how intentional support and access to the right tools and networks can shift the trajectory of women-led businesses, not just helping them survive but thrive. Through tailored capacity building, mentorship, and meaningful partnerships, we’ve watched ideas turn into impactful ventures. With this new phase, we are doubling down on both impact and inclusivity, ensuring that more women across Nigeria have the resources, visibility, and community they need to grow scalable, sustainable businesses and become key players in the innovation ecosystem,” said Nanko Madu, director of programme at AfriLabs.Applications are openhereuntil August 8.",
-    "meta_title": "RevUp Women Nigeria: Boosting Female Founders",
-    "Meta Description": "RevUp Women Initiative launches Nigeria edition to support 150 women-led businesses in Lagos, Abuja & Abia. Apply by August 8th!",
-    "slug": "revup-women-nigeria-edition",
-    "regions": [
-      "Nigeria"
-    ],
-    "sectors": [
-      "Agribusiness",
-      "E-commerce and Retail"
-    ],
-    "stages": [
-      "Stage Agnostic"
-    ],
-    "categories": [
-      "Accelerator"
-    ],
-    "draft_summary": "* **Introduction:** The RevUp Women Initiative, a program dedicated to empowering women entrepreneurs across Africa, has launched a Nigeria edition.  This initiative aims to support women-led businesses through enterprise development, mentorship, and funding opportunities.\n\n* **Program Overview:** Hosted by AfriLabs and Visa Foundation, the program will support 150 women-led businesses across Lagos, Abuja, and Abia states.  The focus areas are agribusiness and e-commerce.  Participants will benefit from connections with successful female entrepreneurs, and six will receive grant funding totaling US$24,000.\n\n* **Key Features:**\n    * **Mentorship:** Access to strategic mentorship from experienced professionals.\n    * **Training:** Tailored capacity building programs to enhance business skills.\n    * **Funding:** Grant opportunities for outstanding participants.\n    * **Networking:** Opportunities to connect with other women entrepreneurs.\n\n* **Eligibility:**  The program is open to women-led businesses in Lagos, Abuja, and Abia, focusing on agribusiness and e-commerce.\n\n* **Application Details:** Applications are open until August 8th.  [Link to application] (This would be replaced with the actual application link)\n\n* **Conclusion:** The RevUp Women Initiative: Nigeria Edition offers a significant opportunity for women entrepreneurs to scale their businesses and contribute to Nigeria's innovation ecosystem. The program's focus on mentorship, training, and funding provides comprehensive support for growth and sustainability.",
-    "main_image_alt": "RevUp Women Nigeria Edition logo and supporting imagery",
-    "organizer_logo_alt": "AfriLabs logo",
-    "extracted_published_date": "2025-07-09T09:00:00+02:00",
-    "extracted_deadline": "august 8",
-    "organization_name": "AfriLabs",
-    "organization_website": "https://new.afrilabs.com/",
-    "organization_logo": "https://new.afrilabs.com/wp-content/uploads/elementor/thumbs/AfriLabs-Logo-q90pbi7phbp18an8lwx1cst79vwam736laz614wnyw.png",
-    "serpapi_enhanced": true
   }
 ]

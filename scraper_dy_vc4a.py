@@ -1,25 +1,30 @@
-#!/usr/bin/env python3
 """
-VC4A Comprehensive Scraper
-Découverte exhaustive + Extraction détaillée + Enrichissement IA + Extraction de logos
+VC4A Comprehensive Scraper - VERSION SIMPLIFIÉE
+Découverte exhaustive + Extraction détaillée + Enrichissement IA + Logo Simple
 """
 
-import asyncio
-import json
-import csv
 import requests
-import base64
-import re
-import os
-from datetime import datetime
-from typing import Set, List, Dict, Optional
-from urllib.parse import urljoin, urlparse
-from collections import Counter
-
-import google.generativeai as genai
-from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
+from playwright.async_api import async_playwright
+import json
+import re
+from datetime import datetime
+import google.generativeai as genai
+from urllib.parse import urljoin, urlparse
+import time
+import logging
+import os
+import asyncio
+import base64
 from dotenv import load_dotenv
+from PIL import Image
+import io
+import csv
+from collections import Counter
+from typing import Dict, List, Optional, Set
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Charger les variables d'environnement
 load_dotenv('config.env')
@@ -141,6 +146,47 @@ class URLValidator:
             return f"https://vc4a.com/{href}"
 
 
+def _normalize_logo_url(logo_src: str, base_url: str) -> str:
+    """Normalise l'URL du logo"""
+    if not logo_src:
+        return None
+    
+    if logo_src.startswith(('http://', 'https://')):
+        return logo_src
+    
+    if logo_src.startswith('/'):
+        parsed_url = urlparse(base_url)
+        return f"{parsed_url.scheme}://{parsed_url.netloc}{logo_src}"
+    
+    return urljoin(base_url, logo_src)
+
+
+def _validate_simple_logo(logo_url: str) -> bool:
+    """Validation simple et rapide du logo"""
+    if not logo_url or len(logo_url) < 10:
+        return False
+    
+    # Accepter les data URLs
+    if logo_url.startswith('data:image/'):
+        return True
+    
+    # Extensions valides
+    valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico']
+    if not any(ext in logo_url.lower() for ext in valid_extensions):
+        return False
+    
+    try:
+        # Test rapide avec HEAD request
+        response = requests.head(logo_url, timeout=3, allow_redirects=True)
+        if response.status_code == 200:
+            content_type = response.headers.get('content-type', '').lower()
+            return 'image' in content_type
+    except:
+        pass
+    
+    return True  # En cas de doute, on accepte
+
+
 class LLMAnalyzer:
     """Analyseur LLM pour enrichir les données avec Gemini AI"""
     
@@ -209,7 +255,7 @@ class LLMAnalyzer:
             
             llm_result = json.loads(json_text)
             
-            print(f" LLM - Métadonnées générées pour: {opportunity_data.get('title', 'Sans titre')}")
+            print(f"✓ LLM - Métadonnées générées pour: {opportunity_data.get('title', 'Sans titre')}")
             
             return llm_result
             
@@ -240,282 +286,6 @@ class LLMAnalyzer:
         slug = re.sub(r'\s+', '-', slug)
         slug = slug.strip('-')
         return slug
-
-
-class LogoExtractor:
-    """Extracteur de logos d'organisations"""
-    
-    def __init__(self):
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        })
-    
-    async def extract_logo(self, organization_website: str) -> Optional[str]:
-        """Extrait le logo de l'organisation depuis son site web"""
-        if not organization_website:
-            return None
-            
-        try:
-            print(f" Extraction logo depuis: {organization_website}")
-            
-            if not organization_website.startswith(('http://', 'https://')):
-                organization_website = 'https://' + organization_website
-            
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/svg+xml,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.5',
-                'Accept-Encoding': 'gzip, deflate',
-                'Connection': 'keep-alive',
-            }
-            
-            response = self.session.get(organization_website, headers=headers, timeout=15)
-            response.raise_for_status()
-            
-            soup = BeautifulSoup(response.text, 'html.parser')
-            header_elements = self._find_header_elements(soup)
-            
-            # Application des stratégies d'extraction de logo
-            strategies = [
-                self._find_logo_by_alt_attribute,
-                self._find_logo_svg_elements,
-                self._find_logo_in_containers,
-                self._find_logo_by_src_content,
-                self._find_logo_by_data_attributes,
-                self._find_logo_by_context_analysis,
-                self._find_logo_intelligent_fallback
-            ]
-            
-            for strategy in strategies:
-                logo_url = strategy(header_elements, organization_website)
-                if logo_url:
-                    print(f" Logo trouvé: {logo_url}")
-                    return logo_url
-            
-            print(f" Aucun logo trouvé")
-            return None
-            
-        except Exception as e:
-            print(f" Erreur extraction logo: {e}")
-            return None
-    
-    def _find_header_elements(self, soup):
-        """Identifie tous les éléments pouvant contenir un header"""
-        header_selectors = [
-            'header', '[class*="header" i]', '[id*="header" i]', 'nav',
-            '[class*="navbar" i]', '[class*="nav" i]', '[class*="top" i]',
-            '[class*="brand" i]', '[role="banner"]', '.site-header',
-            '.main-header', '.page-header', '#masthead', '.masthead'
-        ]
-        
-        header_elements = []
-        for selector in header_selectors:
-            elements = soup.select(selector)
-            header_elements.extend(elements)
-        
-        # Suppression des doublons
-        unique_headers = []
-        seen = set()
-        for elem in header_elements:
-            elem_id = id(elem)
-            if elem_id not in seen:
-                seen.add(elem_id)
-                unique_headers.append(elem)
-        
-        return unique_headers
-    
-    def _find_logo_by_alt_attribute(self, header_elements, base_url):
-        """STRATÉGIE 1: Recherche d'images avec attribut alt contenant 'logo'"""
-        logo_keywords = ['logo', 'brand', 'company', 'organization', 'site']
-        
-        for header in header_elements:
-            images = header.find_all('img', alt=True)
-            
-            for img in images:
-                alt_text = img.get('alt', '').lower()
-                src = img.get('src')
-                
-                if any(keyword in alt_text for keyword in logo_keywords):
-                    if src:
-                        logo_url = self._normalize_logo_url(src, base_url)
-                        if self._is_valid_logo_candidate(logo_url, img):
-                            return logo_url
-        
-        return None
-    
-    def _find_logo_svg_elements(self, header_elements, base_url):
-        """STRATÉGIE 2: Recherche d'éléments SVG avec classes ou IDs logo"""
-        for header in header_elements:
-            # SVG avec class contenant "logo"
-            svg_elements = header.find_all('svg', class_=re.compile('logo', re.I))
-            for svg in svg_elements:
-                svg_url = self._extract_svg_as_logo(svg, base_url)
-                if svg_url:
-                    return svg_url
-            
-            # SVG avec ID contenant "logo"
-            svg_elements = header.find_all('svg', id=re.compile('logo', re.I))
-            for svg in svg_elements:
-                svg_url = self._extract_svg_as_logo(svg, base_url)
-                if svg_url:
-                    return svg_url
-        
-        return None
-    
-    def _find_logo_in_containers(self, header_elements, base_url):
-        """STRATÉGIE 3: Recherche dans containers avec class/id 'logo'"""
-        container_selectors = [
-            '[class*="logo" i]', '[id*="logo" i]', '[class*="brand" i]', 
-            '[id*="brand" i]', '.site-title', '.site-logo', '.brand-logo', '.company-logo'
-        ]
-        
-        for header in header_elements:
-            for selector in container_selectors:
-                containers = header.select(selector)
-                
-                for container in containers:
-                    img = container.find('img')
-                    if img and img.get('src'):
-                        logo_url = self._normalize_logo_url(img.get('src'), base_url)
-                        if self._is_valid_logo_candidate(logo_url, img):
-                            return logo_url
-        
-        return None
-    
-    def _find_logo_by_src_content(self, header_elements, base_url):
-        """STRATÉGIE 4: Images avec src contenant 'logo'"""
-        for header in header_elements:
-            images = header.find_all('img', src=True)
-            
-            for img in images:
-                src = img.get('src', '').lower()
-                
-                if 'logo' in src and not any(exclude in src for exclude in ['icon', 'avatar', 'profile']):
-                    logo_url = self._normalize_logo_url(img.get('src'), base_url)
-                    if self._is_valid_logo_candidate(logo_url, img):
-                        return logo_url
-        
-        return None
-    
-    def _find_logo_by_data_attributes(self, header_elements, base_url):
-        """STRATÉGIE 5: Images avec attributs data-* contenant 'logo'"""
-        for header in header_elements:
-            images = header.find_all('img')
-            
-            for img in images:
-                attrs = img.attrs
-                
-                for attr_name, attr_value in attrs.items():
-                    if isinstance(attr_value, str) and 'logo' in attr_value.lower():
-                        if attr_name in ['data-src', 'data-original', 'title', 'aria-label']:
-                            src = img.get('src') or img.get('data-src') or img.get('data-original')
-                            if src:
-                                logo_url = self._normalize_logo_url(src, base_url)
-                                if self._is_valid_logo_candidate(logo_url, img):
-                                    return logo_url
-        
-        return None
-    
-    def _find_logo_by_context_analysis(self, header_elements, base_url):
-        """STRATÉGIE 6: Analyse contextuelle"""
-        context_indicators = ['home', 'accueil', 'homepage', 'site', 'company', 'organization']
-        
-        for header in header_elements:
-            home_links = header.find_all('a', href=True)
-            
-            for link in home_links:
-                href = link.get('href', '').lower()
-                link_text = link.get_text(strip=True).lower()
-                
-                if (href in ['/', '#', ''] or 
-                    any(indicator in href for indicator in ['home', 'index']) or
-                    any(indicator in link_text for indicator in context_indicators)):
-                    
-                    img = link.find('img')
-                    if img and img.get('src'):
-                        logo_url = self._normalize_logo_url(img.get('src'), base_url)
-                        if self._is_valid_logo_candidate(logo_url, img):
-                            return logo_url
-        
-        return None
-    
-    def _find_logo_intelligent_fallback(self, header_elements, base_url):
-        """STRATÉGIE 7: Fallback intelligent"""
-        for header in header_elements:
-            images = header.find_all('img', src=True)
-            
-            for img in images[:3]:  # Limiter aux 3 premières images
-                src = img.get('src', '').lower()
-                
-                # Exclure les images clairement non-logo
-                exclude_patterns = [
-                    'icon', 'arrow', 'menu', 'search', 'close', 'burger', 'hamburger',
-                    'facebook', 'twitter', 'linkedin', 'instagram', 'youtube', 'social'
-                ]
-                
-                if any(pattern in src for pattern in exclude_patterns):
-                    continue
-                
-                logo_url = self._normalize_logo_url(img.get('src'), base_url)
-                if self._is_valid_logo_candidate(logo_url, img):
-                    return logo_url
-        
-        return None
-    
-    def _extract_svg_as_logo(self, svg_element, base_url):
-        """Extrait un SVG comme logo"""
-        try:
-            svg_content = str(svg_element)
-            if len(svg_content) > 100 and ('path' in svg_content or 'circle' in svg_content or 'rect' in svg_content):
-                # Créer une data URL pour le SVG
-                svg_bytes = svg_content.encode('utf-8')
-                svg_base64 = base64.b64encode(svg_bytes).decode('utf-8')
-                return f"data:image/svg+xml;base64,{svg_base64}"
-            
-            return None
-            
-        except Exception as e:
-            return None
-    
-    def _normalize_logo_url(self, logo_src, base_url):
-        """Normalise l'URL du logo"""
-        if not logo_src:
-            return None
-        
-        if logo_src.startswith(('http://', 'https://')):
-            return logo_src
-        
-        if logo_src.startswith('/'):
-            parsed_url = urlparse(base_url)
-            return f"{parsed_url.scheme}://{parsed_url.netloc}{logo_src}"
-        
-        return urljoin(base_url, logo_src)
-    
-    def _is_valid_logo_candidate(self, logo_url, img_element):
-        """Vérifie si une URL d'image est un bon candidat pour être un logo"""
-        if not logo_url:
-            return False
-        
-        if logo_url.startswith('data:image/'):
-            return True
-        
-        valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp']
-        has_valid_ext = any(ext in logo_url.lower() for ext in valid_extensions)
-        
-        if not has_valid_ext:
-            return False
-        
-        # Vérifier que l'image existe
-        try:
-            head_response = self.session.head(logo_url, timeout=5)
-            if head_response.status_code == 200:
-                content_type = head_response.headers.get('content-type', '')
-                return 'image' in content_type
-        except:
-            pass
-        
-        return True
 
 
 class OpportunityExtractor:
@@ -562,7 +332,35 @@ class OpportunityExtractor:
                 continue
         
         opportunity['subtitle'] = ""
-    
+    async def extract_logo_with_playwright(self, page, opportunity: Dict):
+        """
+        Extrait le logo de l'organisation depuis une page Playwright (DOM rendu dynamiquement)
+        """
+        selectors = [
+            'div.pattern-logo img.logo.media',
+            'img.logo.media',
+            'img.logo',
+            'header img[src*="logo"]',
+            'img[src*="logo"]'
+        ]
+
+        for selector in selectors:
+            try:
+                element = await page.query_selector(selector)
+                if element:
+                    src = await element.get_attribute('src')
+                    if src:
+                        logo_url = urljoin(page.url, src)
+                        if _validate_simple_logo(logo_url):
+                            logger.info(f"✓ Logo trouvé via Playwright: {logo_url}")
+                            opportunity['organization_logo'] = logo_url
+                            return
+            except Exception as e:
+                continue
+
+        logger.warning(f" Aucun logo trouvé avec Playwright sur: {page.url}")
+        opportunity['logo'] = None
+
     async def extract_description(self, page, opportunity: Dict):
         """Extrait la description complète"""
         description_selectors = [
@@ -747,7 +545,7 @@ class OpportunityExtractor:
 
 
 class DataSaver:
-    """Gestionnaire de sauvegarde des données"""
+    """Gestionnaire de sauvegarde des données - Version simplifiée JSON uniquement"""
     
     @staticmethod
     def clean_opportunity_data(data: Dict) -> Dict:
@@ -781,143 +579,31 @@ class DataSaver:
         }
     
     @staticmethod
-    def save_partial_results(opportunities: List[Dict]):
-        """Sauvegarde partielle"""
-        try:
-            timestamp = datetime.now().strftime("%H%M%S")
-            filename = f"vc4a_enhanced_partial_{timestamp}.json"
-            
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(opportunities, f, indent=2, ensure_ascii=False)
-            
-            print(f"    Sauvegarde partielle: {filename}")
-        except Exception as e:
-            print(f"    Erreur sauvegarde: {e}")
-    
-    @staticmethod
-    def save_final_results(opportunities: List[Dict]):
-        """Sauvegarde finale avec les nouveaux champs"""
+    def save_opportunities(opportunities: List[Dict]):
+        """Sauvegarde unique dans vc4a_opportunities.json"""
         if not opportunities:
             print(" Aucune opportunité à sauvegarder")
             return
         
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = "vc4a_opportunities.json"
         
-        # JSON
-        json_filename = f"vc4a_enhanced_final_{timestamp}.json"
         try:
-            with open(json_filename, 'w', encoding='utf-8') as f:
+            with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(opportunities, f, indent=2, ensure_ascii=False)
-            print(f" JSON: {json_filename}")
-        except Exception as e:
-            print(f" Erreur JSON: {e}")
-        
-        # CSV
-        csv_filename = f"vc4a_enhanced_final_{timestamp}.csv"
-        try:
-            with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
-                fieldnames = list(opportunities[0].keys())
-                writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
-                for opp in opportunities:
-                    writer.writerow(opp)
-            print(f" CSV: {csv_filename}")
-        except Exception as e:
-            print(f" Erreur CSV: {e}")
-        
-        # Rapport détaillé
-        DataSaver.generate_enhanced_report(opportunities, timestamp)
-    
-    @staticmethod
-    def generate_enhanced_report(opportunities: List[Dict], timestamp: str):
-        """Génère un rapport détaillé avec les nouvelles métriques LLM"""
-        try:
-            report_filename = f"vc4a_enhanced_report_{timestamp}.txt"
             
-            with open(report_filename, 'w', encoding='utf-8') as f:
-                f.write("=== RAPPORT SCRAPING VC4A ENRICHI LLM ===\n\n")
-                f.write(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-                f.write(f"Opportunités extraites: {len(opportunities)}\n\n")
-                
-                # Statistiques de qualité
-                DataSaver._write_quality_stats(f, opportunities)
-                
-                # Statistiques LLM
-                DataSaver._write_llm_stats(f, opportunities)
-                
-                # Analyses détaillées
-                DataSaver._write_detailed_analysis(f, opportunities)
-                
-            print(f" Rapport enrichi sauvegardé: {report_filename}")
+            print(f" {len(opportunities)} opportunités sauvegardées dans: {filename}")
+            
         except Exception as e:
-            print(f" Erreur rapport: {e}")
-    
-    @staticmethod
-    def _write_quality_stats(f, opportunities: List[Dict]):
-        """Écrit les statistiques de qualité"""
-        total = len(opportunities)
-        stats = {
-            'with_org': len([o for o in opportunities if o.get('organization')]),
-            'with_deadline': len([o for o in opportunities if o.get('deadline')]),
-            'with_website': len([o for o in opportunities if o.get('organization_website')]),
-            'with_logo': len([o for o in opportunities if o.get('organization_logo')]),
-            'with_apply': len([o for o in opportunities if o.get('application_link')]),
-            'with_subtitle': len([o for o in opportunities if o.get('subtitle')]),
-            'with_sectors': len([o for o in opportunities if o.get('sectors')])
-        }
-        
-        f.write("=== STATISTIQUES DE QUALITÉ ===\n")
-        for key, count in stats.items():
-            percentage = count/total*100 if total > 0 else 0
-            f.write(f"{key.replace('_', ' ').title()}: {count}/{total} ({percentage:.1f}%)\n")
-        f.write("\n")
-    
-    @staticmethod
-    def _write_llm_stats(f, opportunities: List[Dict]):
-        """Écrit les statistiques LLM"""
-        total = len(opportunities)
-        llm_stats = {
-            'with_llm_sectors': len([o for o in opportunities if o.get('llm_sectors')]),
-            'with_meta_title': len([o for o in opportunities if o.get('meta_title')]),
-            'with_meta_desc': len([o for o in opportunities if o.get('meta_description')]),
-            'with_draft_summary': len([o for o in opportunities if o.get('draft_summary')])
-        }
-        
-        f.write("=== STATISTIQUES ENRICHISSEMENT LLM ===\n")
-        for key, count in llm_stats.items():
-            percentage = count/total*100 if total > 0 else 0
-            f.write(f"{key.replace('_', ' ').title()}: {count}/{total} ({percentage:.1f}%)\n")
-        f.write("\n")
-    
-    @staticmethod
-    def _write_detailed_analysis(f, opportunities: List[Dict]):
-        """Écrit l'analyse détaillée par catégories"""
-        # Analyse des secteurs LLM
-        llm_sectors_flat = []
-        for opp in opportunities:
-            sectors = opp.get('llm_sectors', [])
-            if isinstance(sectors, list):
-                llm_sectors_flat.extend(sectors)
-        
-        unique_llm_sectors = list(set(llm_sectors_flat))
-        f.write(f"=== SECTEURS DÉTECTÉS PAR LLM ({len(unique_llm_sectors)}) ===\n")
-        for sector in sorted(unique_llm_sectors):
-            count = llm_sectors_flat.count(sector)
-            f.write(f"  - {sector}: {count} occurrences\n")
-        f.write("\n")
-        
-        # Analyse des catégories et stages (similaire...)
-        # [Le reste du code d'analyse...]
+            print(f" Erreur sauvegarde: {e}")
 
 
 class VC4AScraper:
-    """Scraper principal VC4A"""
+    """Scraper principal VC4A avec extraction simple de logo"""
     
     def __init__(self):
         self.config = ConfigManager()
         self.url_validator = URLValidator()
         self.llm_analyzer = LLMAnalyzer()
-        self.logo_extractor = LogoExtractor()
         self.opportunity_extractor = OpportunityExtractor(self.config)
         self.data_saver = DataSaver()
         
@@ -983,7 +669,7 @@ class VC4AScraper:
                 try:
                     button = await page.query_selector(selector)
                     if button:
-                        print(f"    Clic sur 'Load More'")
+                        print(f"    ✓ Clic sur 'Load More'")
                         await button.click()
                         await page.wait_for_timeout(3000)
                         break
@@ -996,7 +682,7 @@ class VC4AScraper:
             
         except Exception as e:
             if self.config.debug_mode:
-                print(f"    Erreur smart load: {e}")
+                print(f"     Erreur smart load: {e}")
     
     async def discover_all_opportunity_urls(self, page) -> Set[str]:
         """Découverte EXHAUSTIVE de toutes les URLs d'opportunités"""
@@ -1014,7 +700,7 @@ class VC4AScraper:
                         };
                     }
                 """)
-                print(f"    Page: {stats['total_links']} liens, {stats['program_links']} avec 'program', {stats['cards']} cartes")
+                print(f"     Page: {stats['total_links']} liens, {stats['program_links']} avec 'program', {stats['cards']} cartes")
             
             # STRATÉGIE 1: Sélecteurs spécifiques très larges
             specific_selectors = [
@@ -1075,12 +761,12 @@ class VC4AScraper:
                             all_urls.add(normalized)
             
             except Exception as e:
-                print(f"    Erreur analyse exhaustive: {e}")
+                print(f"     Erreur analyse exhaustive: {e}")
             
             return all_urls
             
         except Exception as e:
-            print(f"    Erreur découverte: {e}")
+            print(f"     Erreur découverte: {e}")
             return set()
     
     async def discover_total_pages(self, page) -> int:
@@ -1126,7 +812,7 @@ class VC4AScraper:
                     test_url = f"{self.config.base_url}page/{test_page}/"
                     
                     try:
-                        print(f"   Test page {test_page}...")
+                        print(f"    Test page {test_page}...")
                         response = await page.goto(test_url, wait_until="domcontentloaded", timeout=15000)
                         
                         if response and response.status == 200:
@@ -1140,7 +826,7 @@ class VC4AScraper:
                                 relevant_links = await page.query_selector_all('a[href*="program"], a[href*="challenge"]')
                                 if len(relevant_links) > 0:
                                     max_page = test_page
-                                    print(f"    Page {test_page} valide")
+                                    print(f"    ✓ Page {test_page} valide")
                                 else:
                                     break
                             else:
@@ -1159,21 +845,20 @@ class VC4AScraper:
             return 5
     
     async def extract_opportunity_details(self, page, opportunity_url: str) -> Optional[Dict]:
-        """Extrait TOUS les détails d'une opportunité avec enrichissement LLM"""
+        """Extrait TOUS les détails d'une opportunité avec enrichissement LLM et logo via Playwright"""
         try:
             print(f" Extraction: {opportunity_url}")
             
             response = await page.goto(opportunity_url, wait_until="networkidle", timeout=30000)
-            
             if response.status == 404:
-                print(f"    Page 404: {opportunity_url}")
+                print(f"     Page 404: {opportunity_url}")
                 return None
             
             await page.wait_for_timeout(2000)
             
             page_title = await page.title()
             if 'not found' in page_title.lower() or 'error' in page_title.lower():
-                print(f"    Page d'erreur: {opportunity_url}")
+                print(f"     Page d'erreur: {opportunity_url}")
                 return None
             
             opportunity = {
@@ -1189,55 +874,48 @@ class VC4AScraper:
             await self.opportunity_extractor.extract_links(page, opportunity)
             await self.opportunity_extractor.extract_dates(page, opportunity)
             
+            # EXTRACTION DU LOGO via Playwright
+            print(f" Extraction logo organisation avec Playwright...")
+            await self.opportunity_extractor.extract_logo_with_playwright(page, opportunity)
+
             # FILTRAGE FINAL : Vérifier si c'est une vraie opportunité
             title = opportunity.get('title', '').lower()
-            
-            # Exclure les pages génériques par titre
             generic_titles = [
                 'explore programs', 'explore ventures', 'explorar programas',
                 'programmes d\'exploration', 'sign up or log in', 'log in required',
                 'accelerate your business venture'
             ]
-            
             if any(generic in title for generic in generic_titles):
-                print(f"    Page générique filtrée: {title}")
+                print(f"     Page générique filtrée: {title}")
                 return None
             
-            # Vérifier qu'il y a un minimum de contenu
             if (not opportunity.get('title') or 
                 len(opportunity.get('title', '')) < 3 or
                 not opportunity.get('description')):
-                print(f"    Contenu insuffisant")
+                print(f"     Contenu insuffisant")
                 return None
             
             # ENRICHISSEMENT avec LLM
             print(f" Enrichissement LLM...")
             llm_data = await self.llm_analyzer.analyze_opportunity(opportunity)
             opportunity.update(llm_data)
-            
-            # EXTRACTION du logo de l'organisation
-            org_website = opportunity.get('organization_website')
-            if org_website:
-                print(f" Extraction logo organisation...")
-                organization_logo = await self.logo_extractor.extract_logo(org_website)
-                if organization_logo:
-                    opportunity['organization_logo'] = organization_logo
-            
-            print(f"    Extrait: {opportunity.get('title', 'Sans titre')}")
+
+            print(f"     Extrait: {opportunity.get('title', 'Sans titre')}")
             return opportunity
-            
+
         except Exception as e:
-            print(f"    Erreur extraction {opportunity_url}: {e}")
+            print(f"     Erreur extraction {opportunity_url}: {e}")
             return None
+
     
     async def run_complete_scraping(self) -> List[Dict]:
-        """Méthode principale - découverte exhaustive + extraction complète + LLM"""
+        """Méthode principale - découverte exhaustive + extraction complète + LLM + logo simple"""
         async with async_playwright() as playwright:
             browser, page = await self.setup_browser(playwright)
             
             try:
-                print(" === SCRAPER VC4A COMPLET AVEC LLM ===")
-                print("Découverte exhaustive + Extraction détaillée + Enrichissement IA\n")
+                print(" SCRAPER VC4A COMPLET AVEC LLM ET LOGO SIMPLE ")
+                print(" Découverte exhaustive + Extraction détaillée + Enrichissement IA + Logo simple\n")
                 
                 # PHASE 1: Découverte de toutes les URLs
                 print(" PHASE 1: Découverte des opportunités...")
@@ -1272,10 +950,10 @@ class VC4AScraper:
                         print(f" Erreur page {page_num}: {e}")
                         continue
                 
-                print(f"\nPHASE 1 TERMINÉE: {len(all_opportunity_urls)} opportunités découvertes")
+                print(f"\n PHASE 1 TERMINÉE: {len(all_opportunity_urls)} opportunités découvertes")
                 
-                # PHASE 2: Extraction détaillée avec enrichissement LLM
-                print(f"\n PHASE 2: Extraction des détails + Enrichissement LLM...")
+                # PHASE 2: Extraction détaillée avec enrichissement LLM et logo simple
+                print(f"\n PHASE 2: Extraction des détails + Enrichissement LLM ")
                 
                 extracted_opportunities = []
                 
@@ -1288,10 +966,10 @@ class VC4AScraper:
                         clean_opp = self.data_saver.clean_opportunity_data(details)
                         extracted_opportunities.append(clean_opp)
                         
-                        # Sauvegarde progressive
+                        # Sauvegarde progressive (écrase le fichier à chaque fois)
                         if len(extracted_opportunities) % 5 == 0:
                             print(f" Sauvegarde progressive: {len(extracted_opportunities)} opportunités")
-                            self.data_saver.save_partial_results(extracted_opportunities)
+                            self.data_saver.save_opportunities(extracted_opportunities)
                     
                     # Pause entre requêtes
                     await asyncio.sleep(self.config.request_delay)
@@ -1307,15 +985,15 @@ async def main():
     scraper = VC4AScraper()
     
     try:
-        # Lancer le scraping complet avec enrichissement LLM
+        # Lancer le scraping complet avec enrichissement LLM et logo simple
         opportunities = await scraper.run_complete_scraping()
         
         if opportunities:
             print(f"\n === SCRAPING COMPLET ENRICHI TERMINÉ ===")
-            print(f" {len(opportunities)} opportunités extraites avec enrichissement LLM!")
+            print(f" {len(opportunities)} opportunités extraites avec enrichissement LLM et logo simple!")
             
             # Sauvegarde finale
-            scraper.data_saver.save_final_results(opportunities)
+            scraper.data_saver.save_opportunities(opportunities)
             
             # Statistiques rapides
             print(f"\n STATISTIQUES RAPIDES:")
@@ -1328,13 +1006,13 @@ async def main():
             print(f"  • Avec secteurs LLM: {len([o for o in opportunities if o.get('llm_sectors') and len(o.get('llm_sectors', [])) > 0])}")
             
             # Aperçu des résultats enrichis
-            print(f"\n🔍 APERÇU DES OPPORTUNITÉS ENRICHIES (3 premières):")
+            print(f"\n APERÇU DES OPPORTUNITÉS ENRICHIES (3 premières):")
             for i, opp in enumerate(opportunities[:3], 1):
                 print(f"\n{i}. {opp.get('title', 'Sans titre')}")
                 print(f"   Meta Title: {opp.get('meta_title', 'N/A')}")
                 print(f"   Organisation: {opp.get('organization', 'N/A')}")
                 print(f"   Secteurs LLM: {', '.join(opp.get('llm_sectors', [])[:3])}")
-                print(f"   Logo organisation: {'yes' if opp.get('organization_logo') else 'no'}")
+                print(f"   Logo organisation: {'✅' if opp.get('organization_logo') else '❌'}")
                 
             if len(opportunities) > 3:
                 print(f"\n... et {len(opportunities) - 3} autres opportunités enrichies")
@@ -1355,7 +1033,7 @@ async def main():
             print(" Aucune opportunité extraite")
             
     except KeyboardInterrupt:
-        print("\nArrêt demandé par l'utilisateur")
+        print("\n Arrêt demandé par l'utilisateur")
     except Exception as e:
         print(f" Erreur fatale: {e}")
         import traceback

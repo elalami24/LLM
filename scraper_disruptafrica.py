@@ -83,7 +83,7 @@ class DisruptAfricaScraper:
         if self.serpapi_key:
             logger.info("✓ Clé API SerpAPI configurée")
         else:
-            logger.warning("⚠️ Clé API SerpAPI non trouvée. Ajoutez SERPAPI_KEY dans config.env")
+            logger.warning(" Clé API SerpAPI non trouvée. Ajoutez SERPAPI_KEY dans config.env")
 
     def _setup_llm_prompt(self):
         """Configure le prompt pour l'extraction LLM des métadonnées"""
@@ -107,7 +107,7 @@ class DisruptAfricaScraper:
         - organizer_logo_alt: Texte alternatif pour le logo de l'organisateur (ou null si pas d'organisateur)
         - extracted_published_date: Date de publication extraite du contenu (format YYYY-MM-DD ou null)
         - extracted_deadline: Date limite d'application extraite du contenu (format YYYY-MM-DD ou null)
-        - organization_name: Identifie précisément le nom de l'organisation responsable ou associée à l'opportunité décrite dans le contenu . Ne retourne que le nom officiel de l'organisation (par exemple : "Milken Institute" ou "Motsepe Foundation"). Si aucune organisation n’est clairement identifiable, retourne "null".mais il existe il faut analyser bien le contenu pour trouver le nom de l'organization et cette organization peut etre qui lance ou soutient l'initiative décrite dans le contenu .
+        - organization_name:Identifie précisément le nom officiel de l’organisation responsable ou associée à l’opportunité décrite dans le contenu. Ce nom doit correspondre à une entité juridique ou structurelle réelle (par exemple : "Milken Institute", "Motsepe Foundation", "Jack Ma Foundation"). Si plusieurs organisations sont mentionnées, choisis celle(s) qui lance(nt) ou soutient(nt) directement l’initiative. Ignore les noms d’événements, concours, prix, campagnes ou programmes qui ne sont pas des entités juridiques réelles (par exemple : "Africa’s Business Heroes" ou "Alibaba Philanthropy" si ce dernier est une branche ou initiative et non une organisation juridique distincte).Si le nom officiel de l’organisation n’est pas explicitement mentionné, considère que le nom de l’initiative ou programme peut être aussi celui de l’organisation responsable, notamment dans les cas où cette initiative correspond à une entité légalement constituée (par exemple, "D-Prize" est le nom officiel d’une organisation qui lance le "D-Prize Competition").Le nom d’organisation se trouve souvent dans le titre {title} ; sinon, analyse attentivement le contenu {content} pour trouver la ou les organisations principales liées à l’initiative, en te concentrant sur les entités qui gèrent, financent ou organisent l’opportunité.Si plusieurs organisations co-organisent ou financent l’initiative, retourne leurs noms officiels séparés par " and ".Si aucune organisation claire n’est identifiable, retourne "null".
         - organization_website: Site web de l'organisation (ou null si non trouvé)
         - organization_logo: URL du logo de l'organisation (ou null si non trouvé)
         """
@@ -492,49 +492,16 @@ class DisruptAfricaScraper:
     # SECTION 6: EXTRACTION DE LOGOS (8 STRATÉGIES)
    
 
-    async def _find_logo_dynamic_strategy(self, website_url):
-        """STRATÉGIE 8 (DYNAMIQUE): Utilise Playwright pour trouver le premier logo"""
-        logger.debug(" STRATÉGIE DYNAMIQUE: Recherche avec Playwright")
-        
-        try:
-            async with async_playwright() as p:
-                browser = await p.chromium.launch(headless=True)
-                page = await browser.new_page()
-                await page.goto(website_url, wait_until='networkidle')
-                
-                # Récupération de toutes les balises <img>
-                img_elements = await page.query_selector_all("img")
-                
-                for img in img_elements:
-                    src = await img.get_attribute("src")
-                    alt = await img.get_attribute("alt")
-                    
-                    if src:
-                        src_lower = src.lower()
-                        alt_lower = (alt or "").lower()
-                        
-                        # Détection des logos
-                        if ("logo" in src_lower or "logo" in alt_lower):
-                            full_url = urljoin(website_url, src)
-                            logger.info(f"STRATÉGIE DYNAMIQUE - Premier logo détecté: {full_url}")
-                            await browser.close()
-                            return full_url
-                
-                await browser.close()
-                logger.debug(" STRATÉGIE DYNAMIQUE: Aucun logo détecté")
-                return None
-                
-        except Exception as e:
-            logger.debug(f"Erreur stratégie dynamique: {e}")
-            return None
-
     def extract_logo_from_website(self, website_url):
-        """Extraction complète de logos avec 8 stratégies (7 statiques + 1 dynamique)"""
+        """Extraction complète de logos avec 11 stratégies (10 statiques + 1 dynamique)"""
         try:
             logger.info(f" Extraction avancée du logo depuis: {website_url}")
             
             if not website_url.startswith(('http://', 'https://')):
                 website_url = 'https://' + website_url
+            
+            # Réinitialiser les candidats pour cette extraction
+            self.logo_candidates = []
             
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -550,23 +517,26 @@ class DisruptAfricaScraper:
             soup = BeautifulSoup(response.text, 'html.parser')
             header_elements = self._find_header_elements(soup)
             
-            # Application des 7 stratégies statiques
+            # Application des 10 stratégies statiques
             static_strategies = [
-                self._find_logo_by_alt_attribute,      # Stratégie 1
-                self._find_logo_svg_elements,          # Stratégie 2
-                self._find_logo_in_containers,         # Stratégie 3
-                self._find_logo_by_src_content,        # Stratégie 4
-                self._find_logo_by_data_attributes,    # Stratégie 5
-                self._find_logo_by_context_analysis,   # Stratégie 6
-                self._find_logo_intelligent_fallback   # Stratégie 7
+                (self._find_logo_by_alt_attribute, header_elements, website_url),      # Stratégie 1
+                (self._find_logo_svg_elements, header_elements, website_url),          # Stratégie 2
+                (self._find_logo_in_containers, header_elements, website_url),         # Stratégie 3
+                (self._find_logo_by_src_content, header_elements, website_url),        # Stratégie 4
+                (self._find_logo_by_data_attributes, header_elements, website_url),    # Stratégie 5
+                (self._find_logo_by_context_analysis, header_elements, website_url),   # Stratégie 6
+                (self._find_logo_intelligent_fallback, header_elements, website_url),  # Stratégie 7
+                (self._find_logo_favicon_strategy, soup, website_url),                 # Stratégie 8 (améliorée)
+                (self._find_logo_global_images_strategy, soup, website_url),           # Stratégie 9 (nouvelle)
+                (self._find_logo_ai_analysis_strategy, website_url)                    # Stratégie 10 (nouvelle)
             ]
             
-            for i, strategy in enumerate(static_strategies, 1):
-                logo_url = strategy(header_elements, website_url)
+            for i, (strategy, *args) in enumerate(static_strategies, 1):
+                logo_url = strategy(*args)
                 if logo_url:
                     return logo_url
             
-            # Stratégie 8: Dynamique avec Playwright
+            # Stratégie 11: Dynamique avec Playwright (améliorée)
             logger.info(" Tentative avec la stratégie dynamique (Playwright)...")
             try:
                 loop = asyncio.new_event_loop()
@@ -592,13 +562,28 @@ class DisruptAfricaScraper:
             'header', '[class*="header" i]', '[id*="header" i]', 'nav',
             '[class*="navbar" i]', '[class*="nav" i]', '[class*="top" i]',
             '[class*="brand" i]', '[role="banner"]', '.site-header',
-            '.main-header', '.page-header', '#masthead', '.masthead'
+            '.main-header', '.page-header', '#masthead', '.masthead',
+            '.header-wrapper', '.site-branding', '.logo-container', '.brand-container',
+            'a[class*="logo" i]', 'a[id*="logo" i]', 'a[class*="brand" i]',
+            'a[href="/"]', 'a[href="./"]', 'a[href="#"]'
         ]
         
         header_elements = []
         for selector in header_selectors:
             elements = soup.select(selector)
             header_elements.extend(elements)
+        
+        # Ajouter les premiers éléments du body qui peuvent contenir des logos
+        body = soup.find('body')
+        if body:
+            first_divs = body.find_all('div', limit=5)
+            for div in first_divs:
+                div_class = ' '.join(div.get('class', [])).lower()
+                div_id = div.get('id', '').lower()
+                
+                if any(keyword in div_class or keyword in div_id for keyword in 
+                       ['header', 'top', 'nav', 'logo', 'brand', 'site']):
+                    header_elements.append(div)
         
         # Suppression des doublons
         unique_headers = []
@@ -609,7 +594,7 @@ class DisruptAfricaScraper:
                 seen.add(elem_id)
                 unique_headers.append(elem)
         
-        logger.debug(f" Trouvé {len(unique_headers)} zones header potentielles")
+        logger.debug(f"🔍 Trouvé {len(unique_headers)} zones header potentielles")
         return unique_headers
 
     def _find_logo_by_alt_attribute(self, header_elements, base_url):
@@ -620,13 +605,10 @@ class DisruptAfricaScraper:
         
         for header in header_elements:
             images = header.find_all('img', alt=True)
-            logger.debug(f"Trouvé {len(images)} images avec attribut alt dans le header")
             
             for img in images:
                 alt_text = img.get('alt', '').lower()
                 src = img.get('src')
-                
-                logger.debug(f"Image analysée: alt='{img.get('alt')}' src='{src}'")
                 
                 if any(keyword in alt_text for keyword in logo_keywords):
                     if src:
@@ -634,13 +616,14 @@ class DisruptAfricaScraper:
                         if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0.4):
                             logger.info(f" STRATÉGIE 1 - Logo trouvé par alt='{img.get('alt')}': {logo_url}")
                             return logo_url
+                        else:
+                            self._add_logo_candidate(logo_url, img, 0.4, "Stratégie 1 - Alt attribute")
         
-        logger.debug(" STRATÉGIE 1: Aucun logo trouvé par alt")
         return None
 
     def _find_logo_svg_elements(self, header_elements, base_url):
         """STRATÉGIE 2: Recherche d'éléments SVG avec classes ou IDs logo"""
-        logger.debug("🔍 STRATÉGIE 2: Recherche SVG avec classes logo")
+        logger.debug(" STRATÉGIE 2: Recherche SVG avec classes logo")
         
         for header in header_elements:
             # SVG avec class contenant "logo"
@@ -692,6 +675,8 @@ class DisruptAfricaScraper:
                         if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0.3):
                             logger.info(f" STRATÉGIE 3 - Logo dans container '{selector}': {logo_url}")
                             return logo_url
+                        else:
+                            self._add_logo_candidate(logo_url, img, 0.3, "Stratégie 3 - Container")
                     
                     # Container lui-même est une image
                     if container.name == 'img' and container.get('src'):
@@ -699,12 +684,14 @@ class DisruptAfricaScraper:
                         if self._is_valid_logo_candidate(logo_url, container, confidence_boost=0.3):
                             logger.info(f" STRATÉGIE 3 - Container image logo: {logo_url}")
                             return logo_url
+                        else:
+                            self._add_logo_candidate(logo_url, container, 0.3, "Stratégie 3 - Container image")
         
         return None
 
     def _find_logo_by_src_content(self, header_elements, base_url):
         """STRATÉGIE 4: Images avec src contenant 'logo'"""
-        logger.debug("🔍 STRATÉGIE 4: Recherche par src contenant 'logo'")
+        logger.debug(" STRATÉGIE 4: Recherche par src contenant 'logo'")
         
         for header in header_elements:
             images = header.find_all('img', src=True)
@@ -717,6 +704,8 @@ class DisruptAfricaScraper:
                     if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0.2):
                         logger.info(f" STRATÉGIE 4 - Logo par src contenant 'logo': {logo_url}")
                         return logo_url
+                    else:
+                        self._add_logo_candidate(logo_url, img, 0.2, "Stratégie 4 - Src logo")
         
         return None
 
@@ -739,12 +728,14 @@ class DisruptAfricaScraper:
                                 if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0.2):
                                     logger.info(f" STRATÉGIE 5 - Logo par {attr_name}='{attr_value}': {logo_url}")
                                     return logo_url
+                                else:
+                                    self._add_logo_candidate(logo_url, img, 0.2, f"Stratégie 5 - {attr_name}")
         
         return None
 
     def _find_logo_by_context_analysis(self, header_elements, base_url):
-        """STRATÉGIE 6: Analyse contextuelle - images avec liens/textes indicateurs"""
-        logger.debug(" STRATÉGIE 6: Analyse contextuelle")
+        """STRATÉGIE 6: Analyse contextuelle - images avec liens/textes indicateurs + liens avec logos"""
+        logger.debug(" STRATÉGIE 6: Analyse contextuelle avancée")
         
         context_indicators = ['home', 'accueil', 'homepage', 'site', 'company', 'organization']
         
@@ -754,23 +745,41 @@ class DisruptAfricaScraper:
             for link in home_links:
                 href = link.get('href', '').lower()
                 link_text = link.get_text(strip=True).lower()
+                link_class = ' '.join(link.get('class', [])).lower()
+                link_id = link.get('id', '').lower()
                 
-                if (href in ['/', '#', ''] or 
+                # Conditions pour identifier un lien "home" ou "logo"
+                is_home_link = (
+                    href in ['/', '#', '', './'] or 
                     any(indicator in href for indicator in ['home', 'index']) or
-                    any(indicator in link_text for indicator in context_indicators)):
-                    
+                    any(indicator in link_text for indicator in context_indicators) or
+                    any(logo_word in link_class or logo_word in link_id for logo_word in ['logo', 'brand'])
+                )
+                
+                if is_home_link:
+                    # Chercher une image dans le lien
                     img = link.find('img')
                     if img and img.get('src'):
                         logo_url = self._normalize_logo_url(img.get('src'), base_url)
-                        if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0.1):
-                            logger.info(f" STRATÉGIE 6 - Logo contextuel (lien home): {logo_url}")
+                        if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0.2):
+                            logger.info(f" STRATÉGIE 6 - Logo contextuel (lien avec image): {logo_url}")
                             return logo_url
+                        else:
+                            self._add_logo_candidate(logo_url, img, 0.2, "Stratégie 6 - Contextuel")
+                    
+                    # Chercher un SVG dans le lien
+                    svg = link.find('svg')
+                    if svg:
+                        svg_url = self._extract_svg_as_logo(svg, base_url)
+                        if svg_url:
+                            logger.info(f" STRATÉGIE 6 - SVG contextuel (lien avec SVG): {svg_url}")
+                            return svg_url
         
         return None
 
     def _find_logo_intelligent_fallback(self, header_elements, base_url):
-        """STRATÉGIE 7: Fallback intelligent - première image significative"""
-        logger.debug("🔍 STRATÉGIE 7: Fallback intelligent")
+        """STRATÉGIE 7: Fallback intelligent - première image significative dans le header"""
+        logger.debug(" STRATÉGIE 7: Fallback intelligent dans header")
         
         for header in header_elements:
             images = header.find_all('img', src=True)
@@ -795,7 +804,6 @@ class DisruptAfricaScraper:
                 if width and height:
                     try:
                         w, h = int(width), int(height)
-                        # Dimensions inadéquates pour un logo
                         if w < 30 or h < 20 or w/h > 10 or h/w > 3:
                             continue
                     except:
@@ -805,8 +813,340 @@ class DisruptAfricaScraper:
                 if self._is_valid_logo_candidate(logo_url, img, confidence_boost=0):
                     logger.info(f" STRATÉGIE 7 - Logo fallback intelligent: {logo_url}")
                     return logo_url
+                else:
+                    self._add_logo_candidate(logo_url, img, 0.1, "Stratégie 7 - Fallback")
         
         return None
+
+    def _find_logo_favicon_strategy(self, soup, base_url):
+        """STRATÉGIE 8: Extraction du favicon comme logo de secours (AMÉLIORÉE)"""
+        logger.debug(" STRATÉGIE 8: Extraction du favicon (améliorée)")
+        
+        # NOUVEAU: Tester /favicon.ico en premier, même s'il n'est pas déclaré
+        default_favicon = urljoin(base_url, '/favicon.ico')
+        if self.validate_logo_image(default_favicon):
+            logger.info(f" STRATÉGIE 8 - Favicon par défaut trouvé (/favicon.ico): {default_favicon}")
+            return default_favicon
+        
+        favicon_selectors = [
+            'link[rel="icon"]', 'link[rel="shortcut icon"]', 
+            'link[rel="apple-touch-icon"]', 'link[rel="apple-touch-icon-precomposed"]',
+            'link[rel="mask-icon"]', 'link[rel="fluid-icon"]'
+        ]
+        
+        favicon_candidates = []
+        
+        for selector in favicon_selectors:
+            favicons = soup.select(selector)
+            for favicon in favicons:
+                href = favicon.get('href')
+                if href:
+                    favicon_url = self._normalize_logo_url(href, base_url)
+                    
+                    # Scoring par taille
+                    sizes = favicon.get('sizes', '')
+                    size_score = 0.1
+                    
+                    if sizes and 'x' in sizes:
+                        try:
+                            dimensions = sizes.split('x')
+                            width = int(dimensions[0])
+                            height = int(dimensions[1]) if len(dimensions) > 1 else width
+                            
+                            if width >= 64 and height >= 64:
+                                size_score = 0.3
+                            elif width >= 32 and height >= 32:
+                                size_score = 0.2
+                        except:
+                            pass
+                    
+                    favicon_candidates.append((favicon_url, size_score, selector))
+        
+        # Trier par score décroissant
+        favicon_candidates.sort(key=lambda x: x[1], reverse=True)
+        
+        # Essayer chaque candidat
+        for favicon_url, score, selector in favicon_candidates:
+            if self.validate_logo_image(favicon_url):
+                logger.info(f" STRATÉGIE 8 - Favicon trouvé via {selector}: {favicon_url}")
+                return favicon_url
+        
+        return None
+
+    def _find_logo_global_images_strategy(self, soup, base_url):
+        """STRATÉGIE 9: Fallback sur les premières images globales significatives (NOUVELLE)"""
+        logger.debug(" STRATÉGIE 9: Fallback sur images globales")
+        
+        # Chercher dans tout le document, pas seulement le header
+        all_images = soup.find_all('img', src=True)
+        
+        for img in all_images[:10]:  # Limiter à 10 pour éviter de traiter trop d'images
+            src = img.get('src', '').lower()
+            alt = img.get('alt', '').lower()
+            
+            # Filtres d'exclusion stricts
+            exclude_patterns = [
+                'icon', 'arrow', 'menu', 'search', 'close', 'burger', 'hamburger',
+                'facebook', 'twitter', 'linkedin', 'instagram', 'youtube', 'social',
+                'banner', 'ad', 'advertisement', 'avatar', 'profile', 'user',
+                'gallery', 'photo', 'pic', 'image', 'thumb', 'preview',
+                'button', 'background', 'bg', 'pattern', 'texture'
+            ]
+            
+            # Si l'image contient des mots-clés d'exclusion, ignorer
+            if any(pattern in src or pattern in alt for pattern in exclude_patterns):
+                continue
+            
+            # Bonus pour mots-clés logo
+            logo_indicators = ['logo', 'brand', 'company', 'organization', 'site']
+            has_logo_indicator = any(indicator in src or indicator in alt for indicator in logo_indicators)
+            
+            # Vérifier les dimensions si disponibles
+            width = img.get('width')
+            height = img.get('height')
+            
+            reasonable_dimensions = True
+            if width and height:
+                try:
+                    w, h = int(width), int(height)
+                    # Dimensions raisonnables pour un logo
+                    if w < 30 or h < 20 or w > 800 or h > 400 or w/h > 8 or h/w > 3:
+                        reasonable_dimensions = False
+                except:
+                    pass
+            
+            if reasonable_dimensions:
+                logo_url = self._normalize_logo_url(img.get('src'), base_url)
+                confidence_boost = 0.15 if has_logo_indicator else 0.05
+                
+                if self._is_valid_logo_candidate(logo_url, img, confidence_boost=confidence_boost):
+                    logger.info(f" STRATÉGIE 9 - Logo global trouvé: {logo_url}")
+                    return logo_url
+                else:
+                    self._add_logo_candidate(logo_url, img, confidence_boost, "Stratégie 9 - Global")
+        
+        return None
+
+    def _find_logo_ai_analysis_strategy(self, base_url):
+        """STRATÉGIE 10: Analyse AI/ML des candidats logos collectés (NOUVELLE)"""
+        logger.debug(" STRATÉGIE 10: Analyse AI des candidats logos")
+        
+        if not self.logo_candidates:
+            return None
+        
+        try:
+            # Trier les candidats par score de confiance
+            sorted_candidates = sorted(self.logo_candidates, key=lambda x: x['confidence'], reverse=True)
+            
+            # Analyser les 3 meilleurs candidats avec des heuristiques avancées
+            for candidate in sorted_candidates[:3]:
+                logo_url = candidate['url']
+                
+                # Analyse des caractéristiques de l'URL
+                url_score = self._analyze_logo_url_features(logo_url)
+                
+                # Si disponible, analyse visuelle de l'image
+                visual_score = self._analyze_logo_visual_features(logo_url)
+                
+                total_score = candidate['confidence'] + url_score + visual_score
+                
+                logger.debug(f" Candidat AI: {logo_url[:50]}... Score: {total_score:.2f}")
+                
+                # Seuil plus élevé pour cette stratégie
+                if total_score > 0.6:
+                    logger.info(f" STRATÉGIE 10 - Logo AI sélectionné: {logo_url}")
+                    return logo_url
+        
+        except Exception as e:
+            logger.debug(f"Erreur analyse AI: {e}")
+        
+        return None
+
+    def _analyze_logo_url_features(self, logo_url):
+        """Analyse les caractéristiques de l'URL pour détecter un logo"""
+        if not logo_url:
+            return 0
+        
+        score = 0
+        url_lower = logo_url.lower()
+        
+        # Formats d'image appropriés pour les logos
+        if any(ext in url_lower for ext in ['.svg', '.png']):
+            score += 0.2
+        elif any(ext in url_lower for ext in ['.jpg', '.jpeg', '.webp']):
+            score += 0.1
+        
+        # Mots-clés dans le chemin
+        if 'logo' in url_lower:
+            score += 0.3
+        if any(word in url_lower for word in ['brand', 'company', 'org']):
+            score += 0.2
+        
+        # Structure de dossier typique
+        if any(folder in url_lower for folder in ['/assets/', '/images/', '/img/', '/static/']):
+            score += 0.1
+        
+        # Taille de fichier raisonnable (approximation par l'URL)
+        if 'thumb' in url_lower or 'small' in url_lower:
+            score -= 0.1
+        if 'large' in url_lower or 'big' in url_lower:
+            score -= 0.05
+        
+        return min(score, 0.5)  # Limiter à 0.5
+
+    def _analyze_logo_visual_features(self, logo_url):
+        """Analyse visuelle basique de l'image pour détecter un logo"""
+        try:
+            # Télécharger l'image
+            response = self.session.get(logo_url, timeout=5, stream=True)
+            if response.status_code != 200:
+                return 0
+            
+            # Analyser avec PIL
+            image = Image.open(io.BytesIO(response.content))
+            width, height = image.size
+            
+            score = 0
+            
+            # Ratio d'aspect approprié pour un logo
+            ratio = width / height if height > 0 else 0
+            if 0.5 <= ratio <= 4:  # Logos généralement horizontaux ou carrés
+                score += 0.2
+            
+            # Taille appropriée
+            if 50 <= width <= 500 and 30 <= height <= 300:
+                score += 0.2
+            elif width < 50 or height < 30:
+                score -= 0.1
+            
+            # Analyse de complexité (nombre de couleurs)
+            if image.mode in ['RGB', 'RGBA']:
+                colors = image.getcolors(maxcolors=256)
+                if colors and len(colors) <= 10:  # Logos simples
+                    score += 0.1
+                elif colors and len(colors) > 50:  # Trop complexe
+                    score -= 0.1
+            
+            return min(score, 0.3)  # Limiter à 0.3
+            
+        except Exception as e:
+            logger.debug(f"Erreur analyse visuelle: {e}")
+            return 0
+
+    async def _find_logo_dynamic_strategy(self, website_url):
+        """STRATÉGIE 11: Recherche dynamique avancée avec Playwright (AMÉLIORÉE)"""
+        logger.debug(" STRATÉGIE 11: Recherche dynamique avancée avec Playwright")
+        
+        try:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                page = await browser.new_page()
+                
+                # Attendre le chargement complet
+                await page.goto(website_url, wait_until='networkidle')
+                
+                # NOUVEAU: Attendre le chargement des logos dynamiques
+                try:
+                    await page.wait_for_timeout(2000)  # 2 secondes supplémentaires
+                    await page.wait_for_selector("img", timeout=3000)
+                except:
+                    pass
+                
+                # Chercher dans les éléments header
+                header_selectors = ['header', '[class*="header"]', '[id*="header"]', 'nav', '[class*="navbar"]']
+                
+                for selector in header_selectors:
+                    try:
+                        header_elements = await page.query_selector_all(selector)
+                        
+                        for header in header_elements:
+                            # Images avec alt/src contenant "logo"
+                            img_elements = await header.query_selector_all('img[alt*="logo" i], img[src*="logo" i]')
+                            
+                            for img in img_elements:
+                                src = await img.get_attribute("src")
+                                if src:
+                                    full_url = urljoin(website_url, src)
+                                    if self.validate_logo_image(full_url):
+                                        logger.info(f" STRATÉGIE 11 - Logo header trouvé: {full_url}")
+                                        await browser.close()
+                                        return full_url
+                            
+                            # SVG avec classe logo
+                            svg_elements = await header.query_selector_all('svg[class*="logo" i], svg[id*="logo" i]')
+                            
+                            for svg in svg_elements:
+                                svg_content = await svg.inner_html()
+                                if svg_content and len(svg_content) > 50:
+                                    svg_bytes = f'<svg>{svg_content}</svg>'.encode('utf-8')
+                                    svg_base64 = base64.b64encode(svg_bytes).decode('utf-8')
+                                    svg_url = f"data:image/svg+xml;base64,{svg_base64}"
+                                    logger.info(f" STRATÉGIE 11 - SVG header trouvé: {svg_url[:100]}...")
+                                    await browser.close()
+                                    return svg_url
+                            
+                            # Liens contenant des logos
+                            link_elements = await header.query_selector_all('a[href="/"], a[href="./"], a[class*="logo" i], a[class*="brand" i]')
+                            
+                            for link in link_elements:
+                                # Image dans le lien
+                                img_in_link = await link.query_selector('img')
+                                if img_in_link:
+                                    src = await img_in_link.get_attribute("src")
+                                    if src:
+                                        full_url = urljoin(website_url, src)
+                                        if self.validate_logo_image(full_url):
+                                            logger.info(f" STRATÉGIE 11 - Logo dans lien trouvé: {full_url}")
+                                            await browser.close()
+                                            return full_url
+                                
+                                # SVG dans le lien
+                                svg_in_link = await link.query_selector('svg')
+                                if svg_in_link:
+                                    svg_content = await svg_in_link.inner_html()
+                                    if svg_content and len(svg_content) > 50:
+                                        svg_bytes = f'<svg>{svg_content}</svg>'.encode('utf-8')
+                                        svg_base64 = base64.b64encode(svg_bytes).decode('utf-8')
+                                        svg_url = f"data:image/svg+xml;base64,{svg_base64}"
+                                        logger.info(f" STRATÉGIE 11 - SVG dans lien trouvé: {svg_url[:100]}...")
+                                        await browser.close()
+                                        return svg_url
+                    except Exception as e:
+                        logger.debug(f"Erreur avec sélecteur {selector}: {e}")
+                        continue
+                
+                # NOUVEAU: Chercher dans toute la page si rien trouvé dans header
+                all_imgs = await page.query_selector_all('img[alt*="logo" i], img[src*="logo" i]')
+                for img in all_imgs[:5]:  # Limiter à 5
+                    src = await img.get_attribute("src")
+                    if src:
+                        full_url = urljoin(website_url, src)
+                        if self.validate_logo_image(full_url):
+                            logger.info(f" STRATÉGIE 11 - Logo global trouvé: {full_url}")
+                            await browser.close()
+                            return full_url
+                
+                await browser.close()
+                return None
+                
+        except Exception as e:
+            logger.debug(f"Erreur stratégie dynamique: {e}")
+            return None
+
+    
+    # UTILITAIRES POUR L'EXTRACTION DE LOGOS
+    
+    def _add_logo_candidate(self, logo_url, img_element, confidence, strategy):
+        """Ajoute un candidat logo pour analyse ultérieure"""
+        if logo_url and len(self.logo_candidates) < 20:  # Limiter le nombre de candidats
+            self.logo_candidates.append({
+                'url': logo_url,
+                'confidence': confidence,
+                'strategy': strategy,
+                'alt': img_element.get('alt', '') if img_element else '',
+                'class': ' '.join(img_element.get('class', [])) if img_element else '',
+                'src': img_element.get('src', '') if img_element else ''
+            })
 
     def _extract_svg_as_logo(self, svg_element, base_url):
         """Extrait un SVG comme logo - retourne URL ou data URL"""
@@ -823,7 +1163,6 @@ class DisruptAfricaScraper:
             # SVG avec contenu inline significatif
             svg_content = str(svg_element)
             if len(svg_content) > 100 and ('path' in svg_content or 'circle' in svg_content or 'rect' in svg_content):
-                # Créer une data URL pour le SVG
                 svg_bytes = svg_content.encode('utf-8')
                 svg_base64 = base64.b64encode(svg_bytes).decode('utf-8')
                 return f"data:image/svg+xml;base64,{svg_base64}"
@@ -851,41 +1190,32 @@ class DisruptAfricaScraper:
     def _is_valid_logo_candidate(self, logo_url, img_element, confidence_boost=0):
         """Évalue la validité d'un candidat logo avec système de scoring"""
         if not logo_url:
-            logger.debug(" Logo candidat rejeté: URL vide")
             return False
         
         confidence_score = confidence_boost
-        logger.debug(f" Validation logo candidat: {logo_url}")
-        logger.debug(f"Score initial avec boost: {confidence_score}")
         
         # Validation de l'extension/type
         if logo_url.startswith('data:image/'):
             confidence_score += 0.2
-            logger.debug(f"Bonus data URL: +0.2 → {confidence_score}")
         else:
-            valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp']
+            valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico']
             has_valid_ext = any(ext in logo_url.lower() for ext in valid_extensions)
             
             if not has_valid_ext:
-                logger.debug(f" Extension invalide pour: {logo_url}")
                 return False
             
             if '.svg' in logo_url.lower():
                 confidence_score += 0.1
-                logger.debug(f"Bonus SVG: +0.1 → {confidence_score}")
         
         # Analyse de l'élément img
         if img_element:
             alt_text = img_element.get('alt', '').lower()
             class_list = ' '.join(img_element.get('class', [])).lower()
             
-            logger.debug(f"Alt text: '{alt_text}', Classes: '{class_list}'")
-            
             # Bonus pour mots-clés logo
             logo_keywords = ['logo', 'brand', 'company', 'organization', 'site']
             if any(keyword in alt_text or keyword in class_list for keyword in logo_keywords):
                 confidence_score += 0.3
-                logger.debug(f"Bonus mots-clés logo: +0.3 → {confidence_score}")
             
             # Validation des dimensions
             width = img_element.get('width')
@@ -893,56 +1223,50 @@ class DisruptAfricaScraper:
             if width and height:
                 try:
                     w, h = int(width), int(height)
-                    logger.debug(f"Dimensions: {w}x{h}")
                     if 50 <= w <= 500 and 20 <= h <= 200:
                         confidence_score += 0.1
-                        logger.debug(f"Bonus dimensions: +0.1 → {confidence_score}")
                 except:
-                    logger.debug("Erreur parsing dimensions")
                     pass
         
-        # Validation de l'accessibilité de l'image
+        # Validation de l'accessibilité de l'image (avec HEAD request optimisée)
         if not logo_url.startswith('data:'):
-            if not self.validate_logo_image(logo_url):
-                logger.debug(f" Image non accessible: {logo_url}")
+            if not self.validate_logo_image_fast(logo_url):
                 return False
-            else:
-                logger.debug(f" Image accessible: {logo_url}")
         
-        # Décision finale basée sur le score
-        min_confidence = 0.1
-        decision = confidence_score >= min_confidence
-        
-        logger.debug(f" Score final: {confidence_score:.2f}, Minimum requis: {min_confidence}, Décision: {decision}")
-        
-        return decision
+        # Décision finale
+        return confidence_score >= 0.1
 
-    
-    # SECTION 7: VALIDATION ET UTILITAIRES
+    # VALIDATION ET UTILITAIRES AMÉLIORÉS
     
 
-    def validate_logo_image(self, logo_url):
-        """Valide qu'une URL d'image est accessible"""
+    def validate_logo_image_fast(self, logo_url):
+        """Validation rapide avec HEAD request optimisée"""
         try:
             if not logo_url or len(logo_url) < 10:
                 return False
             
-            valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp']
+            # Accepter les data URLs
+            if logo_url.startswith('data:image/'):
+                return True
+            
+            # Extensions valides (inclut .ico pour favicon)
+            valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico']
             if not any(ext in logo_url.lower() for ext in valid_extensions):
                 return False
             
+            # HEAD request optimisée
             try:
-                head_response = self.session.head(logo_url, timeout=5)
+                head_response = self.session.head(logo_url, timeout=3, allow_redirects=True)
                 if head_response.status_code == 200:
-                    content_type = head_response.headers.get('content-type', '')
-                    if 'image' in content_type:
-                        return True
+                    content_type = head_response.headers.get('content-type', '').lower()
+                    return any(img_type in content_type for img_type in ['image', 'icon'])
             except:
+                # Fallback avec GET si HEAD échoue
                 try:
-                    get_response = self.session.get(logo_url, timeout=3, stream=True)
+                    get_response = self.session.get(logo_url, timeout=2, stream=True)
                     if get_response.status_code == 200:
-                        content_type = get_response.headers.get('content-type', '')
-                        return 'image' in content_type
+                        content_type = get_response.headers.get('content-type', '').lower()
+                        return any(img_type in content_type for img_type in ['image', 'icon'])
                 except:
                     pass
             
@@ -951,6 +1275,48 @@ class DisruptAfricaScraper:
         except Exception:
             return False
 
+    def validate_logo_image(self, logo_url):
+        """Validation complète de logo (version originale pour compatibilité)"""
+        try:
+            if not logo_url or len(logo_url) < 10:
+                return False
+            
+            # Accepter les data URLs
+            if logo_url.startswith('data:image/'):
+                return True
+            
+            # Extensions valides (inclut .ico pour favicon)
+            valid_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico']
+            if not any(ext in logo_url.lower() for ext in valid_extensions):
+                return False
+            
+            try:
+                head_response = self.session.head(logo_url, timeout=5)
+                if head_response.status_code == 200:
+                    content_type = head_response.headers.get('content-type', '')
+                    if any(img_type in content_type for img_type in ['image', 'icon']):
+                        return True
+            except:
+                try:
+                    get_response = self.session.get(logo_url, timeout=3, stream=True)
+                    if get_response.status_code == 200:
+                        content_type = get_response.headers.get('content-type', '')
+                        if any(img_type in content_type for img_type in ['image', 'icon']):
+                            return True
+                        
+                        # Pour les .ico, vérifier la signature binaire
+                        if logo_url.lower().endswith('.ico'):
+                            first_bytes = get_response.content[:4]
+                            if first_bytes and len(first_bytes) >= 4:
+                                if first_bytes[0:2] == b'\x00\x00' and first_bytes[2:4] in [b'\x01\x00', b'\x02\x00']:
+                                    return True
+                except:
+                    pass
+            
+            return False
+            
+        except Exception:
+            return False
     def validate_website(self, website_url):
         """Valide qu'une URL de site web est accessible"""
         if not website_url:
@@ -1120,7 +1486,7 @@ class DisruptAfricaScraper:
             }
         
         try:
-            logger.info(f"🔍 Enrichissement SerpAPI pour: {organization_name}")
+            logger.info(f" Enrichissement SerpAPI pour: {organization_name}")
             
             # Validation des données actuelles
             website_valid = self.validate_website(current_website) if current_website else False
